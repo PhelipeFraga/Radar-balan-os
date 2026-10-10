@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-10T19:56-03:00",
+ "atualizado": "2026-10-10T19:57-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -1488,6 +1488,11 @@
      "data": "2026-05-05",
      "fonte": "confirmada",
      "docs": [
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516138&numSequencia=1040844&numVersao=1",
+       "entregue": "2026-05-05"
+      },
       {
        "nome": "Demonstrações financeiras",
        "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516140&numSequencia=1040846&numVersao=1",
