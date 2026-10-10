@@ -56,7 +56,7 @@ const voltar = (href) => `<a class="redondo" href="${href}" aria-label="Voltar">
 function linhaEvento(x, comDia = true) {
   const d = x.data;
   const esquerda = comDia
-    ? `<div class="dia"><b>${d.getDate()}</b><span>${SEMANA[d.getDay()]}</span></div>`
+    ? `<div class="dia">${d.getMonth() !== hoje().getMonth() ? `<i>${MESES[d.getMonth()].slice(0, 3).toUpperCase()}</i>` : ""}<b>${d.getDate()}</b><span>${SEMANA[d.getDay()]}</span></div>`
     : `<div class="logo">${esc(x.inst.sigla)}</div>`;
   return `<a class="item" href="#evento/${chave(x)}">${esquerda}
     <div class="meio"><div class="nome">${esc(x.inst.nome)}</div><div class="info">${descricaoCurta(x.ev)}</div></div>${selo(x.ev)}</a>`;
