@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-10T20:01-03:00",
+ "atualizado": "2026-10-10T20:02-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -418,6 +418,11 @@
        "nome": "Análise gerencial",
        "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1334413&numSequencia=859139&numVersao=1",
        "entregue": "2025-02-13"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1334767&numSequencia=859493&numVersao=2",
+       "entregue": "2025-02-13"
       }
      ],
      "status": "saiu",
@@ -476,6 +481,11 @@
       {
        "nome": "Análise gerencial",
        "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1441148&numSequencia=965860&numVersao=1",
+       "entregue": "2025-11-06"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1441146&numSequencia=965858&numVersao=1",
        "entregue": "2025-11-06"
       }
      ],
@@ -930,6 +940,11 @@
        "nome": "Análise gerencial",
        "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1300061&numSequencia=824787&numVersao=1",
        "entregue": "2024-11-07"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1300059&numSequencia=824785&numVersao=1",
+       "entregue": "2024-11-07"
       }
      ],
      "status": "saiu",
@@ -1175,6 +1190,13 @@
      "ano": 2025,
      "data": "2025-05-15",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1391472&numSequencia=916184&numVersao=1",
+       "entregue": "2025-06-17"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2025-05-15",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=147729&CodigoTipoInstituicao=1"
@@ -2106,6 +2128,13 @@
      "ano": 2025,
      "data": "2026-02-25",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1483353&numSequencia=1008059&numVersao=1",
+       "entregue": "2026-02-27"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-02-25",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154911&CodigoTipoInstituicao=1"
@@ -3998,6 +4027,11 @@
       {
        "nome": "Release de resultados",
        "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1436830&numSequencia=961542&numVersao=2",
+       "entregue": "2025-10-29"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1436767&numSequencia=961479&numVersao=1",
        "entregue": "2025-10-29"
       }
      ],
