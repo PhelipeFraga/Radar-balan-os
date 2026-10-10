@@ -155,10 +155,13 @@ function telaEvento(id) {
   const linhaFonte = saiu
     ? (ev.pdf ? "Entregue à CVM" : "Saiu na imprensa · a CVM confirma em até uma semana")
     : ev.fonte === "confirmada" ? "Data informada pelo banco à CVM" : "Sem data informada · este é o prazo máximo da regra";
-  const docs = [];
-  if (ev.pdf) docs.push({ nome: ev.tipo === "DFP" ? "Demonstrações financeiras (DFP)" : "Informações trimestrais (ITR)", fonte: "Documento oficial · CVM", link: ev.pdf });
+  const docs = (ev.docs || []).map((d) => ({ nome: d.nome, fonte: `PDF · entregue em ${curta(dataLocal(d.entregue))} · toque para baixar`, link: d.link }));
+  if (ev.pdf) docs.push({ nome: ev.tipo === "DFP" ? "Formulário DFP" : "Formulário ITR", fonte: "Formulário padrão · abre no site da CVM", link: ev.pdf });
   if (ev.noticia) docs.push({ nome: ev.noticia.titulo, fonte: "Notícia", link: ev.noticia.link });
-  docs.push({ nome: "Todos os documentos na CVM", fonte: "Busca de documentos · CVM", link: CVM_BUSCA });
+  const semDocs = !docs.length;
+  const avisoSemDocs = saiu
+    ? "Os PDFs entram aqui quando a CVM atualizar a base (uma vez por semana). Enquanto isso, o release já está no site de RI do banco."
+    : "Quando o balanço sair, o release, a análise gerencial e as demonstrações aparecem aqui para baixar.";
   const iconeDoc = `<div style="width:40px;height:40px;border-radius:12px;background:var(--azul-claro);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A35A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg></div>`;
 
   tela.innerHTML = `
@@ -173,8 +176,12 @@ function telaEvento(id) {
       </div>
     </div>
     <h2>Documentos</h2>
-    <div class="cartao lista">${docs.map((d) => `<a class="item" href="${esc(d.link)}" target="_blank" rel="noopener">${iconeDoc}
+    <div class="cartao lista">${semDocs ? `<div class="vazio" style="padding:14px 0">${avisoSemDocs}</div>` : docs.map((d) => `<a class="item" href="${esc(d.link)}" target="_blank" rel="noopener">${iconeDoc}
       <div class="meio"><div class="nome" style="white-space:normal">${esc(d.nome)}</div><div class="info">${esc(d.fonte)}</div></div></a>`).join("")}</div>
+    <div class="botoes">
+      ${inst.ri ? `<a class="botao${semDocs ? "" : " claro"}" href="${esc(inst.ri)}" target="_blank" rel="noopener">Site de RI</a>` : ""}
+      <a class="botao claro" href="${CVM_BUSCA}" target="_blank" rel="noopener">Ver na CVM</a>
+    </div>
     <div class="cartao" style="padding:18px;display:flex;flex-direction:column;gap:10px">
       <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-size:15px;font-weight:800">Números principais</div><span class="etiqueta-fase">Em breve</span></div>
       <div style="font-size:13px;color:var(--suave);line-height:1.5">Lucro, carteira, inadimplência e Basileia vão aparecer aqui sozinhos, minutos depois de o balanço sair.</div>

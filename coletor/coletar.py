@@ -49,6 +49,18 @@ NOMES = {
     21466: "Banco RCI Brasil", 1155: "Banestes", 14206: "BRB", 25860: "BR Partners",
     20729: "Paraná Banco", 7617: "Itaúsa", 21733: "Cielo", 27634: "B100",
 }
+# Site de relações com investidores (onde o release aparece primeiro).
+RI = {
+    1023: "https://ri.bb.com.br", 906: "https://www.bradescori.com.br", 19348: "https://www.itau.com.br/relacoes-com-investidores",
+    20532: "https://www.santander.com.br/ri", 22616: "https://ri.btgpactual.com", 20958: "https://ri.abcbrasil.com.br",
+    24600: "https://www.bancobmg.com.br/ri", 922: "https://ri.bancoamazonia.com.br", 20796: "https://www.daycoval.com.br/ri",
+    1120: "https://ri.banese.com.br", 1171: "https://ri.banpara.b.br", 1210: "https://www.banrisul.com.br/ri",
+    1228: "https://ri.bnb.gov.br", 1325: "https://ri.bancomercantil.com.br", 1309: "https://ri.bancomercantil.com.br",
+    20567: "https://ri.pine.com", 21466: "https://www.bancorci.com.br/relacao-com-investidores", 1155: "https://ri.banestes.com.br",
+    14206: "https://ri.brb.com.br", 25860: "https://ri.brpartners.com.br", 20729: "https://ri.paranabanco.com.br",
+    21733: "https://ri.cielo.com.br", 27634: "https://ri.b100sa.com.br",
+}
+
 # Registradas nesses setores, mas sem operação de crédito relevante.
 EXCLUIR = {15717, 6041}  # Cadip, Investimentos Bemge
 
@@ -102,6 +114,7 @@ def carregar_instituicoes():
             "cnpj": l["CNPJ_CIA"],
             "setor": l["SETOR_ATIV"],
             "orgao": "CVM",
+            "ri": RI.get(cod),
             "eventos": [],
         }
     return inst
@@ -136,15 +149,19 @@ def ler_calendario(pdf_bytes):
     return achados
 
 
-def datas_previstas(inst):
-    cache_arq = CACHE / "calendarios.json"
-    cache = json.loads(cache_arq.read_text(encoding="utf-8")) if cache_arq.exists() else {}
+def carregar_ipe():
     docs = []
     for ano in (HOJE.year - 1, HOJE.year):
         try:
             docs += csv_do_zip(f"{CVM}/DOC/IPE/DADOS/ipe_cia_aberta_{ano}.zip", f"ipe_cia_aberta_{ano}.csv")
         except Exception as erro:
             print(f"  IPE {ano} indisponível: {erro}")
+    return docs
+
+
+def datas_previstas(inst, docs):
+    cache_arq = CACHE / "calendarios.json"
+    cache = json.loads(cache_arq.read_text(encoding="utf-8")) if cache_arq.exists() else {}
     # Cada banco entrega vários calendários (um por ano e as revisões). Lê todos,
     # do mais antigo para o mais novo, e a versão mais nova de cada data vence.
     calendarios = sorted(
@@ -169,6 +186,71 @@ def datas_previstas(inst):
     CACHE.mkdir(parents=True, exist_ok=True)
     cache_arq.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
     return datas
+
+
+# ---------- 2b. PDFs do resultado (release, análise gerencial, demonstrações) ----------
+
+DOCUMENTOS = {
+    "Press-release": (1, "Release de resultados"),
+    "Relatório de Análise Gerencial": (2, "Análise gerencial"),
+    "Demonstrações Financeiras Intermediárias": (3, "Demonstrações financeiras"),
+    "Demonstrações Financeiras Anuais Completas": (3, "Demonstrações financeiras"),
+}
+
+
+def documentos_resultado(inst, docs):
+    """{(cod, tri, ano): [docs]} com a versão mais nova de cada tipo de PDF."""
+    achados = {}
+    for d in docs:
+        cod = int(d["Codigo_CVM"])
+        if cod not in inst or d["Categoria"] != "Dados Econômico-Financeiros" or d["Tipo"] not in DOCUMENTOS:
+            continue
+        try:
+            ref = date.fromisoformat(d["Data_Referencia"])
+        except ValueError:
+            continue
+        if ref.month not in (3, 6, 9, 12):
+            continue
+        tri = f"{(ref.month - 1) // 3 + 1}T"
+        ordem, nome = DOCUMENTOS[d["Tipo"]]
+        grupo = achados.setdefault((cod, tri, ref.year), {})
+        atual = grupo.get(nome)
+        if not atual or (d["Data_Entrega"], d["Versao"]) > (atual["entregue"], atual["versao"]):
+            grupo[nome] = {"nome": nome, "ordem": ordem, "entregue": d["Data_Entrega"], "versao": d["Versao"],
+                           "link": d["Link_Download"].replace("http://", "https://")}
+    return {k: [{"nome": x["nome"], "link": x["link"], "entregue": x["entregue"]}
+                for x in sorted(v.values(), key=lambda x: x["ordem"])] for k, v in achados.items()}
+
+
+def baixa_pdf(link, cache):
+    """Alguns PDFs a CVM não entrega (devolve uma página de erro). Lê só o começo do arquivo para saber."""
+    if cache.get(link):
+        return True
+    try:
+        with urllib.request.urlopen(urllib.request.Request(link, headers=AGENTE), timeout=60) as r:
+            ok = r.read(5) == b"%PDF-"
+    except Exception:
+        ok = False
+    if ok:
+        cache[link] = True  # só guarda o sucesso; o que falhou é testado de novo na próxima rodada
+    return ok
+
+
+def filtrar_pdfs(pdfs):
+    cache_arq = CACHE / "pdfs.json"
+    cache = json.loads(cache_arq.read_text(encoding="utf-8")) if cache_arq.exists() else {}
+    limite = (HOJE - timedelta(days=200)).isoformat()
+    filtrados = {}
+    for chave, lista in pdfs.items():
+        if max(x["entregue"] for x in lista) < limite:
+            continue
+        bons = [x for x in lista if baixa_pdf(x["link"], cache)]
+        if bons:
+            filtrados[chave] = bons
+    cache_arq.write_text(json.dumps(cache, indent=1), encoding="utf-8")
+    falhas = sum(len(v) for v in pdfs.values() if max(x["entregue"] for x in v) >= limite) - sum(len(v) for v in filtrados.values())
+    print(f"  {sum(len(v) for v in filtrados.values())} PDFs ok, {falhas} indisponíveis na CVM")
+    return filtrados
 
 
 # ---------- 3. Balanços já entregues (ITR/DFP) ----------
@@ -242,7 +324,10 @@ def montar():
     inst = carregar_instituicoes()
     print(f"  {len(inst)} instituições")
     print("Calendários...")
-    previstas = datas_previstas(inst)
+    ipe = carregar_ipe()
+    previstas = datas_previstas(inst, ipe)
+    print("PDFs dos resultados...")
+    pdfs = filtrar_pdfs(documentos_resultado(inst, ipe))
     print("Entregas na CVM...")
     feitos = entregues(inst)
     periodos = trimestres_relevantes()
@@ -256,8 +341,14 @@ def montar():
             else:
                 ev["data"], ev["fonte"] = prazo_legal(tipo, tri, ano).isoformat(), "prazo"
             entrega = feitos.get((cod, tipo, tri, ano))
+            if pdfs.get((cod, tri, ano)):
+                ev["docs"] = pdfs[(cod, tri, ano)]
+                if not entrega:  # o release costuma chegar à base antes do ITR
+                    entrega = {"recebido": min(x["entregue"] for x in ev["docs"]), "link": None}
             if entrega:
-                ev["status"], ev["saiu_em"], ev["pdf"] = "saiu", entrega["recebido"], entrega["link"]
+                ev["status"], ev["saiu_em"] = "saiu", entrega["recebido"]
+                if entrega["link"]:
+                    ev["pdf"] = entrega["link"]
             else:
                 ev["status"] = "previsto"
                 prevista = date.fromisoformat(ev["data"])

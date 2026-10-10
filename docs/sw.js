@@ -1,6 +1,6 @@
 // Guarda o app no celular para abrir rápido e funcionar sem internet.
 // Os dados (dados.json) vêm sempre da rede primeiro; sem rede, usa a última cópia.
-const VERSAO = "radar-v1";
+const VERSAO = "radar-v2";
 const ARQUIVOS = ["./", "index.html", "app.js", "manifest.webmanifest", "icone-192.png", "icone-512.png"];
 
 self.addEventListener("install", (e) => {

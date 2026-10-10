@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-10T19:49-03:00",
+ "atualizado": "2026-10-10T19:56-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -9,6 +9,7 @@
    "cnpj": "28.195.667/0001-06",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://ri.abcbrasil.com.br",
    "eventos": [
     {
      "tipo": "DFP",
@@ -28,6 +29,18 @@
      "ano": 2026,
      "data": "2026-05-07",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1517352&numSequencia=1042058&numVersao=1",
+       "entregue": "2026-05-07"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1517351&numSequencia=1042057&numVersao=1",
+       "entregue": "2026-05-07"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-05-07",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156790&CodigoTipoInstituicao=1"
@@ -39,6 +52,18 @@
      "ano": 2026,
      "data": "2026-08-06",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552991&numSequencia=1077697&numVersao=1",
+       "entregue": "2026-08-06"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552990&numSequencia=1077696&numVersao=1",
+       "entregue": "2026-08-06"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-06",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160223&CodigoTipoInstituicao=1"
@@ -71,6 +96,7 @@
    "cnpj": "52.270.350/0001-71",
    "setor": "Intermediação Financeira",
    "orgao": "CVM",
+   "ri": "https://ri.b100sa.com.br",
    "eventos": [
     {
      "tipo": "DFP",
@@ -79,6 +105,13 @@
      "ano": 2025,
      "data": "2026-03-31",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1502963&numSequencia=1027669&numVersao=2",
+       "entregue": "2026-04-09"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-03-31",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=155942&CodigoTipoInstituicao=1"
@@ -90,6 +123,13 @@
      "ano": 2026,
      "data": "2026-05-08",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1519302&numSequencia=1044008&numVersao=1",
+       "entregue": "2026-05-08"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-05-08",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157005&CodigoTipoInstituicao=1"
@@ -101,6 +141,13 @@
      "ano": 2026,
      "data": "2026-08-13",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557268&numSequencia=1081974&numVersao=1",
+       "entregue": "2026-08-13"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-13",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160646&CodigoTipoInstituicao=1"
@@ -133,6 +180,7 @@
    "cnpj": "10.739.356/0001-03",
    "setor": "Emp. Adm. Part. - Bancos",
    "orgao": "CVM",
+   "ri": "https://ri.brpartners.com.br",
    "eventos": [
     {
      "tipo": "DFP",
@@ -152,6 +200,18 @@
      "ano": 2026,
      "data": "2026-05-07",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1517976&numSequencia=1042682&numVersao=1",
+       "entregue": "2026-05-07"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1517972&numSequencia=1042678&numVersao=1",
+       "entregue": "2026-05-07"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-05-07",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156836&CodigoTipoInstituicao=1"
@@ -163,6 +223,18 @@
      "ano": 2026,
      "data": "2026-08-06",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553429&numSequencia=1078135&numVersao=1",
+       "entregue": "2026-08-06"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1553431&numSequencia=1078137&numVersao=1",
+       "entregue": "2026-08-06"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-06",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160236&CodigoTipoInstituicao=1"
@@ -195,6 +267,7 @@
    "cnpj": "00.000.208/0001-00",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://ri.brb.com.br",
    "eventos": [
     {
      "tipo": "DFP",
@@ -251,6 +324,7 @@
    "cnpj": "30.306.294/0001-45",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://ri.btgpactual.com",
    "eventos": [
     {
      "tipo": "DFP",
@@ -270,6 +344,18 @@
      "ano": 2026,
      "data": "2026-05-12",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1519393&numSequencia=1044099&numVersao=1",
+       "entregue": "2026-05-11"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1519391&numSequencia=1044097&numVersao=1",
+       "entregue": "2026-05-11"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-05-11",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157012&CodigoTipoInstituicao=1"
@@ -281,6 +367,18 @@
      "ano": 2026,
      "data": "2026-08-11",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1555532&numSequencia=1080238&numVersao=1",
+       "entregue": "2026-08-11"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1555621&numSequencia=1080327&numVersao=2",
+       "entregue": "2026-08-11"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-11",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160381&CodigoTipoInstituicao=1"
@@ -313,6 +411,7 @@
    "cnpj": "61.186.680/0001-74",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://www.bancobmg.com.br/ri",
    "eventos": [
     {
      "tipo": "DFP",
@@ -332,6 +431,18 @@
      "ano": 2026,
      "data": "2026-05-05",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516267&numSequencia=1040973&numVersao=1",
+       "entregue": "2026-05-05"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516268&numSequencia=1040974&numVersao=1",
+       "entregue": "2026-05-05"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-05-05",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156636&CodigoTipoInstituicao=1"
@@ -343,6 +454,18 @@
      "ano": 2026,
      "data": "2026-08-13",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557203&numSequencia=1081909&numVersao=1",
+       "entregue": "2026-08-13"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557205&numSequencia=1081911&numVersao=1",
+       "entregue": "2026-08-13"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-13",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160637&CodigoTipoInstituicao=1"
@@ -375,6 +498,7 @@
    "cnpj": "62.144.175/0001-20",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://ri.pine.com",
    "eventos": [
     {
      "tipo": "DFP",
@@ -394,6 +518,13 @@
      "ano": 2026,
      "data": "2026-05-06",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516441&numSequencia=1041147&numVersao=1",
+       "entregue": "2026-05-06"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-05-06",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156674&CodigoTipoInstituicao=1"
@@ -405,6 +536,18 @@
      "ano": 2026,
      "data": "2026-08-12",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556118&numSequencia=1080824&numVersao=1",
+       "entregue": "2026-08-12"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1562814&numSequencia=1087520&numVersao=2",
+       "entregue": "2026-08-28"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-12",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160455&CodigoTipoInstituicao=1"
@@ -437,6 +580,7 @@
    "cnpj": "62.307.848/0001-15",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://www.bancorci.com.br/relacao-com-investidores",
    "eventos": [
     {
      "tipo": "DFP",
@@ -495,6 +639,7 @@
    "cnpj": "04.902.979/0001-44",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://ri.bancoamazonia.com.br",
    "eventos": [
     {
      "tipo": "DFP",
@@ -503,6 +648,13 @@
      "ano": 2025,
      "data": "2026-04-17",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1506420&numSequencia=1031126&numVersao=1",
+       "entregue": "2026-04-17"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-04-17",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156293&CodigoTipoInstituicao=1"
@@ -525,6 +677,13 @@
      "ano": 2026,
      "data": "2026-08-28",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1562839&numSequencia=1087545&numVersao=1",
+       "entregue": "2026-08-28"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-28",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=161144&CodigoTipoInstituicao=1"
@@ -557,6 +716,7 @@
    "cnpj": "00.000.000/0001-91",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://ri.bb.com.br",
    "eventos": [
     {
      "tipo": "DFP",
@@ -565,6 +725,23 @@
      "ano": 2025,
      "data": "2026-02-11",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1476563&numSequencia=1001269&numVersao=2",
+       "entregue": "2026-02-11"
+      },
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1481390&numSequencia=1006096&numVersao=3",
+       "entregue": "2026-02-24"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1500726&numSequencia=1025432&numVersao=1",
+       "entregue": "2026-04-02"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-02-11",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154715&CodigoTipoInstituicao=1"
@@ -576,6 +753,23 @@
      "ano": 2026,
      "data": "2026-05-13",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521598&numSequencia=1046304&numVersao=1",
+       "entregue": "2026-05-13"
+      },
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521600&numSequencia=1046306&numVersao=1",
+       "entregue": "2026-05-13"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521602&numSequencia=1046308&numVersao=1",
+       "entregue": "2026-05-13"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-05-13",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157308&CodigoTipoInstituicao=1"
@@ -587,6 +781,23 @@
      "ano": 2026,
      "data": "2026-08-12",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556521&numSequencia=1081227&numVersao=1",
+       "entregue": "2026-08-12"
+      },
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1558772&numSequencia=1083478&numVersao=2",
+       "entregue": "2026-08-17"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556524&numSequencia=1081230&numVersao=1",
+       "entregue": "2026-08-12"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-12",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160511&CodigoTipoInstituicao=1"
@@ -619,6 +830,7 @@
    "cnpj": "07.237.373/0001-20",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://ri.bnb.gov.br",
    "eventos": [
     {
      "tipo": "DFP",
@@ -649,6 +861,13 @@
      "ano": 2026,
      "data": "2026-08-14",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557537&numSequencia=1082243&numVersao=1",
+       "entregue": "2026-08-14"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-14",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160736&CodigoTipoInstituicao=1"
@@ -681,6 +900,7 @@
    "cnpj": "13.009.717/0001-46",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://ri.banese.com.br",
    "eventos": [
     {
      "tipo": "DFP",
@@ -700,6 +920,13 @@
      "ano": 2026,
      "data": "2026-05-15",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1528544&numSequencia=1053250&numVersao=1",
+       "entregue": "2026-05-29"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-05-15",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157613&CodigoTipoInstituicao=1"
@@ -711,6 +938,13 @@
      "ano": 2026,
      "data": "2026-08-14",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1562792&numSequencia=1087498&numVersao=1",
+       "entregue": "2026-08-28"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-14",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160841&CodigoTipoInstituicao=1"
@@ -743,6 +977,7 @@
    "cnpj": "28.127.603/0001-78",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://ri.banestes.com.br",
    "eventos": [
     {
      "tipo": "DFP",
@@ -751,6 +986,18 @@
      "ano": 2025,
      "data": "2026-02-23",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1480852&numSequencia=1005558&numVersao=1",
+       "entregue": "2026-02-23"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1529266&numSequencia=1053972&numVersao=2",
+       "entregue": "2026-06-01"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-02-23",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154846&CodigoTipoInstituicao=1"
@@ -762,6 +1009,13 @@
      "ano": 2026,
      "data": "2026-05-13",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521398&numSequencia=1046104&numVersao=1",
+       "entregue": "2026-05-13"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-05-13",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157286&CodigoTipoInstituicao=1"
@@ -773,6 +1027,18 @@
      "ano": 2026,
      "data": "2026-08-12",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556363&numSequencia=1081069&numVersao=1",
+       "entregue": "2026-08-12"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556369&numSequencia=1081075&numVersao=1",
+       "entregue": "2026-08-12"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-12",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160477&CodigoTipoInstituicao=1"
@@ -805,6 +1071,7 @@
    "cnpj": "04.913.711/0001-08",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://ri.banpara.b.br",
    "eventos": [
     {
      "tipo": "DFP",
@@ -813,6 +1080,13 @@
      "ano": 2025,
      "data": "2026-03-20",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1495601&numSequencia=1020307&numVersao=2",
+       "entregue": "2026-03-26"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-03-20",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=155558&CodigoTipoInstituicao=1"
@@ -835,6 +1109,13 @@
      "ano": 2026,
      "data": "2026-08-14",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1558294&numSequencia=1083000&numVersao=1",
+       "entregue": "2026-08-14"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-14",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160799&CodigoTipoInstituicao=1"
@@ -867,6 +1148,7 @@
    "cnpj": "92.702.067/0001-96",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://www.banrisul.com.br/ri",
    "eventos": [
     {
      "tipo": "DFP",
@@ -886,6 +1168,13 @@
      "ano": 2026,
      "data": "2026-05-14",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1521772&numSequencia=1046478&numVersao=1",
+       "entregue": "2026-05-14"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-05-14",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157350&CodigoTipoInstituicao=1"
@@ -897,6 +1186,13 @@
      "ano": 2026,
      "data": "2026-08-13",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1556793&numSequencia=1081499&numVersao=1",
+       "entregue": "2026-08-13"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-13",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160571&CodigoTipoInstituicao=1"
@@ -929,6 +1225,7 @@
    "cnpj": "60.746.948/0001-12",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://www.bradescori.com.br",
    "eventos": [
     {
      "tipo": "DFP",
@@ -937,6 +1234,23 @@
      "ano": 2025,
      "data": "2026-02-05",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1473830&numSequencia=998536&numVersao=1",
+       "entregue": "2026-02-05"
+      },
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1473833&numSequencia=998539&numVersao=1",
+       "entregue": "2026-02-05"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1495311&numSequencia=1020017&numVersao=2",
+       "entregue": "2026-03-25"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-02-05",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154611&CodigoTipoInstituicao=1"
@@ -948,6 +1262,23 @@
      "ano": 2026,
      "data": "2026-05-06",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516957&numSequencia=1041663&numVersao=1",
+       "entregue": "2026-05-06"
+      },
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516958&numSequencia=1041664&numVersao=1",
+       "entregue": "2026-05-06"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516980&numSequencia=1041686&numVersao=1",
+       "entregue": "2026-05-06"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-05-06",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156709&CodigoTipoInstituicao=1"
@@ -959,6 +1290,18 @@
      "ano": 2026,
      "data": "2026-08-05",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552737&numSequencia=1077443&numVersao=1",
+       "entregue": "2026-08-05"
+      },
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552745&numSequencia=1077451&numVersao=1",
+       "entregue": "2026-08-05"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-05",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160166&CodigoTipoInstituicao=1"
@@ -991,6 +1334,7 @@
    "cnpj": "01.027.058/0001-91",
    "setor": "Intermediação Financeira",
    "orgao": "CVM",
+   "ri": "https://ri.cielo.com.br",
    "eventos": [
     {
      "tipo": "DFP",
@@ -999,6 +1343,13 @@
      "ano": 2025,
      "data": "2026-03-31",
      "fonte": "prazo",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1499924&numSequencia=1024630&numVersao=1",
+       "entregue": "2026-04-01"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-01-26",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154462&CodigoTipoInstituicao=1"
@@ -1053,6 +1404,7 @@
    "cnpj": "62.232.889/0001-90",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://www.daycoval.com.br/ri",
    "eventos": [
     {
      "tipo": "DFP",
@@ -1115,6 +1467,7 @@
    "cnpj": "60.872.504/0001-23",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://www.itau.com.br/relacoes-com-investidores",
    "eventos": [
     {
      "tipo": "DFP",
@@ -1134,6 +1487,13 @@
      "ano": 2026,
      "data": "2026-05-05",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1516140&numSequencia=1040846&numVersao=1",
+       "entregue": "2026-05-05"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-05-05",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156638&CodigoTipoInstituicao=1"
@@ -1145,6 +1505,18 @@
      "ano": 2026,
      "data": "2026-08-04",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552006&numSequencia=1076712&numVersao=1",
+       "entregue": "2026-08-04"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552007&numSequencia=1076713&numVersao=1",
+       "entregue": "2026-08-04"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-04",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160139&CodigoTipoInstituicao=1"
@@ -1177,6 +1549,7 @@
    "cnpj": "34.169.557/0001-72",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://ri.bancomercantil.com.br",
    "eventos": [
     {
      "tipo": "DFP",
@@ -1207,6 +1580,13 @@
      "ano": 2026,
      "data": "2026-08-14",
      "fonte": "prazo",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552273&numSequencia=1076979&numVersao=1",
+       "entregue": "2026-08-05"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-05",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160157&CodigoTipoInstituicao=1"
@@ -1239,6 +1619,7 @@
    "cnpj": "17.184.037/0001-10",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://ri.bancomercantil.com.br",
    "eventos": [
     {
      "tipo": "DFP",
@@ -1269,6 +1650,13 @@
      "ano": 2026,
      "data": "2026-08-05",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1552270&numSequencia=1076976&numVersao=1",
+       "entregue": "2026-08-05"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-05",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160156&CodigoTipoInstituicao=1"
@@ -1301,6 +1689,7 @@
    "cnpj": "14.388.334/0001-99",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://ri.paranabanco.com.br",
    "eventos": [
     {
      "tipo": "DFP",
@@ -1320,6 +1709,13 @@
      "ano": 2026,
      "data": "2026-05-12",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1520935&numSequencia=1045641&numVersao=1",
+       "entregue": "2026-05-12"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-05-12",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157221&CodigoTipoInstituicao=1"
@@ -1331,6 +1727,13 @@
      "ano": 2026,
      "data": "2026-08-12",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1557258&numSequencia=1081964&numVersao=3",
+       "entregue": "2026-08-13"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-08-12",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160569&CodigoTipoInstituicao=1"
@@ -1363,6 +1766,7 @@
    "cnpj": "90.400.888/0001-42",
    "setor": "Bancos",
    "orgao": "CVM",
+   "ri": "https://www.santander.com.br/ri",
    "eventos": [
     {
      "tipo": "DFP",
@@ -1382,6 +1786,18 @@
      "ano": 2026,
      "data": "2026-05-15",
      "fonte": "prazo",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1510319&numSequencia=1035025&numVersao=1",
+       "entregue": "2026-04-29"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1511594&numSequencia=1036300&numVersao=2",
+       "entregue": "2026-04-29"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-04-29",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156458&CodigoTipoInstituicao=1"
@@ -1393,6 +1809,18 @@
      "ano": 2026,
      "data": "2026-08-14",
      "fonte": "prazo",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1549115&numSequencia=1073821&numVersao=2",
+       "entregue": "2026-07-29"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1549012&numSequencia=1073718&numVersao=1",
+       "entregue": "2026-07-29"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2026-07-29",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=159747&CodigoTipoInstituicao=1"
