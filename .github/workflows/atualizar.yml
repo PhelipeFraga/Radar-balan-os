@@ -6,6 +6,13 @@ on:
     - cron: "0 9,13,17,21 * * *"
     - cron: "30 23 * * *"
   workflow_dispatch:
+  # Roda também quando o código do robô muda
+  push:
+    branches: [main]
+    paths:
+      - "coletor/*.py"
+      - "coletor/requirements.txt"
+      - ".github/workflows/atualizar.yml"
 
 permissions:
   contents: write
