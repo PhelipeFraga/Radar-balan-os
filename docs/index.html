@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Radar de Balanços</title>
+<meta name="theme-color" content="#14213D">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Radar">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icone-192.png">
+<link rel="apple-touch-icon" href="icone-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --fundo:#F3F4F7; --cartao:#FFFFFF; --texto:#14161A; --suave:#5B6170; --apagado:#8A90A0;
+  --linha:#EEF0F4; --marinho:#14213D; --azul:#2346D8; --azul-escuro:#1A35A8; --azul-claro:#E6ECFF;
+  --laranja:#E07A00; --laranja-texto:#9A4A00; --laranja-claro:#FFEEDB; --verde:#4ADE80;
+  --sombra:0 6px 20px rgba(20,22,26,.06);
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--fundo);color:var(--texto);font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+button,input{font-family:inherit;color:inherit}
+a{color:var(--azul)}
+#app{max-width:520px;margin:0 auto;min-height:100dvh;display:flex;flex-direction:column}
+main{flex:1;padding:calc(env(safe-area-inset-top) + 28px) 20px 110px;display:flex;flex-direction:column;gap:16px}
+nav.abas{position:fixed;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #E6E8EE;padding:10px 12px calc(env(safe-area-inset-bottom) + 12px)}
+nav.abas .grade{max-width:520px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+nav.abas a{text-decoration:none;color:var(--apagado);display:flex;flex-direction:column;align-items:center;gap:4px;font-size:11px;font-weight:600;min-height:44px}
+nav.abas a.ativa{color:var(--azul);font-weight:700}
+.topo{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.subtitulo{font-size:13px;font-weight:600;color:var(--suave)}
+h1{margin:0;font-size:26px;font-weight:800;letter-spacing:-.5px}
+h2{margin:0;font-size:17px;font-weight:800}
+.redondo{width:44px;height:44px;border-radius:22px;border:none;background:#fff;box-shadow:0 4px 14px rgba(20,22,26,.08);display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;text-decoration:none}
+.cartao{background:var(--cartao);border-radius:22px;box-shadow:var(--sombra)}
+.lista{padding:4px 16px}
+.item{display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--linha);text-decoration:none;color:inherit}
+.item:last-child{border-bottom:none}
+.item .meio{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.item .nome{font-size:15px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.item .info{font-size:13px;color:var(--suave)}
+.dia{width:48px;height:52px;border-radius:14px;background:var(--fundo);display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0}
+.dia b{font-size:19px;font-weight:800;line-height:1}
+.dia span{font-size:11px;font-weight:700;color:var(--suave)}
+.selo{font-size:11px;font-weight:700;padding:6px 10px;border-radius:999px;white-space:nowrap;flex-shrink:0}
+.selo.conf{background:var(--azul-claro);color:var(--azul-escuro)}
+.selo.prazo{background:var(--laranja-claro);color:var(--laranja-texto)}
+.selo.saiu{background:#DCFCE7;color:#166534}
+.logo{width:40px;height:40px;border-radius:13px;background:var(--marinho);color:#fff;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.destaque{display:flex;flex-direction:column;gap:14px;padding:20px;border-radius:24px;background:var(--marinho);color:#fff;text-decoration:none;box-shadow:0 12px 28px rgba(20,33,61,.28)}
+.destaque .rotulo{display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.4px;color:#A7F3C0}
+.ponto{width:8px;height:8px;border-radius:4px;background:var(--verde)}
+.destaque .logo{width:48px;height:48px;border-radius:16px;background:#fff;color:var(--marinho);font-size:16px}
+.destaque .acao{display:flex;justify-content:space-between;align-items:center;background:rgba(255,255,255,.1);border-radius:14px;padding:12px 14px;font-size:14px;font-weight:600}
+.numeros{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.numeros .cartao{padding:16px;border-radius:20px;display:flex;flex-direction:column;gap:4px}
+.numeros b{font-size:26px;font-weight:800}
+.numeros span{font-size:13px;color:var(--suave);font-weight:600}
+.cabeca-secao{display:flex;justify-content:space-between;align-items:baseline}
+.cabeca-secao a{font-size:13px;font-weight:700;text-decoration:none}
+.vazio{padding:18px 16px;font-size:14px;color:var(--suave);line-height:1.5}
+.mes{padding:18px 14px;display:flex;flex-direction:column;gap:10px}
+.mes .titulo{font-size:16px;font-weight:800;padding-left:6px}
+.grade-mes{display:grid;grid-template-columns:repeat(7,1fr);gap:2px}
+.grade-mes .sem{text-align:center;font-size:11px;font-weight:700;color:var(--apagado);padding:4px 0}
+.grade-mes button{height:44px;border:none;background:none;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;cursor:pointer;padding:0}
+.grade-mes .num{width:32px;height:32px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:14px;font-weight:600}
+.grade-mes .passado .num{color:#A3A8B5}
+.grade-mes .hoje .num{background:var(--azul-claro);font-weight:800}
+.grade-mes .escolhido .num{background:var(--azul);color:#fff;font-weight:800}
+.grade-mes .marca{width:5px;height:5px;border-radius:3px}
+.legenda{display:flex;gap:16px;padding:4px 6px 0;flex-wrap:wrap}
+.legenda div{display:flex;align-items:center;gap:6px;font-size:12px;font-weight:600;color:var(--suave)}
+.legenda i{width:8px;height:8px;border-radius:4px;display:block}
+.capa{margin:calc(-1 * (env(safe-area-inset-top) + 28px)) -20px 0;background:var(--marinho);color:#fff;padding:calc(env(safe-area-inset-top) + 28px) 20px 26px;border-radius:0 0 32px 32px;display:flex;flex-direction:column;gap:20px}
+.capa .redondo{background:rgba(255,255,255,.12);box-shadow:none}
+.capa .logo{width:60px;height:60px;border-radius:20px;background:#fff;color:var(--marinho);font-size:20px}
+.botoes{display:flex;gap:10px}
+.botao{flex:1;min-height:52px;border-radius:16px;border:none;background:var(--azul);color:#fff;text-decoration:none;font-size:15px;font-weight:700;display:flex;align-items:center;justify-content:center;padding:0 12px;text-align:center;cursor:pointer}
+.botao.claro{background:#fff;color:var(--texto);box-shadow:0 4px 14px rgba(20,22,26,.08)}
+.busca{display:flex;align-items:center;gap:10px;padding:0 16px;height:50px;border-radius:16px;background:#fff;box-shadow:0 4px 14px rgba(20,22,26,.05)}
+.busca input{border:none;outline:none;background:transparent;font-size:15px;flex:1;min-width:0}
+.filtros{display:flex;gap:8px;flex-wrap:wrap}
+.filtros button{min-height:38px;padding:0 16px;border-radius:999px;border:none;background:#fff;font-size:13px;font-weight:600;cursor:pointer}
+.filtros button.ativo{background:var(--marinho);color:#fff;font-weight:700}
+.chave{width:50px;height:30px;border-radius:15px;border:none;background:#D5D8E0;padding:3px;display:flex;align-items:center;justify-content:flex-start;cursor:pointer;flex-shrink:0}
+.chave[aria-checked="true"]{background:var(--azul);justify-content:flex-end}
+.chave i{width:24px;height:24px;border-radius:12px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.2);display:block}
+.nota{font-size:12px;color:var(--suave);line-height:1.5;padding:0 4px}
+.etiqueta-fase{font-size:11px;font-weight:700;padding:5px 10px;border-radius:999px;background:var(--fundo);color:var(--suave)}
+.erro{background:#FFF4F2;color:#7A1C1C;border-radius:18px;padding:14px 16px;font-size:14px;font-weight:600}
+</style>
+</head>
+<body>
+<div id="app">
+  <main id="tela" aria-live="polite"></main>
+  <nav class="abas" aria-label="Seções">
+    <div class="grade">
+      <a href="#hoje" data-aba="hoje"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Hoje</a>
+      <a href="#calendario" data-aba="calendario"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Calendário</a>
+      <a href="#instituicoes" data-aba="instituicoes"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21V10M15 21V10M2 10l10-6 10 6"/></svg>Instituições</a>
+      <a href="#numeros" data-aba="numeros"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>Números</a>
+    </div>
+  </nav>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

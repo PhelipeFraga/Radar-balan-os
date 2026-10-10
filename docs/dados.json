@@ -1,0 +1,1398 @@
+{
+ "atualizado": "2026-10-10T19:28-03:00",
+ "instituicoes": [
+  {
+   "id": 20958,
+   "nome": "ABC Brasil",
+   "sigla": "AB",
+   "razao_social": "BANCO ABC BRASIL S/A",
+   "cnpj": "28.195.667/0001-06",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-02-06",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-02-06",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154619&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-07",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-07",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156790&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-06",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-06",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160223&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-05",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 27634,
+   "nome": "B100",
+   "sigla": "B1",
+   "razao_social": "B100 S.A.",
+   "cnpj": "52.270.350/0001-71",
+   "setor": "Intermediação Financeira",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-03-31",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-03-31",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=155942&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-08",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-08",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157005&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-13",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-13",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160646&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-13",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 25860,
+   "nome": "BR Partners",
+   "sigla": "BP",
+   "razao_social": "BRBI BR PARTNERS S.A",
+   "cnpj": "10.739.356/0001-03",
+   "setor": "Emp. Adm. Part. - Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-02-05",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-02-05",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154607&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-07",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-07",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156836&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-06",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-06",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160236&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-05",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 14206,
+   "nome": "BRB",
+   "sigla": "BR",
+   "razao_social": "BRB BANCO DE BRASILIA SA",
+   "cnpj": "00.000.208/0001-00",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-15",
+     "fonte": "prazo",
+     "status": "previsto"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-14",
+     "fonte": "prazo",
+     "status": "previsto"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-14",
+     "fonte": "prazo",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 22616,
+   "nome": "BTG Pactual",
+   "sigla": "BP",
+   "razao_social": "BANCO BTG PACTUAL S/A",
+   "cnpj": "30.306.294/0001-45",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-02-09",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-02-09",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154641&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-12",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-11",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157012&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-11",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-11",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160381&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-10",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 24600,
+   "nome": "Banco BMG",
+   "sigla": "BB",
+   "razao_social": "BANCO BMG S/A",
+   "cnpj": "61.186.680/0001-74",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-02-26",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-02-26",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154932&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-05",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-05",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156636&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-13",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-13",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160637&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-05",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 20567,
+   "nome": "Banco Pine",
+   "sigla": "BP",
+   "razao_social": "BANCO PINE S/A",
+   "cnpj": "62.144.175/0001-20",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-02-18",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-02-18",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154785&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-05",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-06",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156674&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-12",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-12",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160455&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-11",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 21466,
+   "nome": "Banco RCI Brasil",
+   "sigla": "BR",
+   "razao_social": "BANCO RCI BRASIL S.A.",
+   "cnpj": "62.307.848/0001-15",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-03-31",
+     "fonte": "prazo",
+     "status": "saiu",
+     "saiu_em": "2026-03-16",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=155398&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-15",
+     "fonte": "prazo",
+     "status": "previsto"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-14",
+     "fonte": "prazo",
+     "status": "previsto"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-14",
+     "fonte": "prazo",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 922,
+   "nome": "Banco da Amazônia",
+   "sigla": "BA",
+   "razao_social": "BANCO DA AMAZÔNIA S.A.",
+   "cnpj": "04.902.979/0001-44",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-04-17",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-04-17",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156293&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-15",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-15",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157673&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-28",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-28",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=161144&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-16",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 1023,
+   "nome": "Banco do Brasil",
+   "sigla": "BB",
+   "razao_social": "BANCO DO BRASIL S.A.",
+   "cnpj": "00.000.000/0001-91",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-02-11",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-02-11",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154715&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-13",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-13",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157308&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-12",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-12",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160511&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-11",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 1228,
+   "nome": "Banco do Nordeste",
+   "sigla": "BN",
+   "razao_social": "BANCO DO NORDESTE DO BRASIL SA",
+   "cnpj": "07.237.373/0001-20",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-03-18",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-03-18",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=155477&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-13",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-13",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157248&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-14",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-14",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160736&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-13",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 1120,
+   "nome": "Banese",
+   "sigla": "BA",
+   "razao_social": "BANCO DO ESTADO DE SERGIPE SA",
+   "cnpj": "13.009.717/0001-46",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-02-25",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-02-25",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154911&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-15",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-15",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157613&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-14",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-14",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160841&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-16",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 1155,
+   "nome": "Banestes",
+   "sigla": "BA",
+   "razao_social": "BANESTES SA BANCO DO ESTADO DO ESPIRITO SANTO",
+   "cnpj": "28.127.603/0001-78",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-03-31",
+     "fonte": "prazo",
+     "status": "saiu",
+     "saiu_em": "2026-02-23",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154846&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-15",
+     "fonte": "prazo",
+     "status": "saiu",
+     "saiu_em": "2026-05-13",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157286&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-14",
+     "fonte": "prazo",
+     "status": "saiu",
+     "saiu_em": "2026-08-12",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160477&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-14",
+     "fonte": "prazo",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 1171,
+   "nome": "Banpará",
+   "sigla": "BA",
+   "razao_social": "BANCO DO ESTADO DO PARÁ S/A.",
+   "cnpj": "04.913.711/0001-08",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-03-20",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-03-20",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=155558&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-15",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-15",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157507&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-14",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-14",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160799&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-13",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 1210,
+   "nome": "Banrisul",
+   "sigla": "BA",
+   "razao_social": "BANCO DO ESTADO DO RIO GRANDE DO SUL SA",
+   "cnpj": "92.702.067/0001-96",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-02-11",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-02-11",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154711&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-14",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-14",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157350&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-13",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-13",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160571&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-12",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 906,
+   "nome": "Bradesco",
+   "sigla": "BR",
+   "razao_social": "BANCO BRADESCO S.A.",
+   "cnpj": "60.746.948/0001-12",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-02-05",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-02-05",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154611&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-06",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-06",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156709&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-05",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-05",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160166&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-10-22",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 21733,
+   "nome": "Cielo",
+   "sigla": "CI",
+   "razao_social": "CIELO S.A. - INSTITUIÇÃO DE PAGAMENTO",
+   "cnpj": "01.027.058/0001-91",
+   "setor": "Intermediação Financeira",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-03-31",
+     "fonte": "prazo",
+     "status": "saiu",
+     "saiu_em": "2026-01-26",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154462&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-15",
+     "fonte": "prazo",
+     "status": "saiu",
+     "saiu_em": "2026-05-15",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157624&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-14",
+     "fonte": "prazo",
+     "status": "saiu",
+     "saiu_em": "2026-08-14",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160813&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-14",
+     "fonte": "prazo",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 20796,
+   "nome": "Daycoval",
+   "sigla": "DA",
+   "razao_social": "BANCO DAYCOVAL S.A.",
+   "cnpj": "62.232.889/0001-90",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-02-10",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-02-10",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154681&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-06",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-06",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156719&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-05",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-05",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160175&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-04",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 19348,
+   "nome": "Itaú Unibanco",
+   "sigla": "IU",
+   "razao_social": "ITAÚ UNIBANCO HOLDING S.A.",
+   "cnpj": "60.872.504/0001-23",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-02-04",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-02-04",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154591&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-05",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-05",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156638&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-04",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-04",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160139&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-03",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-02-03",
+     "fonte": "confirmada",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 1309,
+   "nome": "Mercantil Investimentos",
+   "sigla": "MI",
+   "razao_social": "BANCO MERCANTIL DE INVESTIMENTOS S.A.",
+   "cnpj": "34.169.557/0001-72",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-03-31",
+     "fonte": "prazo",
+     "status": "saiu",
+     "saiu_em": "2026-03-04",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=155047&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-15",
+     "fonte": "prazo",
+     "status": "saiu",
+     "saiu_em": "2026-05-06",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156673&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-14",
+     "fonte": "prazo",
+     "status": "saiu",
+     "saiu_em": "2026-08-05",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160157&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-14",
+     "fonte": "prazo",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 1325,
+   "nome": "Mercantil do Brasil",
+   "sigla": "MB",
+   "razao_social": "BANCO MERCANTIL BRASIL SA",
+   "cnpj": "17.184.037/0001-10",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-03-04",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-03-04",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=155046&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-06",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-06",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156672&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-05",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-05",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160156&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-05",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 20729,
+   "nome": "Paraná Banco",
+   "sigla": "PB",
+   "razao_social": "PARANA BANCO S.A.",
+   "cnpj": "14.388.334/0001-99",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-02-25",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-02-25",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154914&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-12",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-05-12",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157221&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-12",
+     "fonte": "confirmada",
+     "status": "saiu",
+     "saiu_em": "2026-08-12",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160569&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-11",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  },
+  {
+   "id": 20532,
+   "nome": "Santander Brasil",
+   "sigla": "SB",
+   "razao_social": "BANCO SANTANDER (BRASIL) S.A.",
+   "cnpj": "90.400.888/0001-42",
+   "setor": "Bancos",
+   "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T25",
+     "tri": "4T",
+     "ano": 2025,
+     "data": "2026-03-31",
+     "fonte": "prazo",
+     "status": "saiu",
+     "saiu_em": "2026-02-04",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154583&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "1T26",
+     "tri": "1T",
+     "ano": 2026,
+     "data": "2026-05-15",
+     "fonte": "prazo",
+     "status": "saiu",
+     "saiu_em": "2026-04-29",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=156458&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "2T26",
+     "tri": "2T",
+     "ano": 2026,
+     "data": "2026-08-14",
+     "fonte": "prazo",
+     "status": "saiu",
+     "saiu_em": "2026-07-29",
+     "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=159747&CodigoTipoInstituicao=1"
+    },
+    {
+     "tipo": "ITR",
+     "periodo": "3T26",
+     "tri": "3T",
+     "ano": 2026,
+     "data": "2026-11-14",
+     "fonte": "prazo",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T26",
+     "tri": "4T",
+     "ano": 2026,
+     "data": "2027-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    }
+   ]
+  }
+ ]
+}
