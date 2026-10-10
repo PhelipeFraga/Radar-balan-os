@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-10T20:17-03:00",
+ "atualizado": "2026-10-10T20:41-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -1163,6 +1163,11 @@
       {
        "nome": "Análise gerencial",
        "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1189734&numSequencia=714460&numVersao=1",
+       "entregue": "2024-02-05"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1189732&numSequencia=714458&numVersao=1",
        "entregue": "2024-02-05"
       }
      ],
@@ -4624,13 +4629,18 @@
      "fonte": "confirmada",
      "docs": [
       {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1197911&numSequencia=722637&numVersao=1",
+       "entregue": "2024-02-22"
+      },
+      {
        "nome": "Demonstrações financeiras",
        "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1207517&numSequencia=732243&numVersao=1",
        "entregue": "2024-03-14"
       }
      ],
      "status": "saiu",
-     "saiu_em": "2024-03-14"
+     "saiu_em": "2024-02-22"
     },
     {
      "tipo": "ITR",
