@@ -27,6 +27,8 @@ from pathlib import Path
 
 from pypdf import PdfReader
 
+import sec
+
 RAIZ = Path(__file__).resolve().parent.parent
 SAIDA = RAIZ / "docs"
 CACHE = RAIZ / "coletor" / "cache"
@@ -99,6 +101,7 @@ def carregar_instituicoes():
             "razao_social": l["DENOM_SOCIAL"],
             "cnpj": l["CNPJ_CIA"],
             "setor": l["SETOR_ATIV"],
+            "orgao": "CVM",
             "eventos": [],
         }
     return inst
@@ -266,12 +269,47 @@ def montar():
                         print(f"  saiu (notícia): {i['nome']} {ev['periodo']}")
             i["eventos"].append(ev)
 
+    print("Fintechs na SEC...")
+    inst.update(fintechs_sec(periodos))
+
     lista = sorted(inst.values(), key=lambda x: x["nome"])
     SAIDA.mkdir(exist_ok=True)
     dados = {"atualizado": datetime.now(BRT).isoformat(timespec="minutes"), "instituicoes": lista}
     (SAIDA / "dados.json").write_text(json.dumps(dados, ensure_ascii=False, indent=1), encoding="utf-8")
     escrever_agenda(lista)
     print(f"Pronto: {sum(len(i['eventos']) for i in lista)} eventos.")
+
+
+def fintechs_sec(periodos):
+    cache_arq = CACHE / "sec.json"
+    cache = json.loads(cache_arq.read_text(encoding="utf-8")) if cache_arq.exists() else {}
+    dados = sec.coletar(cache, HOJE)
+    cache_arq.write_text(json.dumps(cache, ensure_ascii=False, indent=1), encoding="utf-8")
+    inst = {}
+    for cik, d in dados.items():
+        info = d["info"]
+        i = {"id": cik, "nome": info["nome"], "sigla": info["sigla"], "razao_social": info["nome"],
+             "setor": info["bolsa"], "orgao": "SEC", "cik": cik, "eventos": []}
+        for _tipo, tri, ano in periodos:
+            chave = (tri, ano)
+            ev = {"tipo": "ITR", "periodo": f"{tri}{str(ano)[2:]}", "tri": tri, "ano": ano}
+            res = d["resultados"].get(chave)
+            if chave in d["avisos"]:
+                ev["data"], ev["fonte"] = d["avisos"][chave], "confirmada"
+            elif res:
+                ev["data"], ev["fonte"] = res["recebido"], "confirmada"
+            else:
+                estimada = sec.estimar(d["resultados"], tri, ano)
+                if not estimada:
+                    continue
+                ev["data"], ev["fonte"] = estimada, "estimada"
+            if res:
+                ev["status"], ev["saiu_em"], ev["pdf"] = "saiu", res["recebido"], res["link"]
+            else:
+                ev["status"] = "previsto"
+            i["eventos"].append(ev)
+        inst[cik] = i
+    return inst
 
 
 def escrever_agenda(lista):
@@ -281,7 +319,7 @@ def escrever_agenda(lista):
     for i in lista:
         for ev in i["eventos"]:
             d = date.fromisoformat(ev["data"])
-            texto = "data confirmada" if ev["fonte"] == "confirmada" else "prazo legal"
+            texto = {"confirmada": "data confirmada", "prazo": "prazo legal", "estimada": "estimativa pelo ano anterior"}[ev["fonte"]]
             linhas += [
                 "BEGIN:VEVENT",
                 f"UID:{i['id']}-{ev['tipo']}-{ev['periodo']}@radar-balancos",

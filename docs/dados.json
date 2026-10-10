@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-10T19:42-03:00",
+ "atualizado": "2026-10-10T19:48-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -8,6 +8,7 @@
    "razao_social": "BANCO ABC BRASIL S/A",
    "cnpj": "28.195.667/0001-06",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -69,6 +70,7 @@
    "razao_social": "B100 S.A.",
    "cnpj": "52.270.350/0001-71",
    "setor": "Intermediação Financeira",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -130,6 +132,7 @@
    "razao_social": "BRBI BR PARTNERS S.A",
    "cnpj": "10.739.356/0001-03",
    "setor": "Emp. Adm. Part. - Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -191,6 +194,7 @@
    "razao_social": "BRB BANCO DE BRASILIA SA",
    "cnpj": "00.000.208/0001-00",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -246,6 +250,7 @@
    "razao_social": "BANCO BTG PACTUAL S/A",
    "cnpj": "30.306.294/0001-45",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -307,6 +312,7 @@
    "razao_social": "BANCO BMG S/A",
    "cnpj": "61.186.680/0001-74",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -368,6 +374,7 @@
    "razao_social": "BANCO PINE S/A",
    "cnpj": "62.144.175/0001-20",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -429,6 +436,7 @@
    "razao_social": "BANCO RCI BRASIL S.A.",
    "cnpj": "62.307.848/0001-15",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -486,6 +494,7 @@
    "razao_social": "BANCO DA AMAZÔNIA S.A.",
    "cnpj": "04.902.979/0001-44",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -547,6 +556,7 @@
    "razao_social": "BANCO DO BRASIL S.A.",
    "cnpj": "00.000.000/0001-91",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -608,6 +618,7 @@
    "razao_social": "BANCO DO NORDESTE DO BRASIL SA",
    "cnpj": "07.237.373/0001-20",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -669,6 +680,7 @@
    "razao_social": "BANCO DO ESTADO DE SERGIPE SA",
    "cnpj": "13.009.717/0001-46",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -730,6 +742,7 @@
    "razao_social": "BANESTES SA BANCO DO ESTADO DO ESPIRITO SANTO",
    "cnpj": "28.127.603/0001-78",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -791,6 +804,7 @@
    "razao_social": "BANCO DO ESTADO DO PARÁ S/A.",
    "cnpj": "04.913.711/0001-08",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -852,6 +866,7 @@
    "razao_social": "BANCO DO ESTADO DO RIO GRANDE DO SUL SA",
    "cnpj": "92.702.067/0001-96",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -913,6 +928,7 @@
    "razao_social": "BANCO BRADESCO S.A.",
    "cnpj": "60.746.948/0001-12",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -974,6 +990,7 @@
    "razao_social": "CIELO S.A. - INSTITUIÇÃO DE PAGAMENTO",
    "cnpj": "01.027.058/0001-91",
    "setor": "Intermediação Financeira",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -1035,6 +1052,7 @@
    "razao_social": "BANCO DAYCOVAL S.A.",
    "cnpj": "62.232.889/0001-90",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -1096,6 +1114,7 @@
    "razao_social": "ITAÚ UNIBANCO HOLDING S.A.",
    "cnpj": "60.872.504/0001-23",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -1157,6 +1176,7 @@
    "razao_social": "BANCO MERCANTIL DE INVESTIMENTOS S.A.",
    "cnpj": "34.169.557/0001-72",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -1218,6 +1238,7 @@
    "razao_social": "BANCO MERCANTIL BRASIL SA",
    "cnpj": "17.184.037/0001-10",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -1279,6 +1300,7 @@
    "razao_social": "PARANA BANCO S.A.",
    "cnpj": "14.388.334/0001-99",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",
@@ -1340,6 +1362,7 @@
    "razao_social": "BANCO SANTANDER (BRASIL) S.A.",
    "cnpj": "90.400.888/0001-42",
    "setor": "Bancos",
+   "orgao": "CVM",
    "eventos": [
     {
      "tipo": "DFP",

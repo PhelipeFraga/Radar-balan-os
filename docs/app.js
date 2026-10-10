@@ -49,7 +49,8 @@ function eventos({ soSeguidas = true } = {}) {
 const chave = (x) => `${x.inst.id}-${x.ev.tipo}-${x.ev.periodo}`;
 const selo = (ev) => ev.status === "saiu"
   ? `<span class="selo saiu">Saiu</span>`
-  : ev.fonte === "confirmada" ? `<span class="selo conf">Data confirmada</span>` : `<span class="selo prazo">Prazo legal</span>`;
+  : ev.fonte === "confirmada" ? `<span class="selo conf">Data confirmada</span>`
+  : ev.fonte === "estimada" ? `<span class="selo prazo">Estimativa</span>` : `<span class="selo prazo">Prazo legal</span>`;
 const seta = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>`;
 const voltar = (href) => `<a class="redondo" href="${href}" aria-label="Voltar"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg></a>`;
 

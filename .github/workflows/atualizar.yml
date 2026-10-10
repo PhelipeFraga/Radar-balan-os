@@ -32,6 +32,8 @@ jobs:
           python-version: "3.12"
       - run: pip install -r coletor/requirements.txt
       - run: python coletor/coletar.py
+        env:
+          SEC_CONTATO: ${{ secrets.SEC_CONTATO }}
       - name: Salvar se mudou
         run: |
           git config user.name "radar-robo"
