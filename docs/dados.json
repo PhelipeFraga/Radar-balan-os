@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-10T19:28-03:00",
+ "atualizado": "2026-10-10T19:42-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -385,7 +385,7 @@
      "periodo": "1T26",
      "tri": "1T",
      "ano": 2026,
-     "data": "2026-05-05",
+     "data": "2026-05-06",
      "fonte": "confirmada",
      "status": "saiu",
      "saiu_em": "2026-05-06",
@@ -736,8 +736,8 @@
      "periodo": "4T25",
      "tri": "4T",
      "ano": 2025,
-     "data": "2026-03-31",
-     "fonte": "prazo",
+     "data": "2026-02-23",
+     "fonte": "confirmada",
      "status": "saiu",
      "saiu_em": "2026-02-23",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=154846&CodigoTipoInstituicao=1"
@@ -747,8 +747,8 @@
      "periodo": "1T26",
      "tri": "1T",
      "ano": 2026,
-     "data": "2026-05-15",
-     "fonte": "prazo",
+     "data": "2026-05-13",
+     "fonte": "confirmada",
      "status": "saiu",
      "saiu_em": "2026-05-13",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=157286&CodigoTipoInstituicao=1"
@@ -758,8 +758,8 @@
      "periodo": "2T26",
      "tri": "2T",
      "ano": 2026,
-     "data": "2026-08-14",
-     "fonte": "prazo",
+     "data": "2026-08-12",
+     "fonte": "confirmada",
      "status": "saiu",
      "saiu_em": "2026-08-12",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=160477&CodigoTipoInstituicao=1"
@@ -769,8 +769,8 @@
      "periodo": "3T26",
      "tri": "3T",
      "ano": 2026,
-     "data": "2026-11-14",
-     "fonte": "prazo",
+     "data": "2026-11-12",
+     "fonte": "confirmada",
      "status": "previsto"
     },
     {
