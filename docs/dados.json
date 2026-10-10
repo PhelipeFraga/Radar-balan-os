@@ -20,6 +20,11 @@
      "fonte": "confirmada",
      "docs": [
       {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1056474&numSequencia=581204&numVersao=1",
+       "entregue": "2023-02-08"
+      },
+      {
        "nome": "Demonstrações financeiras",
        "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1056472&numSequencia=581202&numVersao=1",
        "entregue": "2023-02-08"
@@ -482,6 +487,11 @@
        "nome": "Análise gerencial",
        "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1188680&numSequencia=713406&numVersao=1",
        "entregue": "2024-02-01"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1195869&numSequencia=720595&numVersao=2",
+       "entregue": "2024-02-16"
       }
      ],
      "status": "saiu",
@@ -1798,7 +1808,15 @@
      "ano": 2022,
      "data": "2023-03-31",
      "fonte": "prazo",
-     "status": "previsto"
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1077162&numSequencia=601892&numVersao=3",
+       "entregue": "2023-03-24"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-03-24"
     },
     {
      "tipo": "DFP",
@@ -2458,7 +2476,15 @@
      "ano": 2022,
      "data": "2023-03-31",
      "fonte": "prazo",
-     "status": "previsto"
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1087437&numSequencia=612166&numVersao=1",
+       "entregue": "2023-04-18"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-04-18"
     },
     {
      "tipo": "DFP",
@@ -2660,13 +2686,18 @@
      "fonte": "confirmada",
      "docs": [
       {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1066099&numSequencia=590829&numVersao=1",
+       "entregue": "2023-02-28"
+      },
+      {
        "nome": "Demonstrações financeiras",
        "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1087474&numSequencia=612203&numVersao=1",
        "entregue": "2023-04-18"
       }
      ],
      "status": "saiu",
-     "saiu_em": "2023-04-18"
+     "saiu_em": "2023-02-28"
     },
     {
      "tipo": "DFP",
@@ -2676,6 +2707,11 @@
      "data": "2024-02-27",
      "fonte": "confirmada",
      "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1199386&numSequencia=724112&numVersao=1",
+       "entregue": "2024-02-27"
+      },
       {
        "nome": "Demonstrações financeiras",
        "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1199388&numSequencia=724114&numVersao=1",
@@ -2903,7 +2939,15 @@
      "ano": 2023,
      "data": "2024-03-08",
      "fonte": "confirmada",
-     "status": "previsto"
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1207826&numSequencia=732552&numVersao=2",
+       "entregue": "2024-03-14"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-03-14"
     },
     {
      "tipo": "ITR",
@@ -3075,7 +3119,15 @@
      "ano": 2023,
      "data": "2024-02-09",
      "fonte": "confirmada",
-     "status": "previsto"
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1191910&numSequencia=716636&numVersao=1",
+       "entregue": "2024-02-09"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-02-09"
     },
     {
      "tipo": "ITR",
@@ -3262,6 +3314,11 @@
       {
        "nome": "Release de resultados",
        "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1057716&numSequencia=582446&numVersao=1",
+       "entregue": "2023-02-09"
+      },
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1057714&numSequencia=582444&numVersao=1",
        "entregue": "2023-02-09"
       },
       {
@@ -3758,13 +3815,18 @@
      "fonte": "confirmada",
      "docs": [
       {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1190301&numSequencia=715027&numVersao=1",
+       "entregue": "2024-02-06"
+      },
+      {
        "nome": "Demonstrações financeiras",
        "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1269758&numSequencia=794484&numVersao=1",
        "entregue": "2024-08-09"
       }
      ],
      "status": "saiu",
-     "saiu_em": "2024-08-09"
+     "saiu_em": "2024-02-06"
     },
     {
      "tipo": "ITR",
@@ -3910,10 +3972,15 @@
        "nome": "Análise gerencial",
        "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1056550&numSequencia=581280&numVersao=2",
        "entregue": "2023-02-08"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1056278&numSequencia=581008&numVersao=1",
+       "entregue": "2023-02-07"
       }
      ],
      "status": "saiu",
-     "saiu_em": "2023-02-08"
+     "saiu_em": "2023-02-07"
     },
     {
      "tipo": "DFP",
@@ -4175,7 +4242,15 @@
      "ano": 2023,
      "data": "2024-03-31",
      "fonte": "prazo",
-     "status": "previsto"
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1190655&numSequencia=715381&numVersao=1",
+       "entregue": "2024-02-07"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-02-07"
     },
     {
      "tipo": "ITR",
@@ -4515,6 +4590,11 @@
        "nome": "Release de resultados",
        "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1062038&numSequencia=586768&numVersao=1",
        "entregue": "2023-02-16"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1064037&numSequencia=588767&numVersao=1",
+       "entregue": "2023-02-22"
       }
      ],
      "status": "saiu",
