@@ -185,7 +185,9 @@ function telaInstituicao(id) {
   const proximo = evs.filter((x) => x.ev.status !== "saiu" && x.data >= h).sort((a, b) => a.data - b.data)[0];
   const saidos = evs.filter((x) => x.ev.status === "saiu").sort((a, b) => (b.ev.ano - a.ev.ano) || b.ev.tri.localeCompare(a.ev.tri));
   const ultimo = saidos[0];
-  const anuais = saidos.filter((x) => x.ev.tipo === "DFP" && x !== ultimo);
+  // Sempre os 4 anos anteriores ao atual, numa lista só.
+  const anos = [1, 2, 3, 4].map((n) => h.getFullYear() - n);
+  const anuais = anos.map((ano) => ({ ano, x: evs.find((e) => e.ev.tipo === "DFP" && e.ev.ano === ano) }));
 
   let blocoProximo = '<div class="cartao" style="padding:18px"><div class="vazio" style="padding:0">Sem data prevista.</div></div>';
   if (proximo) {
@@ -211,13 +213,26 @@ function telaInstituicao(id) {
       ${docs.length ? docsHtml(docs) : `<div class="vazio" style="padding:14px 0">${vazio}</div>`}</div>`;
   };
 
+  function linhaAnual({ ano, x }) {
+    const docs = x ? listaDocs(x.ev).filter((d) => PRINCIPAIS.includes(d.nome)) : [];
+    const pilula = (d) => `<a href="${esc(d.link)}" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:0 12px;border-radius:999px;background:var(--azul-claro);color:var(--azul-escuro);font-size:12px;font-weight:700;text-decoration:none">${ICONE_BAIXAR.replace('width="20" height="20"', 'width="15" height="15"')}${d.nome === "Release de resultados" ? "Release" : "Demonstrações"}</a>`;
+    let info = "Ainda não saiu";
+    if (x && x.ev.status === "saiu") info = `Saiu em ${curta(dataLocal(x.ev.saiu_em))}/${dataLocal(x.ev.saiu_em).getFullYear()}`;
+    else if (x) info = `Previsto para ${curta(x.data)}/${x.data.getFullYear()}`;
+    return `<div class="item" style="flex-wrap:wrap">
+      <div class="meio" style="flex:1 1 120px"><div class="nome">Balanço de ${ano}</div><div class="info">${info}</div></div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap">${docs.length ? docs.map(pilula).join("") : x && x.ev.status === "saiu" ? '<span class="info" style="font-size:12px">PDFs indisponíveis na CVM</span>' : ""}</div>
+    </div>`;
+  }
+
   tela.innerHTML = `
     ${capa(inst)}
     <h2>Próximo balanço</h2>
     ${blocoProximo}
     <h2>Último balanço</h2>
     ${ultimo ? blocoBalanco(ultimo, "Os PDFs ainda não chegaram à base da CVM. Veja no site de RI, no topo.") : '<div class="cartao lista"><div class="vazio">Nenhum balanço encontrado.</div></div>'}
-    ${anuais.length ? `<h2>Balanços anuais anteriores</h2>${anuais.map((x) => blocoBalanco(x, "Os PDFs deste ano não estão disponíveis na CVM.")).join("")}` : ""}
+    <h2>Balanços anuais anteriores</h2>
+    <div class="cartao lista">${anuais.map(linhaAnual).join("")}</div>
     <div class="cartao" style="padding:18px;display:flex;flex-direction:column;gap:10px">
       <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-size:15px;font-weight:800">Números dos últimos balanços</div><span class="etiqueta-fase">Em breve</span></div>
       <div style="font-size:13px;color:var(--suave);line-height:1.5">Lucro, carteira, inadimplência e Basileia, trimestre a trimestre, vão aparecer aqui.</div>

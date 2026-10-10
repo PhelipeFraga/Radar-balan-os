@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-10T20:02-03:00",
+ "atualizado": "2026-10-10T20:16-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -11,6 +11,45 @@
    "orgao": "CVM",
    "ri": "https://ri.abcbrasil.com.br",
    "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-02-08",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1056472&numSequencia=581202&numVersao=1",
+       "entregue": "2023-02-08"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-02-08"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-02-06",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1190018&numSequencia=714744&numVersao=1",
+       "entregue": "2024-02-06"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1190303&numSequencia=715029&numVersao=2",
+       "entregue": "2024-02-06"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-02-06"
+    },
     {
      "tipo": "ITR",
      "periodo": "3T24",
@@ -226,6 +265,32 @@
    "ri": "https://ri.b100sa.com.br",
    "eventos": [
     {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-03-31",
+     "fonte": "prazo",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1272983&numSequencia=797709&numVersao=1",
+       "entregue": "2024-09-06"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-09-06"
+    },
+    {
      "tipo": "ITR",
      "periodo": "3T24",
      "tri": "3T",
@@ -388,6 +453,40 @@
    "orgao": "CVM",
    "ri": "https://ri.brpartners.com.br",
    "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-02-09",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1059656&numSequencia=584386&numVersao=2",
+       "entregue": "2023-02-13"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-02-13"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-02-01",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1188680&numSequencia=713406&numVersao=1",
+       "entregue": "2024-02-01"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-02-01"
+    },
     {
      "tipo": "ITR",
      "periodo": "3T24",
@@ -593,6 +692,40 @@
    "ri": "https://ri.brb.com.br",
    "eventos": [
     {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-03-10",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1146860&numSequencia=671587&numVersao=1",
+       "entregue": "2023-09-28"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-09-28"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-03-31",
+     "fonte": "prazo",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1225265&numSequencia=749991&numVersao=2",
+       "entregue": "2024-04-24"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-04-24"
+    },
+    {
      "tipo": "ITR",
      "periodo": "3T24",
      "tri": "3T",
@@ -709,6 +842,55 @@
    "orgao": "CVM",
    "ri": "https://ri.btgpactual.com",
    "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-02-13",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1059576&numSequencia=584306&numVersao=1",
+       "entregue": "2023-02-13"
+      },
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1059580&numSequencia=584310&numVersao=1",
+       "entregue": "2023-02-13"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1059769&numSequencia=584499&numVersao=2",
+       "entregue": "2023-02-13"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-02-13"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-02-05",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1189448&numSequencia=714174&numVersao=1",
+       "entregue": "2024-02-05"
+      },
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1189450&numSequencia=714176&numVersao=1",
+       "entregue": "2024-02-05"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-02-05"
+    },
     {
      "tipo": "ITR",
      "periodo": "3T24",
@@ -929,6 +1111,45 @@
    "ri": "https://www.bancobmg.com.br/ri",
    "eventos": [
     {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-02-14",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1060589&numSequencia=585319&numVersao=1",
+       "entregue": "2023-02-14"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1060583&numSequencia=585313&numVersao=1",
+       "entregue": "2023-02-14"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-02-14"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-02-05",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1189734&numSequencia=714460&numVersao=1",
+       "entregue": "2024-02-05"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-02-05"
+    },
+    {
      "tipo": "ITR",
      "periodo": "3T24",
      "tri": "3T",
@@ -1143,6 +1364,50 @@
    "ri": "https://ri.pine.com",
    "eventos": [
     {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-02-07",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1056512&numSequencia=581242&numVersao=1",
+       "entregue": "2023-02-08"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1056502&numSequencia=581232&numVersao=1",
+       "entregue": "2023-02-08"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-02-08"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-02-08",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1191142&numSequencia=715868&numVersao=1",
+       "entregue": "2024-02-08"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1191156&numSequencia=715882&numVersao=2",
+       "entregue": "2024-02-08"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-02-08"
+    },
+    {
      "tipo": "ITR",
      "periodo": "3T24",
      "tri": "3T",
@@ -1337,6 +1602,40 @@
    "ri": "https://www.bancorci.com.br/relacao-com-investidores",
    "eventos": [
     {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-03-31",
+     "fonte": "prazo",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1067023&numSequencia=591753&numVersao=2",
+       "entregue": "2023-03-01"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-03-01"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-03-31",
+     "fonte": "prazo",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1200483&numSequencia=725209&numVersao=1",
+       "entregue": "2024-02-28"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-02-28"
+    },
+    {
      "tipo": "ITR",
      "periodo": "3T24",
      "tri": "3T",
@@ -1493,6 +1792,32 @@
    "ri": "https://ri.bancoamazonia.com.br",
    "eventos": [
     {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-03-31",
+     "fonte": "prazo",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1207709&numSequencia=732435&numVersao=1",
+       "entregue": "2024-03-14"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-03-14"
+    },
+    {
      "tipo": "ITR",
      "periodo": "3T24",
      "tri": "3T",
@@ -1638,6 +1963,60 @@
    "orgao": "CVM",
    "ri": "https://ri.bb.com.br",
    "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-02-13",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1059864&numSequencia=584594&numVersao=1",
+       "entregue": "2023-02-13"
+      },
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1060630&numSequencia=585360&numVersao=2",
+       "entregue": "2023-02-14"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1059865&numSequencia=584595&numVersao=1",
+       "entregue": "2023-02-13"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-02-13"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-02-08",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1191581&numSequencia=716307&numVersao=1",
+       "entregue": "2024-02-08"
+      },
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1191580&numSequencia=716306&numVersao=1",
+       "entregue": "2024-02-08"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1191582&numSequencia=716308&numVersao=1",
+       "entregue": "2024-02-08"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-02-08"
+    },
     {
      "tipo": "ITR",
      "periodo": "3T24",
@@ -1893,6 +2272,40 @@
    "ri": "https://ri.bnb.gov.br",
    "eventos": [
     {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-03-31",
+     "fonte": "prazo",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1066872&numSequencia=591602&numVersao=2",
+       "entregue": "2023-03-01"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-03-01"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-02-22",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1197781&numSequencia=722507&numVersao=1",
+       "entregue": "2024-02-22"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-02-22"
+    },
+    {
      "tipo": "ITR",
      "periodo": "3T24",
      "tri": "3T",
@@ -2039,6 +2452,32 @@
    "ri": "https://ri.banese.com.br",
    "eventos": [
     {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-03-31",
+     "fonte": "prazo",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1198637&numSequencia=723363&numVersao=1",
+       "entregue": "2024-02-23"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-02-23"
+    },
+    {
      "tipo": "ITR",
      "periodo": "3T24",
      "tri": "3T",
@@ -2117,6 +2556,13 @@
      "ano": 2025,
      "data": "2025-11-14",
      "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1469711&numSequencia=994417&numVersao=1",
+       "entregue": "2026-01-23"
+      }
+     ],
      "status": "saiu",
      "saiu_em": "2025-11-14",
      "pdf": "https://www.rad.cvm.gov.br/ENET/frmGerenciaPaginaFRE.aspx?NumeroSequencialDocumento=153362&CodigoTipoInstituicao=1"
@@ -2206,12 +2652,46 @@
    "ri": "https://ri.banestes.com.br",
    "eventos": [
     {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-02-28",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1087474&numSequencia=612203&numVersao=1",
+       "entregue": "2023-04-18"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-04-18"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-02-27",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1199388&numSequencia=724114&numVersao=1",
+       "entregue": "2024-02-27"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-02-27"
+    },
+    {
      "tipo": "ITR",
      "periodo": "3T24",
      "tri": "3T",
      "ano": 2024,
-     "data": "2024-11-14",
-     "fonte": "prazo",
+     "data": "2024-11-12",
+     "fonte": "confirmada",
      "docs": [
       {
        "nome": "Release de resultados",
@@ -2400,6 +2880,32 @@
    "ri": "https://ri.banpara.b.br",
    "eventos": [
     {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-09-29",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1149329&numSequencia=674055&numVersao=4",
+       "entregue": "2023-10-06"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-10-06"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-03-08",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
+    {
      "tipo": "ITR",
      "periodo": "3T24",
      "tri": "3T",
@@ -2545,6 +3051,32 @@
    "orgao": "CVM",
    "ri": "https://www.banrisul.com.br/ri",
    "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-02-15",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1065160&numSequencia=589890&numVersao=2",
+       "entregue": "2023-02-24"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-02-24"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-02-09",
+     "fonte": "confirmada",
+     "status": "previsto"
+    },
     {
      "tipo": "ITR",
      "periodo": "3T24",
@@ -2719,6 +3251,55 @@
    "orgao": "CVM",
    "ri": "https://www.bradescori.com.br",
    "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-02-09",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1057716&numSequencia=582446&numVersao=1",
+       "entregue": "2023-02-09"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1057717&numSequencia=582447&numVersao=1",
+       "entregue": "2023-02-09"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-02-09"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-02-07",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1190530&numSequencia=715256&numVersao=1",
+       "entregue": "2024-02-07"
+      },
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1190532&numSequencia=715258&numVersao=1",
+       "entregue": "2024-02-07"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1190533&numSequencia=715259&numVersao=1",
+       "entregue": "2024-02-07"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-02-07"
+    },
     {
      "tipo": "ITR",
      "periodo": "3T24",
@@ -2969,6 +3550,45 @@
    "ri": "https://ri.cielo.com.br",
    "eventos": [
     {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-01-26",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1052568&numSequencia=577298&numVersao=1",
+       "entregue": "2023-01-26"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1052578&numSequencia=577308&numVersao=1",
+       "entregue": "2023-01-26"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-01-26"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-02-05",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1189776&numSequencia=714502&numVersao=1",
+       "entregue": "2024-02-05"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-02-05"
+    },
+    {
      "tipo": "ITR",
      "periodo": "3T24",
      "tri": "3T",
@@ -3108,6 +3728,45 @@
    "ri": "https://www.daycoval.com.br/ri",
    "eventos": [
     {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-02-08",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1056925&numSequencia=581655&numVersao=1",
+       "entregue": "2023-02-08"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1057009&numSequencia=581739&numVersao=1",
+       "entregue": "2023-02-08"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-02-08"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-02-06",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1269758&numSequencia=794484&numVersao=1",
+       "entregue": "2024-08-09"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-08-09"
+    },
+    {
      "tipo": "ITR",
      "periodo": "3T24",
      "tri": "3T",
@@ -3240,6 +3899,45 @@
    "ri": "https://www.itau.com.br/relacoes-com-investidores",
    "eventos": [
     {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-02-07",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1056550&numSequencia=581280&numVersao=2",
+       "entregue": "2023-02-08"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-02-08"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-02-05",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Análise gerencial",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1189760&numSequencia=714486&numVersao=1",
+       "entregue": "2024-02-05"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1189759&numSequencia=714485&numVersao=1",
+       "entregue": "2024-02-05"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-02-05"
+    },
+    {
      "tipo": "ITR",
      "periodo": "3T24",
      "tri": "3T",
@@ -3319,6 +4017,11 @@
       {
        "nome": "Análise gerencial",
        "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1408189&numSequencia=932901&numVersao=1",
+       "entregue": "2025-08-05"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1408190&numSequencia=932902&numVersao=1",
        "entregue": "2025-08-05"
       }
      ],
@@ -3448,6 +4151,32 @@
    "orgao": "CVM",
    "ri": "https://ri.bancomercantil.com.br",
    "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-03-31",
+     "fonte": "prazo",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1074077&numSequencia=598807&numVersao=2",
+       "entregue": "2023-03-17"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-03-17"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-03-31",
+     "fonte": "prazo",
+     "status": "previsto"
+    },
     {
      "tipo": "ITR",
      "periodo": "3T24",
@@ -3595,6 +4324,40 @@
    "ri": "https://ri.bancomercantil.com.br",
    "eventos": [
     {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-03-08",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1074067&numSequencia=598797&numVersao=2",
+       "entregue": "2023-03-17"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-03-17"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-02-07",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1190653&numSequencia=715379&numVersao=1",
+       "entregue": "2024-02-07"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-02-07"
+    },
+    {
      "tipo": "ITR",
      "periodo": "3T24",
      "tri": "3T",
@@ -3740,6 +4503,40 @@
    "orgao": "CVM",
    "ri": "https://ri.paranabanco.com.br",
    "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-02-16",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1062038&numSequencia=586768&numVersao=1",
+       "entregue": "2023-02-16"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-02-16"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-02-22",
+     "fonte": "confirmada",
+     "docs": [
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1207517&numSequencia=732243&numVersao=1",
+       "entregue": "2024-03-14"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-03-14"
+    },
     {
      "tipo": "ITR",
      "periodo": "3T24",
@@ -3924,6 +4721,50 @@
    "orgao": "CVM",
    "ri": "https://www.santander.com.br/ri",
    "eventos": [
+    {
+     "tipo": "DFP",
+     "periodo": "4T22",
+     "tri": "4T",
+     "ano": 2022,
+     "data": "2023-03-31",
+     "fonte": "prazo",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1054437&numSequencia=579167&numVersao=1",
+       "entregue": "2023-02-02"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1054433&numSequencia=579163&numVersao=1",
+       "entregue": "2023-02-02"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2023-02-02"
+    },
+    {
+     "tipo": "DFP",
+     "periodo": "4T23",
+     "tri": "4T",
+     "ano": 2023,
+     "data": "2024-03-31",
+     "fonte": "prazo",
+     "docs": [
+      {
+       "nome": "Release de resultados",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1187867&numSequencia=712593&numVersao=2",
+       "entregue": "2024-01-31"
+      },
+      {
+       "nome": "Demonstrações financeiras",
+       "link": "https://www.rad.cvm.gov.br/ENET/frmDownloadDocumento.aspx?Tela=ext&descTipo=IPE&CodigoInstituicao=1&numProtocolo=1187831&numSequencia=712557&numVersao=1",
+       "entregue": "2024-01-31"
+      }
+     ],
+     "status": "saiu",
+     "saiu_em": "2024-01-31"
+    },
     {
      "tipo": "ITR",
      "periodo": "3T24",

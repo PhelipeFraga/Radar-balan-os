@@ -39,6 +39,8 @@ AGENTE = {"User-Agent": "Mozilla/5.0 (RadarDeBalancos; coletor pessoal de dados 
 
 # Quanto do passado guardar: cerca de 8 trimestres, para o histórico de cada instituição.
 HISTORICO_DIAS = 760
+# Balanços anuais: sempre os 4 anos anteriores ao atual.
+ANOS_ANUAIS = 4
 
 SETORES = {"Bancos", "Emp. Adm. Part. - Bancos", "Intermediação Financeira"}
 
@@ -154,7 +156,7 @@ def ler_calendario(pdf_bytes):
 
 def carregar_ipe():
     docs = []
-    for ano in (HOJE.year - 2, HOJE.year - 1, HOJE.year):
+    for ano in range(HOJE.year - ANOS_ANUAIS, HOJE.year + 1):
         try:
             docs += csv_do_zip(f"{CVM}/DOC/IPE/DADOS/ipe_cia_aberta_{ano}.zip", f"ipe_cia_aberta_{ano}.csv")
         except Exception as erro:
@@ -245,14 +247,15 @@ def filtrar_pdfs(pdfs):
     limite = (HOJE - timedelta(days=HISTORICO_DIAS)).isoformat()
     filtrados = {}
     for chave, lista in pdfs.items():
-        if max(x["entregue"] for x in lista) < limite:
+        _cod, tri, ano = chave
+        anual_antigo = tri == "4T" and ano >= HOJE.year - ANOS_ANUAIS
+        if max(x["entregue"] for x in lista) < limite and not anual_antigo:
             continue
         bons = [x for x in lista if baixa_pdf(x["link"], cache)]
         if bons:
             filtrados[chave] = bons
     cache_arq.write_text(json.dumps(cache, indent=1), encoding="utf-8")
-    falhas = sum(len(v) for v in pdfs.values() if max(x["entregue"] for x in v) >= limite) - sum(len(v) for v in filtrados.values())
-    print(f"  {sum(len(v) for v in filtrados.values())} PDFs ok, {falhas} indisponíveis na CVM")
+    print(f"  {sum(len(v) for v in filtrados.values())} PDFs ok")
     return filtrados
 
 
@@ -296,10 +299,11 @@ def prazo_legal(tipo, tri, ano):
 def trimestres_relevantes():
     """Os últimos ~8 trimestres (histórico) e os próximos, para o calendário."""
     periodos = []
-    for ano in (HOJE.year - 3, HOJE.year - 2, HOJE.year - 1, HOJE.year, HOJE.year + 1):
+    for ano in range(HOJE.year - ANOS_ANUAIS, HOJE.year + 2):
         periodos += [("ITR", "1T", ano), ("ITR", "2T", ano), ("ITR", "3T", ano), ("DFP", "4T", ano)]
     janela_ini, janela_fim = HOJE - timedelta(days=HISTORICO_DIAS), HOJE + timedelta(days=200)
-    return [p for p in periodos if janela_ini <= prazo_legal(*p) <= janela_fim]
+    anual_antigo = lambda p: p[0] == "DFP" and p[2] >= HOJE.year - ANOS_ANUAIS
+    return [p for p in periodos if (janela_ini <= prazo_legal(*p) or anual_antigo(p)) and prazo_legal(*p) <= janela_fim]
 
 
 # ---------- 5. Notícia de que o resultado saiu ----------
