@@ -145,6 +145,57 @@ function telaCalendario() {
   }));
 }
 
+const ICONE_DOC = `<div style="width:40px;height:40px;border-radius:12px;background:var(--azul-claro);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A35A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg></div>`;
+
+function listaDocs(ev) {
+  const docs = (ev.docs || []).map((d) => ({ nome: d.nome, fonte: `PDF · entregue em ${curta(dataLocal(d.entregue))} · toque para baixar`, link: d.link }));
+  if (ev.pdf) docs.push({ nome: ev.tipo === "DFP" ? "Formulário DFP" : "Formulário ITR", fonte: "Formulário padrão · abre no site da CVM", link: ev.pdf });
+  if (ev.noticia) docs.push({ nome: ev.noticia.titulo, fonte: "Notícia", link: ev.noticia.link });
+  return docs;
+}
+const docsHtml = (docs) => docs.map((d) => `<a class="item" href="${esc(d.link)}" target="_blank" rel="noopener">${ICONE_DOC}
+  <div class="meio"><div class="nome" style="white-space:normal">${esc(d.nome)}</div><div class="info">${esc(d.fonte)}</div></div></a>`).join("");
+
+function telaInstituicao(id) {
+  const inst = estado.dados.instituicoes.find((i) => String(i.id) === id);
+  if (!inst) { tela.innerHTML = `${voltar("#instituicoes")}<div class="erro">Instituição não encontrada.</div>`; return; }
+  const h = hoje();
+  const evs = inst.eventos.map((ev) => ({ inst, ev, data: dataLocal(ev.data) }));
+  const proximo = evs.filter((x) => x.ev.status !== "saiu" && x.data >= h).sort((a, b) => a.data - b.data)[0];
+  const saidos = evs.filter((x) => x.ev.status === "saiu").sort((a, b) => (b.ev.ano - a.ev.ano) || b.ev.tri.localeCompare(a.ev.tri));
+  const ultimo = saidos[0];
+  const anteriores = saidos.slice(1);
+  const docsUltimo = ultimo ? listaDocs(ultimo.ev) : [];
+  const qtdPdf = (ev) => (ev.docs || []).length;
+  const linhaAnterior = (x) => `<a class="item" href="#evento/${chave(x)}">
+    <div class="dia" style="width:56px"><b style="font-size:15px">${x.ev.periodo}</b></div>
+    <div class="meio"><div class="nome">${descricaoCurta(x.ev)}</div><div class="info">Saiu em ${curta(dataLocal(x.ev.saiu_em))}/${dataLocal(x.ev.saiu_em).getFullYear()} · ${qtdPdf(x.ev) ? qtdPdf(x.ev) + (qtdPdf(x.ev) === 1 ? " PDF" : " PDFs") : "sem PDF"}</div></div>
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A90A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a>`;
+
+  tela.innerHTML = `
+    <div class="capa">${voltar("javascript:history.back()")}
+      <div style="display:flex;align-items:center;gap:14px"><div class="logo">${esc(inst.sigla)}</div>
+        <div style="display:flex;flex-direction:column;gap:4px;min-width:0"><div style="font-size:24px;font-weight:800">${esc(inst.nome)}</div>
+        <div style="font-size:14px;color:#C9D2E8">${esc(inst.setor)}</div></div></div>
+    </div>
+    <h2>Próximo balanço</h2>
+    <div class="cartao lista">${proximo ? linhaEvento(proximo) : '<div class="vazio">Sem data prevista.</div>'}</div>
+    <div class="cabeca-secao"><h2>Último balanço</h2>${ultimo ? `<a href="#evento/${chave(ultimo)}">Detalhes</a>` : ""}</div>
+    ${ultimo ? `<div class="cartao lista">
+      <div class="item"><div class="meio"><div class="nome">${descricao(ultimo.ev)}</div><div class="info">Saiu em ${curta(dataLocal(ultimo.ev.saiu_em))}</div></div><span class="selo saiu">Saiu</span></div>
+      ${docsUltimo.length ? docsHtml(docsUltimo) : '<div class="vazio" style="padding:14px 0">Os PDFs ainda não chegaram à base da CVM. Veja no site de RI.</div>'}</div>`
+      : '<div class="cartao lista"><div class="vazio">Nenhum balanço encontrado.</div></div>'}
+    <div class="botoes">
+      ${inst.ri ? `<a class="botao" href="${esc(inst.ri)}" target="_blank" rel="noopener">Site de RI</a>` : ""}
+      <a class="botao claro" href="${CVM_BUSCA}" target="_blank" rel="noopener">Ver na CVM</a>
+    </div>
+    ${anteriores.length ? `<h2>Balanços anteriores</h2><div class="cartao lista">${anteriores.map(linhaAnterior).join("")}</div>` : ""}
+    <div class="cartao" style="padding:18px;display:flex;flex-direction:column;gap:10px">
+      <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-size:15px;font-weight:800">Números dos últimos balanços</div><span class="etiqueta-fase">Em breve</span></div>
+      <div style="font-size:13px;color:var(--suave);line-height:1.5">Lucro, carteira, inadimplência e Basileia, trimestre a trimestre, vão aparecer aqui.</div>
+    </div>`;
+}
+
 function telaEvento(id) {
   const x = eventos({ soSeguidas: false }).find((e) => chave(e) === id);
   if (!x) { tela.innerHTML = `${voltar("#hoje")}<div class="erro">Balanço não encontrado.</div>`; return; }
@@ -155,19 +206,16 @@ function telaEvento(id) {
   const linhaFonte = saiu
     ? (ev.pdf ? "Entregue à CVM" : "Saiu na imprensa · a CVM confirma em até uma semana")
     : ev.fonte === "confirmada" ? "Data informada pelo banco à CVM" : "Sem data informada · este é o prazo máximo da regra";
-  const docs = (ev.docs || []).map((d) => ({ nome: d.nome, fonte: `PDF · entregue em ${curta(dataLocal(d.entregue))} · toque para baixar`, link: d.link }));
-  if (ev.pdf) docs.push({ nome: ev.tipo === "DFP" ? "Formulário DFP" : "Formulário ITR", fonte: "Formulário padrão · abre no site da CVM", link: ev.pdf });
-  if (ev.noticia) docs.push({ nome: ev.noticia.titulo, fonte: "Notícia", link: ev.noticia.link });
+  const docs = listaDocs(ev);
   const semDocs = !docs.length;
   const avisoSemDocs = saiu
     ? "Os PDFs entram aqui quando a CVM atualizar a base (uma vez por semana). Enquanto isso, o release já está no site de RI do banco."
     : "Quando o balanço sair, o release, a análise gerencial e as demonstrações aparecem aqui para baixar.";
-  const iconeDoc = `<div style="width:40px;height:40px;border-radius:12px;background:var(--azul-claro);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A35A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg></div>`;
 
   tela.innerHTML = `
     <div class="capa">${voltar("javascript:history.back()")}
       <div style="display:flex;align-items:center;gap:14px"><div class="logo">${esc(inst.sigla)}</div>
-        <div style="display:flex;flex-direction:column;gap:4px;min-width:0"><div style="font-size:24px;font-weight:800">${esc(inst.nome)}</div>
+        <div style="display:flex;flex-direction:column;gap:4px;min-width:0"><a href="#inst/${inst.id}" style="font-size:24px;font-weight:800;color:#fff;text-decoration:none">${esc(inst.nome)} ›</a>
         <div style="font-size:14px;color:#C9D2E8">${esc(inst.setor)}</div></div></div>
       <div style="display:flex;flex-direction:column;gap:6px">
         <div style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.4px;color:${saiu ? "#A7F3C0" : "#C9D2E8"}">${rotulo}</div>
@@ -176,8 +224,7 @@ function telaEvento(id) {
       </div>
     </div>
     <h2>Documentos</h2>
-    <div class="cartao lista">${semDocs ? `<div class="vazio" style="padding:14px 0">${avisoSemDocs}</div>` : docs.map((d) => `<a class="item" href="${esc(d.link)}" target="_blank" rel="noopener">${iconeDoc}
-      <div class="meio"><div class="nome" style="white-space:normal">${esc(d.nome)}</div><div class="info">${esc(d.fonte)}</div></div></a>`).join("")}</div>
+    <div class="cartao lista">${semDocs ? `<div class="vazio" style="padding:14px 0">${avisoSemDocs}</div>` : docsHtml(docs)}</div>
     <div class="botoes">
       ${inst.ri ? `<a class="botao${semDocs ? "" : " claro"}" href="${esc(inst.ri)}" target="_blank" rel="noopener">Site de RI</a>` : ""}
       <a class="botao claro" href="${CVM_BUSCA}" target="_blank" rel="noopener">Ver na CVM</a>
@@ -209,8 +256,8 @@ function telaInstituicoes() {
       <button data-filtro="todas" class="${estado.filtro === "todas" ? "ativo" : ""}">Todas · ${todas.length}</button>
       <button data-filtro="seguindo" class="${estado.filtro === "seguindo" ? "ativo" : ""}">Acompanhando · ${qtdSegue}</button>
     </div>
-    <div class="cartao lista">${lista.length ? lista.map((i) => `<div class="item"><div class="logo">${esc(i.sigla)}</div>
-      <div class="meio"><div class="nome">${esc(i.nome)}</div><div class="info">${proximo(i)}</div></div>
+    <div class="cartao lista">${lista.length ? lista.map((i) => `<div class="item"><a href="#inst/${i.id}" style="display:flex;align-items:center;gap:12px;flex:1;min-width:0;text-decoration:none;color:inherit"><div class="logo">${esc(i.sigla)}</div>
+      <div class="meio"><div class="nome">${esc(i.nome)}</div><div class="info">${proximo(i)}</div></div></a>
       <button class="chave" role="switch" aria-checked="${segue(i.id)}" aria-label="Acompanhar ${esc(i.nome)}" data-id="${i.id}"><i></i></button></div>`).join("")
       : '<div class="vazio">Nenhuma instituição encontrada.</div>'}</div>
     <p class="nota">Por enquanto, o app cobre os bancos e financeiras com ações ou registro na CVM. Desligue a chave das que você não quer ver no Hoje e no Calendário.</p>`;
@@ -240,10 +287,10 @@ function rodapeAtualizacao() {
 function desenhar() {
   const rota = (location.hash || "#hoje").slice(1);
   const [aba, ...resto] = rota.split("/");
-  document.querySelectorAll("nav.abas a").forEach((a) => a.classList.toggle("ativa", a.dataset.aba === aba || (aba === "evento" && a.dataset.aba === "hoje")));
+  document.querySelectorAll("nav.abas a").forEach((a) => a.classList.toggle("ativa", a.dataset.aba === aba || (aba === "evento" && a.dataset.aba === "hoje") || (aba === "inst" && a.dataset.aba === "instituicoes")));
   if (estado.erro && !estado.dados) { tela.innerHTML = `<h1>Radar de Balanços</h1><div class="erro">Não consegui carregar os dados. Verifique a internet e abra o app de novo.</div>`; return; }
   if (!estado.dados) { tela.innerHTML = `<h1>Radar de Balanços</h1><p class="nota">Carregando…</p>`; return; }
-  ({ hoje: telaHoje, calendario: telaCalendario, instituicoes: telaInstituicoes, numeros: telaNumeros }[aba] || (aba === "evento" ? () => telaEvento(resto.join("/")) : telaHoje))();
+  ({ hoje: telaHoje, calendario: telaCalendario, instituicoes: telaInstituicoes, numeros: telaNumeros }[aba] || (aba === "evento" ? () => telaEvento(resto.join("/")) : aba === "inst" ? () => telaInstituicao(resto.join("/")) : telaHoje))();
 }
 
 window.addEventListener("hashchange", () => { desenhar(); window.scrollTo(0, 0); });
