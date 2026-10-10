@@ -147,14 +147,35 @@ function telaCalendario() {
 
 const ICONE_DOC = `<div style="width:40px;height:40px;border-radius:12px;background:var(--azul-claro);display:flex;align-items:center;justify-content:center;flex-shrink:0"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A35A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/></svg></div>`;
 
+// Só os dois documentos que importam: o release e as demonstrações.
+const PRINCIPAIS = ["Release de resultados", "Demonstrações financeiras"];
 function listaDocs(ev) {
-  const docs = (ev.docs || []).map((d) => ({ nome: d.nome, fonte: `PDF · entregue em ${curta(dataLocal(d.entregue))} · toque para baixar`, link: d.link }));
-  if (ev.pdf) docs.push({ nome: ev.tipo === "DFP" ? "Formulário DFP" : "Formulário ITR", fonte: "Formulário padrão · abre no site da CVM", link: ev.pdf });
-  if (ev.noticia) docs.push({ nome: ev.noticia.titulo, fonte: "Notícia", link: ev.noticia.link });
+  const docs = (ev.docs || []).filter((d) => PRINCIPAIS.includes(d.nome))
+    .map((d) => ({ nome: d.nome, fonte: `PDF · entregue em ${curta(dataLocal(d.entregue))}`, link: d.link }));
+  if (!docs.length && ev.noticia) docs.push({ nome: ev.noticia.titulo, fonte: "Notícia", link: ev.noticia.link });
   return docs;
 }
+const ICONE_BAIXAR = `<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2346D8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11"/><path d="m7 10 5 5 5-5"/><path d="M5 20h14"/></svg>`;
 const docsHtml = (docs) => docs.map((d) => `<a class="item" href="${esc(d.link)}" target="_blank" rel="noopener">${ICONE_DOC}
-  <div class="meio"><div class="nome" style="white-space:normal">${esc(d.nome)}</div><div class="info">${esc(d.fonte)}</div></div></a>`).join("");
+  <div class="meio"><div class="nome" style="white-space:normal">${esc(d.nome)}</div><div class="info">${esc(d.fonte)}</div></div>${ICONE_BAIXAR}</a>`).join("");
+
+// Atalhos no topo escuro: site de RI e CVM.
+function atalhos(inst) {
+  const globo = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18a14 14 0 0 1 0-18"/></svg>`;
+  const predio = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21V10M15 21V10M2 10l10-6 10 6"/></svg>`;
+  return `<div class="atalhos">
+    ${inst.ri ? `<a href="${esc(inst.ri)}" target="_blank" rel="noopener">${globo}Site de RI</a>` : ""}
+    <a href="${CVM_BUSCA}" target="_blank" rel="noopener">${predio}Ver na CVM</a></div>`;
+}
+
+function capa(inst, extra = "") {
+  return `<div class="capa">${voltar("javascript:history.back()")}
+      <div style="display:flex;align-items:center;gap:14px"><div class="logo">${esc(inst.sigla)}</div>
+        <div style="display:flex;flex-direction:column;gap:4px;min-width:0"><div style="font-size:24px;font-weight:800">${esc(inst.nome)}</div>
+        <div style="font-size:14px;color:#C9D2E8">${esc(inst.setor)}</div></div></div>
+      ${extra}${atalhos(inst)}
+    </div>`;
+}
 
 function telaInstituicao(id) {
   const inst = estado.dados.instituicoes.find((i) => String(i.id) === id);
@@ -164,32 +185,39 @@ function telaInstituicao(id) {
   const proximo = evs.filter((x) => x.ev.status !== "saiu" && x.data >= h).sort((a, b) => a.data - b.data)[0];
   const saidos = evs.filter((x) => x.ev.status === "saiu").sort((a, b) => (b.ev.ano - a.ev.ano) || b.ev.tri.localeCompare(a.ev.tri));
   const ultimo = saidos[0];
-  const anteriores = saidos.slice(1);
-  const docsUltimo = ultimo ? listaDocs(ultimo.ev) : [];
-  const qtdPdf = (ev) => (ev.docs || []).length;
-  const linhaAnterior = (x) => `<a class="item" href="#evento/${chave(x)}">
-    <div class="dia" style="width:56px"><b style="font-size:15px">${x.ev.periodo}</b></div>
-    <div class="meio"><div class="nome">${descricaoCurta(x.ev)}</div><div class="info">Saiu em ${curta(dataLocal(x.ev.saiu_em))}/${dataLocal(x.ev.saiu_em).getFullYear()} · ${qtdPdf(x.ev) ? qtdPdf(x.ev) + (qtdPdf(x.ev) === 1 ? " PDF" : " PDFs") : "sem PDF"}</div></div>
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A90A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a>`;
+  const anuais = saidos.filter((x) => x.ev.tipo === "DFP" && x !== ultimo);
+
+  let blocoProximo = '<div class="cartao" style="padding:18px"><div class="vazio" style="padding:0">Sem data prevista.</div></div>';
+  if (proximo) {
+    const d = proximo.data;
+    const faltam = diasEntre(h, d);
+    blocoProximo = `<div class="cartao" style="padding:18px;display:flex;align-items:center;gap:16px">
+      <div style="width:64px;height:72px;border-radius:18px;background:var(--azul-claro);display:flex;flex-direction:column;align-items:center;justify-content:center;flex-shrink:0">
+        <div style="font-size:11px;font-weight:800;letter-spacing:.5px;color:var(--azul)">${MESES[d.getMonth()].slice(0, 3).toUpperCase()}</div>
+        <div style="font-size:28px;font-weight:800;line-height:1.05">${d.getDate()}</div>
+        <div style="font-size:11px;font-weight:700;color:var(--suave)">${SEMANA[d.getDay()]}</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:6px;min-width:0">
+        <div style="font-size:16px;font-weight:800">${descricao(proximo.ev)}</div>
+        <div style="font-size:13px;color:var(--suave);font-weight:600">${faltam === 0 ? "É hoje" : faltam === 1 ? "Amanhã" : `Faltam ${faltam} dias`}</div>
+        <div>${selo(proximo.ev)}</div>
+      </div></div>`;
+  }
+
+  const blocoBalanco = (x, vazio) => {
+    const docs = listaDocs(x.ev);
+    return `<div class="cartao lista">
+      <div class="item"><div class="meio"><div class="nome">${descricao(x.ev)}</div><div class="info">Saiu em ${curta(dataLocal(x.ev.saiu_em))}/${dataLocal(x.ev.saiu_em).getFullYear()}</div></div></div>
+      ${docs.length ? docsHtml(docs) : `<div class="vazio" style="padding:14px 0">${vazio}</div>`}</div>`;
+  };
 
   tela.innerHTML = `
-    <div class="capa">${voltar("javascript:history.back()")}
-      <div style="display:flex;align-items:center;gap:14px"><div class="logo">${esc(inst.sigla)}</div>
-        <div style="display:flex;flex-direction:column;gap:4px;min-width:0"><div style="font-size:24px;font-weight:800">${esc(inst.nome)}</div>
-        <div style="font-size:14px;color:#C9D2E8">${esc(inst.setor)}</div></div></div>
-    </div>
+    ${capa(inst)}
     <h2>Próximo balanço</h2>
-    <div class="cartao lista">${proximo ? linhaEvento(proximo) : '<div class="vazio">Sem data prevista.</div>'}</div>
-    <div class="cabeca-secao"><h2>Último balanço</h2>${ultimo ? `<a href="#evento/${chave(ultimo)}">Detalhes</a>` : ""}</div>
-    ${ultimo ? `<div class="cartao lista">
-      <div class="item"><div class="meio"><div class="nome">${descricao(ultimo.ev)}</div><div class="info">Saiu em ${curta(dataLocal(ultimo.ev.saiu_em))}</div></div><span class="selo saiu">Saiu</span></div>
-      ${docsUltimo.length ? docsHtml(docsUltimo) : '<div class="vazio" style="padding:14px 0">Os PDFs ainda não chegaram à base da CVM. Veja no site de RI.</div>'}</div>`
-      : '<div class="cartao lista"><div class="vazio">Nenhum balanço encontrado.</div></div>'}
-    <div class="botoes">
-      ${inst.ri ? `<a class="botao" href="${esc(inst.ri)}" target="_blank" rel="noopener">Site de RI</a>` : ""}
-      <a class="botao claro" href="${CVM_BUSCA}" target="_blank" rel="noopener">Ver na CVM</a>
-    </div>
-    ${anteriores.length ? `<h2>Balanços anteriores</h2><div class="cartao lista">${anteriores.map(linhaAnterior).join("")}</div>` : ""}
+    ${blocoProximo}
+    <h2>Último balanço</h2>
+    ${ultimo ? blocoBalanco(ultimo, "Os PDFs ainda não chegaram à base da CVM. Veja no site de RI, no topo.") : '<div class="cartao lista"><div class="vazio">Nenhum balanço encontrado.</div></div>'}
+    ${anuais.length ? `<h2>Balanços anuais anteriores</h2>${anuais.map((x) => blocoBalanco(x, "Os PDFs deste ano não estão disponíveis na CVM.")).join("")}` : ""}
     <div class="cartao" style="padding:18px;display:flex;flex-direction:column;gap:10px">
       <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-size:15px;font-weight:800">Números dos últimos balanços</div><span class="etiqueta-fase">Em breve</span></div>
       <div style="font-size:13px;color:var(--suave);line-height:1.5">Lucro, carteira, inadimplência e Basileia, trimestre a trimestre, vão aparecer aqui.</div>
@@ -204,31 +232,23 @@ function telaEvento(id) {
   const quando = saiu && ev.saiu_em ? dataLocal(ev.saiu_em) : x.data;
   const rotulo = saiu ? `<div class="ponto"></div>SAIU · ${curta(quando)}` : `PREVISTO · ${curta(x.data)}`;
   const linhaFonte = saiu
-    ? (ev.pdf ? "Entregue à CVM" : "Saiu na imprensa · a CVM confirma em até uma semana")
+    ? (ev.pdf || (ev.docs || []).length ? "Entregue à CVM" : "Saiu na imprensa · a CVM confirma em até uma semana")
     : ev.fonte === "confirmada" ? "Data informada pelo banco à CVM" : "Sem data informada · este é o prazo máximo da regra";
   const docs = listaDocs(ev);
-  const semDocs = !docs.length;
   const avisoSemDocs = saiu
-    ? "Os PDFs entram aqui quando a CVM atualizar a base (uma vez por semana). Enquanto isso, o release já está no site de RI do banco."
-    : "Quando o balanço sair, o release, a análise gerencial e as demonstrações aparecem aqui para baixar.";
-
-  tela.innerHTML = `
-    <div class="capa">${voltar("javascript:history.back()")}
-      <div style="display:flex;align-items:center;gap:14px"><div class="logo">${esc(inst.sigla)}</div>
-        <div style="display:flex;flex-direction:column;gap:4px;min-width:0"><a href="#inst/${inst.id}" style="font-size:24px;font-weight:800;color:#fff;text-decoration:none">${esc(inst.nome)} ›</a>
-        <div style="font-size:14px;color:#C9D2E8">${esc(inst.setor)}</div></div></div>
-      <div style="display:flex;flex-direction:column;gap:6px">
+    ? "Os PDFs entram aqui quando a CVM atualizar a base (uma vez por semana). Enquanto isso, o release já está no site de RI, no topo."
+    : "Quando o balanço sair, o release e as demonstrações financeiras aparecem aqui para baixar.";
+  const resumo = `<div style="display:flex;flex-direction:column;gap:6px">
         <div style="display:flex;align-items:center;gap:8px;font-size:12px;font-weight:700;letter-spacing:.4px;color:${saiu ? "#A7F3C0" : "#C9D2E8"}">${rotulo}</div>
         <div style="font-size:20px;font-weight:800;line-height:1.3">${saiu ? "Saiu o " + descricao(ev).charAt(0).toLowerCase() + descricao(ev).slice(1) : descricao(ev)}</div>
         <div style="font-size:13px;color:#C9D2E8">${linhaFonte}</div>
-      </div>
-    </div>
+      </div>`;
+
+  tela.innerHTML = `
+    ${capa(inst, resumo)}
     <h2>Documentos</h2>
-    <div class="cartao lista">${semDocs ? `<div class="vazio" style="padding:14px 0">${avisoSemDocs}</div>` : docsHtml(docs)}</div>
-    <div class="botoes">
-      ${inst.ri ? `<a class="botao${semDocs ? "" : " claro"}" href="${esc(inst.ri)}" target="_blank" rel="noopener">Site de RI</a>` : ""}
-      <a class="botao claro" href="${CVM_BUSCA}" target="_blank" rel="noopener">Ver na CVM</a>
-    </div>
+    <div class="cartao lista">${docs.length ? docsHtml(docs) : `<div class="vazio" style="padding:14px 0">${avisoSemDocs}</div>`}</div>
+    <a class="botao claro" href="#inst/${inst.id}">Ver tudo de ${esc(inst.nome)}</a>
     <div class="cartao" style="padding:18px;display:flex;flex-direction:column;gap:10px">
       <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-size:15px;font-weight:800">Números principais</div><span class="etiqueta-fase">Em breve</span></div>
       <div style="font-size:13px;color:var(--suave);line-height:1.5">Lucro, carteira, inadimplência e Basileia vão aparecer aqui sozinhos, minutos depois de o balanço sair.</div>
