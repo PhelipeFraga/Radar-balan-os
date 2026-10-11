@@ -27,6 +27,7 @@ from pathlib import Path
 
 from pypdf import PdfReader
 
+import ifdata
 import sec
 
 RAIZ = Path(__file__).resolve().parent.parent
@@ -367,6 +368,9 @@ def montar():
                         print(f"  saiu (notícia): {i['nome']} {ev['periodo']}")
             i["eventos"].append(ev)
 
+    print("Números no Banco Central (IF.data)...")
+    numeros_bc(inst)
+
     print("Fintechs na SEC...")
     inst.update(fintechs_sec(periodos))
 
@@ -376,6 +380,21 @@ def montar():
     (SAIDA / "dados.json").write_text(json.dumps(dados, ensure_ascii=False, indent=1), encoding="utf-8")
     escrever_agenda(lista)
     print(f"Pronto: {sum(len(i['eventos']) for i in lista)} eventos.")
+
+
+def numeros_bc(inst):
+    cache_arq = CACHE / "ifdata.json"
+    cache = json.loads(cache_arq.read_text(encoding="utf-8")) if cache_arq.exists() else {}
+    raiz = {cod: re.sub(r"\D", "", i["cnpj"])[:8] for cod, i in inst.items()}
+    try:
+        series = ifdata.coletar(sorted(set(raiz.values())), HOJE, cache)
+    except Exception as erro:  # sem o BC nesta rodada: mantém o app funcionando sem os números
+        print(f"  IF.data indisponível: {erro}")
+        return
+    cache_arq.write_text(json.dumps(cache, ensure_ascii=False), encoding="utf-8")
+    for cod, i in inst.items():
+        if series.get(raiz[cod]):
+            i["numeros"] = series[raiz[cod]]
 
 
 def fintechs_sec(periodos):

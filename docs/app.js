@@ -8,7 +8,7 @@ const TRIMESTRE = { "1T": "1º trimestre", "2T": "2º trimestre", "3T": "3º tri
 const CVM_BUSCA = "https://www.rad.cvm.gov.br/ENETWeb/frmConsultaExternaCVM.aspx";
 
 const tela = document.getElementById("tela");
-const estado = { dados: null, erro: null, mes: null, diaEscolhido: null, busca: "", filtro: "todas" };
+const estado = { dados: null, erro: null, mes: null, diaEscolhido: null, busca: "", filtro: "todas", indicador: "lucro" };
 
 // ---------- utilidades ----------
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -177,6 +177,78 @@ function capa(inst, extra = "") {
     </div>`;
 }
 
+// ---------- números (Banco Central) ----------
+const INDICADORES = [
+  { id: "lucro", nome: "Lucro do trimestre", tipo: "reais", bom: "sobe" },
+  { id: "carteira", nome: "Carteira de crédito", tipo: "reais", bom: "neutro" },
+  { id: "basileia", nome: "Índice de Basileia", tipo: "pct", bom: "sobe" },
+  { id: "estagio3", nome: "Estágio 3", tipo: "pct", bom: "desce" },
+  { id: "over90", nome: "Over 90", tipo: "pct", bom: "desce" },
+];
+const VERDE = "#15803D", VERMELHO = "#C62828";
+const virgula = (n, casas) => n.toFixed(casas).replace(".", ",");
+function reais(v) {
+  if (v == null) return "não informado";
+  const s = v < 0 ? "−" : "", a = Math.abs(v);
+  if (a >= 1e12) return `${s}R$ ${virgula(a / 1e12, 2)} tri`;
+  if (a >= 1e9) return `${s}R$ ${virgula(a / 1e9, a >= 1e11 ? 0 : 1)} bi`;
+  if (a >= 1e6) return `${s}R$ ${virgula(a / 1e6, 0)} mi`;
+  return `${s}R$ ${virgula(a / 1e3, 0)} mil`;
+}
+const pct = (v) => v == null ? "–" : virgula(v * 100, 1) + "%";
+const formata = (ind, v) => ind.tipo === "reais" ? reais(v) : pct(v);
+
+function variacao(ind, atual, anterior) {
+  if (atual == null || anterior == null) return { texto: "sem comparação", cor: "var(--suave)" };
+  const delta = atual - anterior;
+  let texto;
+  if (ind.tipo === "pct") texto = `${delta > 0 ? "▲" : delta < 0 ? "▼" : "="} ${virgula(Math.abs(delta * 100), 1)} p.p.`;
+  else if (anterior > 0 && atual > 0) texto = `${delta > 0 ? "▲" : delta < 0 ? "▼" : "="} ${virgula(Math.abs(delta / anterior * 100), 0)}%`;
+  else texto = `antes: ${reais(anterior)}`;
+  const melhora = ind.bom === "sobe" ? delta > 0 : ind.bom === "desce" ? delta < 0 : null;
+  const cor = melhora === null || delta === 0 ? "var(--suave)" : melhora ? VERDE : VERMELHO;
+  return { texto, cor };
+}
+
+function blocoNumeros(inst) {
+  const serie = inst.numeros || [];
+  if (!serie.length) {
+    return `<div class="cartao" style="padding:18px"><div class="vazio" style="padding:0">O Banco Central não publica números separados desta instituição.</div></div>`;
+  }
+  const ultimo = serie[serie.length - 1], anterior = serie[serie.length - 2] || {};
+  const escolhido = INDICADORES.find((i) => i.id === estado.indicador) || INDICADORES[0];
+  const cartoes = INDICADORES.map((ind, n) => {
+    const v = variacao(ind, ultimo[ind.id], anterior[ind.id]);
+    const ativo = ind.id === escolhido.id;
+    return `<button data-ind="${ind.id}" aria-pressed="${ativo}" style="grid-column:${n === 0 ? "1 / -1" : "auto"};text-align:left;border:2px solid ${ativo ? "var(--azul)" : "transparent"};background:#fff;border-radius:20px;box-shadow:var(--sombra);padding:14px 16px;display:flex;flex-direction:column;gap:4px;cursor:pointer">
+      <span style="font-size:12px;font-weight:700;color:var(--suave)">${ind.nome}</span>
+      <span style="font-size:${n === 0 ? 28 : 22}px;font-weight:800;letter-spacing:-.4px;color:var(--texto)">${formata(ind, ultimo[ind.id])}</span>
+      <span style="font-size:12px;font-weight:700;color:${v.cor}">${v.texto}</span>
+    </button>`;
+  }).join("");
+
+  const valores = serie.map((s) => s[escolhido.id]);
+  const maior = Math.max(...valores.filter((x) => x != null).map(Math.abs), 0) || 1;
+  const barras = serie.map((s, n) => {
+    const v = s[escolhido.id];
+    const altura = v == null ? 0 : Math.max(4, Math.round(Math.abs(v) / maior * 110));
+    const cor = v != null && v < 0 ? VERMELHO : n === serie.length - 1 ? "var(--azul)" : "#C9D2E8";
+    const rotulo = v == null ? "–" : escolhido.tipo === "pct" ? virgula(v * 100, 1) : virgula(v / 1e9, Math.abs(v) >= 1e11 ? 0 : 1);
+    return `<div style="flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:5px;height:140px">
+      <span style="font-size:10px;font-weight:700;color:var(--suave);white-space:nowrap">${rotulo}</span>
+      <span style="display:block;width:100%;height:${altura}px;border-radius:7px;background:${cor}"></span>
+      <span style="font-size:10px;font-weight:600;color:var(--apagado)">${s.periodo}</span></div>`;
+  }).join("");
+  const unidade = escolhido.tipo === "pct" ? "em %" : "em R$ bilhões";
+
+  return `<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">${cartoes}</div>
+    <div class="cartao" style="padding:18px;display:flex;flex-direction:column;gap:12px">
+      <div><div style="font-size:15px;font-weight:800">${escolhido.nome}</div><div style="font-size:12px;color:var(--suave)">Últimos ${serie.length} trimestres, ${unidade}</div></div>
+      <div role="img" aria-label="Gráfico de ${escolhido.nome} nos últimos trimestres" style="display:flex;align-items:flex-end;gap:6px">${barras}</div>
+    </div>
+    <p class="nota">Fonte: Banco Central (IF.data), grupo prudencial. Os números saem 2 a 3 meses depois do fim do trimestre. Estágio 3 (ativos problemáticos) e Over 90 (atraso acima de 90 dias) são % da carteira e existem desde 2025. Toque num cartão para ver o gráfico dele.</p>`;
+}
+
 function telaInstituicao(id) {
   const inst = estado.dados.instituicoes.find((i) => String(i.id) === id);
   if (!inst) { tela.innerHTML = `${voltar("#instituicoes")}<div class="erro">Instituição não encontrada.</div>`; return; }
@@ -233,10 +305,14 @@ function telaInstituicao(id) {
     ${ultimo ? blocoBalanco(ultimo, "Os PDFs ainda não chegaram à base da CVM. Veja no site de RI, no topo.") : '<div class="cartao lista"><div class="vazio">Nenhum balanço encontrado.</div></div>'}
     <h2>Balanços anuais anteriores</h2>
     <div class="cartao lista">${anuais.map(linhaAnual).join("")}</div>
-    <div class="cartao" style="padding:18px;display:flex;flex-direction:column;gap:10px">
-      <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-size:15px;font-weight:800">Números dos últimos balanços</div><span class="etiqueta-fase">Em breve</span></div>
-      <div style="font-size:13px;color:var(--suave);line-height:1.5">Lucro, carteira, inadimplência e Basileia, trimestre a trimestre, vão aparecer aqui.</div>
-    </div>`;
+    <div class="cabeca-secao"><h2>Números</h2>${(inst.numeros || []).length ? `<span class="subtitulo">${descricaoCurta({ tipo: "ITR", tri: inst.numeros[inst.numeros.length - 1].periodo.slice(0, 2), ano: 2000 + Number(inst.numeros[inst.numeros.length - 1].periodo.slice(2)) })} · vs. tri anterior</span>` : ""}</div>
+    ${blocoNumeros(inst)}`;
+  tela.querySelectorAll("[data-ind]").forEach((b) => b.addEventListener("click", () => {
+    estado.indicador = b.dataset.ind;
+    const y = window.scrollY;
+    desenhar();
+    window.scrollTo(0, y);
+  }));
 }
 
 function telaEvento(id) {
@@ -263,11 +339,7 @@ function telaEvento(id) {
     ${capa(inst, resumo)}
     <h2>Documentos</h2>
     <div class="cartao lista">${docs.length ? docsHtml(docs) : `<div class="vazio" style="padding:14px 0">${avisoSemDocs}</div>`}</div>
-    <a class="botao claro" href="#inst/${inst.id}">Ver tudo de ${esc(inst.nome)}</a>
-    <div class="cartao" style="padding:18px;display:flex;flex-direction:column;gap:10px">
-      <div style="display:flex;justify-content:space-between;align-items:center"><div style="font-size:15px;font-weight:800">Números principais</div><span class="etiqueta-fase">Em breve</span></div>
-      <div style="font-size:13px;color:var(--suave);line-height:1.5">Lucro, carteira, inadimplência e Basileia vão aparecer aqui sozinhos, minutos depois de o balanço sair.</div>
-    </div>`;
+    <a class="botao claro" href="#inst/${inst.id}">Ver números e histórico de ${esc(inst.nome)}</a>`;
 }
 
 function telaInstituicoes() {
@@ -304,12 +376,18 @@ function telaInstituicoes() {
 }
 
 function telaNumeros() {
+  const segue = seguindo();
+  const lista = estado.dados.instituicoes.filter((i) => segue(i.id) && (i.numeros || []).length);
+  const linha = (i) => {
+    const u = i.numeros[i.numeros.length - 1];
+    return `<a class="item" href="#inst/${i.id}"><div class="logo">${esc(i.sigla)}</div>
+      <div class="meio"><div class="nome">${esc(i.nome)}</div><div class="info">Lucro ${reais(u.lucro)} · Over 90 ${pct(u.over90)} · ${u.periodo}</div></div>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A90A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a>`;
+  };
   tela.innerHTML = `
-    <div class="topo"><h1>Números</h1><span class="etiqueta-fase">Em breve</span></div>
-    <div class="cartao" style="padding:20px;display:flex;flex-direction:column;gap:10px">
-      <h2>Os números de cada balanço, sozinhos</h2>
-      <p style="margin:0;font-size:14px;color:var(--suave);line-height:1.6">Na próxima fase, o robô vai ler cada balanço que sair e montar lucro, carteira de crédito, inadimplência e Basileia, com o histórico de 8 trimestres e a comparação entre as instituições.</p>
-    </div>`;
+    <div class="topo"><h1>Números</h1></div>
+    <p class="nota" style="margin:0">Toque numa instituição para ver lucro, carteira, Basileia, Estágio 3 e Over 90 dos últimos trimestres.</p>
+    <div class="cartao lista">${lista.length ? lista.map(linha).join("") : '<div class="vazio">Nenhuma instituição acompanhada com números no Banco Central.</div>'}</div>`;
 }
 
 function rodapeAtualizacao() {
