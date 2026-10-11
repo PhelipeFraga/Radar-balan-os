@@ -11,7 +11,10 @@ Detalhes do IF.data:
   90 dias) só existem desde 2025 (Resolução CMN 4.966), no conglomerado prudencial.
 - Antes de 2025 a carteira E-H (conglomerado financeiro) ocupa o lugar do Estágio 3,
   como a medida de crédito problemático da regra antiga (Resolução 2.682). Escolha do Phelipe.
-  O Over 90 fica sem dado nesses anos.
+- Vencidos: "vencido a partir de 15 dias" (relatórios 11 e 13, pessoa física e
+  jurídica) sobre a carteira total. Existe em todos os anos, então substitui o Over 90
+  e dá uma base contínua (escolha do Phelipe). Mede parcelas atrasadas, não o saldo do
+  contrato; até 2024 vem do conglomerado financeiro, depois do prudencial.
 - Saem 2 a 3 meses depois do fim do trimestre.
 """
 
@@ -81,6 +84,15 @@ def _mes(codigos, anomes):
         for l in _relatorio(anomes, 1, "16", prud):
             if l.get("Grupo") is None:
                 novo.setdefault(l["CodInst"], {})[l["NomeColuna"].strip()] = l["Saldo"]
+    vencidos = {}
+    tipo, codigos_venc = (2, fin) if anomes < 202503 else (1, prud)
+    for rel in ("11", "13"):  # pessoa física e pessoa jurídica
+        for l in _relatorio(anomes, tipo, rel, codigos_venc):
+            tot = vencidos.setdefault(l["CodInst"], {"vencido": 0.0, "total": 0.0})
+            if l.get("Grupo") and "Vencido" in l["NomeColuna"]:
+                tot["vencido"] += l["Saldo"] or 0
+            if l.get("Grupo") is None and "Total da Carteira" in l["NomeColuna"]:
+                tot["total"] += l["Saldo"] or 0
     niveis = {}
     if anomes < 202503:
         for l in _relatorio(anomes, 2, "8", fin):  # carteira por nível de risco (AA a H)
@@ -96,14 +108,16 @@ def _mes(codigos, anomes):
         if not v:
             continue
         item = {"lucro_sem": _pega(v, "Lucro L"), "carteira": _pega(v, "Carteira de Cr"), "basileia": _pega(v, "de Basileia"),
-                "estagio3": None, "over90": None, "estagio_tipo": None}
+                "estagio3": None, "vencidos": None, "estagio_tipo": None}
         n = novo.get(cp)
         if n and _pega(n, "Total Geral"):
             total = _pega(n, "Total Geral")
-            prob, inad = _pega(n, "Ativos problem"), _pega(n, "Inadimpl")
+            prob = _pega(n, "Ativos problem")
             item["estagio3"] = prob / total if prob is not None else None
-            item["over90"] = inad / total if inad is not None else None
             item["estagio_tipo"] = "E3"
+        venc = vencidos.get(cf if anomes < 202503 else cp)
+        if venc and venc["total"]:
+            item["vencidos"] = venc["vencido"] / venc["total"]
         eh = niveis.get(cf)
         if eh and eh["total"]:
             item["estagio3"] = eh["eh"] / eh["total"]
@@ -157,7 +171,7 @@ def coletar(raizes, hoje, cache):
             meio = (dados.get(ano * 100 + 6) or {}).get(raiz) or {}
             lucro = lucro + meio["lucro_sem"] if lucro is not None and meio.get("lucro_sem") is not None else None
         return {"rotulo": rotulo, "lucro": lucro, "carteira": fim["carteira"], "basileia": fim["basileia"],
-                "estagio3": fim["estagio3"], "over90": fim["over90"], "estagio_tipo": fim["estagio_tipo"]}
+                "estagio3": fim["estagio3"], "vencidos": fim["vencidos"], "estagio_tipo": fim["estagio_tipo"]}
 
     acumulado = ROTULO_ACUMULADO[mes_atual]
     saida = {}

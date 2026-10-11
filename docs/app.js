@@ -183,7 +183,7 @@ const INDICADORES = [
   { id: "carteira", nome: "Carteira de crédito", tipo: "reais", bom: "neutro" },
   { id: "basileia", nome: "Índice de Basileia", tipo: "pct", bom: "sobe" },
   { id: "estagio3", nome: "Estágio 3", tipo: "pct", bom: "desce" },
-  { id: "over90", nome: "Over 90", tipo: "pct", bom: "desce" },
+  { id: "vencidos", nome: "Vencidos (+15 dias)", tipo: "pct", bom: "desce" },
 ];
 const VERDE = "#15803D", VERMELHO = "#C62828";
 const virgula = (n, casas) => n.toFixed(casas).replace(".", ",");
@@ -268,7 +268,7 @@ function blocoNumeros(inst) {
       <div role="img" aria-label="Gráfico de ${tituloGrafico} por ano" style="display:flex;align-items:flex-end;gap:6px">${grafico}</div>
       ${legenda}
     </div>
-    <p class="nota">Fonte: Banco Central (IF.data), grupo prudencial. Os números saem 2 a 3 meses depois do fim do trimestre. Estágio 3 e Over 90 são % da carteira e existem desde 2025 (Resolução 4.966); até 2024, o lugar do Estágio 3 é da carteira E–H. Toque num cartão para ver o gráfico dele.</p>`;
+    <p class="nota">Fonte: Banco Central (IF.data), grupo prudencial. Os números saem 2 a 3 meses depois do fim do trimestre. Estágio 3 e Vencidos são % da carteira. O Estágio 3 existe desde 2025 (Resolução 4.966); até 2024, o lugar dele é da carteira E–H. Vencidos = parcelas com mais de 15 dias de atraso, mesma base em todos os anos. Toque num cartão para ver o gráfico dele.</p>`;
 }
 
 function telaInstituicao(id) {
@@ -403,12 +403,12 @@ function telaNumeros() {
   const linha = (i) => {
     const u = i.numeros.atual;
     return `<a class="item" href="#inst/${i.id}"><div class="logo">${esc(i.sigla)}</div>
-      <div class="meio"><div class="nome">${esc(i.nome)}</div><div class="info">Lucro ${rotuloCurto(u.rotulo)} ${reais(u.lucro)} · Over 90 ${pct(u.over90)}</div></div>
+      <div class="meio"><div class="nome">${esc(i.nome)}</div><div class="info">Lucro ${rotuloCurto(u.rotulo)} ${reais(u.lucro)} · Vencidos ${pct(u.vencidos)}</div></div>
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A90A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a>`;
   };
   tela.innerHTML = `
     <div class="topo"><h1>Números</h1></div>
-    <p class="nota" style="margin:0">Toque numa instituição para ver lucro, carteira, Basileia, Estágio 3 e Over 90 dos últimos trimestres.</p>
+    <p class="nota" style="margin:0">Toque numa instituição para ver lucro, carteira, Basileia, Estágio 3 e Vencidos, ano a ano.</p>
     <div class="cartao lista">${lista.length ? lista.map(linha).join("") : '<div class="vazio">Nenhuma instituição acompanhada com números no Banco Central.</div>'}</div>`;
 }
 
