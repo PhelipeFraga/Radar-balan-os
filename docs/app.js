@@ -179,7 +179,7 @@ function capa(inst, extra = "") {
 
 // ---------- números (Banco Central) ----------
 const INDICADORES = [
-  { id: "lucro", nome: "Lucro do trimestre", tipo: "reais", bom: "sobe" },
+  { id: "lucro", nome: "Lucro", tipo: "reais", bom: "sobe" },
   { id: "carteira", nome: "Carteira de crédito", tipo: "reais", bom: "neutro" },
   { id: "basileia", nome: "Índice de Basileia", tipo: "pct", bom: "sobe" },
   { id: "estagio3", nome: "Estágio 3", tipo: "pct", bom: "desce" },
@@ -198,7 +198,7 @@ function reais(v) {
 const pct = (v) => v == null ? "–" : virgula(v * 100, 1) + "%";
 const formata = (ind, v) => ind.tipo === "reais" ? reais(v) : pct(v);
 
-function variacao(ind, atual, anterior) {
+function variacao(ind, atual, anterior, quando) {
   if (atual == null || anterior == null) return { texto: "sem comparação", cor: "var(--suave)" };
   const delta = atual - anterior;
   let texto;
@@ -207,46 +207,68 @@ function variacao(ind, atual, anterior) {
   else texto = `antes: ${reais(anterior)}`;
   const melhora = ind.bom === "sobe" ? delta > 0 : ind.bom === "desce" ? delta < 0 : null;
   const cor = melhora === null || delta === 0 ? "var(--suave)" : melhora ? VERDE : VERMELHO;
-  return { texto, cor };
+  return { texto: `${texto} vs ${quando}`, cor };
+}
+
+// "1º semestre 2026" -> "1S26"; "2025" -> "2025"
+function rotuloCurto(r) {
+  const m = r.match(/^(.*) (\d{4})$/);
+  if (!m) return r;
+  const sigla = { "1º tri": "1T", "1º semestre": "1S", "jan–set": "9M", "ano": "" }[m[1]];
+  return sigla === undefined ? r : `${sigla}${m[2].slice(2)}`;
 }
 
 function blocoNumeros(inst) {
-  const serie = inst.numeros || [];
-  if (!serie.length) {
+  const n = inst.numeros;
+  if (!n || (!n.atual && !(n.anos || []).length)) {
     return `<div class="cartao" style="padding:18px"><div class="vazio" style="padding:0">O Banco Central não publica números separados desta instituição.</div></div>`;
   }
-  const ultimo = serie[serie.length - 1], anterior = serie[serie.length - 2] || {};
+  const atual = n.atual || {}, anterior = n.anterior || {};
+  const anoAnterior = (anterior.rotulo || "").slice(-4);
   const escolhido = INDICADORES.find((i) => i.id === estado.indicador) || INDICADORES[0];
-  const cartoes = INDICADORES.map((ind, n) => {
-    const v = variacao(ind, ultimo[ind.id], anterior[ind.id]);
+  const nomeCartao = (ind) => ind.id === "lucro" ? `Lucro acumulado · ${atual.rotulo || ""}` : ind.id === "over90" && atual.atraso_tipo === "EH" ? "Carteira E–H" : ind.nome.replace("Lucro do trimestre", "Lucro");
+  const cartoes = INDICADORES.map((ind, k) => {
+    const v = variacao(ind, atual[ind.id], anterior[ind.id], anterior.rotulo ? rotuloCurto(anterior.rotulo) : "ano anterior");
     const ativo = ind.id === escolhido.id;
-    return `<button data-ind="${ind.id}" aria-pressed="${ativo}" style="grid-column:${n === 0 ? "1 / -1" : "auto"};text-align:left;border:2px solid ${ativo ? "var(--azul)" : "transparent"};background:#fff;border-radius:20px;box-shadow:var(--sombra);padding:14px 16px;display:flex;flex-direction:column;gap:4px;cursor:pointer">
-      <span style="font-size:12px;font-weight:700;color:var(--suave)">${ind.nome}</span>
-      <span style="font-size:${n === 0 ? 28 : 22}px;font-weight:800;letter-spacing:-.4px;color:var(--texto)">${formata(ind, ultimo[ind.id])}</span>
+    return `<button data-ind="${ind.id}" aria-pressed="${ativo}" style="grid-column:${k === 0 ? "1 / -1" : "auto"};text-align:left;border:2px solid ${ativo ? "var(--azul)" : "transparent"};background:#fff;border-radius:20px;box-shadow:var(--sombra);padding:14px 16px;display:flex;flex-direction:column;gap:4px;cursor:pointer">
+      <span style="font-size:12px;font-weight:700;color:var(--suave)">${nomeCartao(ind)}</span>
+      <span style="font-size:${k === 0 ? 28 : 22}px;font-weight:800;letter-spacing:-.4px;color:var(--texto)">${formata(ind, atual[ind.id])}</span>
       <span style="font-size:12px;font-weight:700;color:${v.cor}">${v.texto}</span>
     </button>`;
   }).join("");
 
-  const valores = serie.map((s) => s[escolhido.id]);
-  const maior = Math.max(...valores.filter((x) => x != null).map(Math.abs), 0) || 1;
-  const barras = serie.map((s, n) => {
+  // Gráfico: 4 anos fechados e, separados, o mesmo período do ano passado e o deste ano.
+  const anos = n.anos || [];
+  const pares = [n.anterior, n.atual].filter(Boolean);
+  const todos = [...anos, ...pares];
+  const valores = todos.map((s) => s[escolhido.id]).filter((x) => x != null);
+  const maior = Math.max(...valores.map(Math.abs), 0) || 1;
+  const temEH = escolhido.id === "over90" && todos.some((s) => s.atraso_tipo === "EH" && s.over90 != null);
+  const barra = (s, destaque) => {
     const v = s[escolhido.id];
     const altura = v == null ? 0 : Math.max(4, Math.round(Math.abs(v) / maior * 110));
-    const cor = v != null && v < 0 ? VERMELHO : n === serie.length - 1 ? "var(--azul)" : "#C9D2E8";
+    const eh = escolhido.id === "over90" && s.atraso_tipo === "EH";
+    const cor = v != null && v < 0 ? VERMELHO : destaque ? "var(--azul)" : eh ? "#F5C99A" : "#C9D2E8";
     const rotulo = v == null ? "–" : escolhido.tipo === "pct" ? virgula(v * 100, 1) : virgula(v / 1e9, Math.abs(v) >= 1e11 ? 0 : 1);
     return `<div style="flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:5px;height:140px">
       <span style="font-size:10px;font-weight:700;color:var(--suave);white-space:nowrap">${rotulo}</span>
       <span style="display:block;width:100%;height:${altura}px;border-radius:7px;background:${cor}"></span>
-      <span style="font-size:10px;font-weight:600;color:var(--apagado)">${s.periodo}</span></div>`;
-  }).join("");
+      <span style="font-size:10px;font-weight:${destaque ? 800 : 600};color:${destaque ? "var(--texto)" : "var(--apagado)"};white-space:nowrap">${rotuloCurto(s.rotulo)}</span></div>`;
+  };
+  const grafico = anos.map((s) => barra(s, false)).join("")
+    + (pares.length ? `<div style="width:1px;align-self:stretch;background:var(--linha);margin:0 2px"></div>` : "")
+    + pares.map((s) => barra(s, s === n.atual)).join("");
   const unidade = escolhido.tipo === "pct" ? "em %" : "em R$ bilhões";
+  const legenda = temEH ? `<div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--suave)"><i style="width:10px;height:10px;border-radius:3px;background:#F5C99A;display:block"></i>Até 2024: carteira E–H (antes da 4.966 o BC não publica o Over 90)</div>` : "";
+  const tituloGrafico = escolhido.id === "lucro" ? "Lucro" : escolhido.nome;
 
   return `<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">${cartoes}</div>
     <div class="cartao" style="padding:18px;display:flex;flex-direction:column;gap:12px">
-      <div><div style="font-size:15px;font-weight:800">${escolhido.nome}</div><div style="font-size:12px;color:var(--suave)">Últimos ${serie.length} trimestres, ${unidade}</div></div>
-      <div role="img" aria-label="Gráfico de ${escolhido.nome} nos últimos trimestres" style="display:flex;align-items:flex-end;gap:6px">${barras}</div>
+      <div><div style="font-size:15px;font-weight:800">${tituloGrafico}</div><div style="font-size:12px;color:var(--suave)">Anos fechados${escolhido.id === "lucro" ? " (ano inteiro)" : " (posição em dezembro)"} e o acumulado de ${atual.rotulo ? atual.rotulo.replace(/ \d{4}$/, "") : "agora"} contra o mesmo período, ${unidade}</div></div>
+      <div role="img" aria-label="Gráfico de ${tituloGrafico} por ano" style="display:flex;align-items:flex-end;gap:6px">${grafico}</div>
+      ${legenda}
     </div>
-    <p class="nota">Fonte: Banco Central (IF.data), grupo prudencial. Os números saem 2 a 3 meses depois do fim do trimestre. Estágio 3 (ativos problemáticos) e Over 90 (atraso acima de 90 dias) são % da carteira e existem desde 2025. Toque num cartão para ver o gráfico dele.</p>`;
+    <p class="nota">Fonte: Banco Central (IF.data), grupo prudencial. Os números saem 2 a 3 meses depois do fim do trimestre. Estágio 3 e Over 90 são % da carteira e existem desde 2025 (Resolução 4.966); até 2024, o lugar do Over 90 é da carteira E–H. Toque num cartão para ver o gráfico dele.</p>`;
 }
 
 function telaInstituicao(id) {
@@ -305,7 +327,7 @@ function telaInstituicao(id) {
     ${ultimo ? blocoBalanco(ultimo, "Os PDFs ainda não chegaram à base da CVM. Veja no site de RI, no topo.") : '<div class="cartao lista"><div class="vazio">Nenhum balanço encontrado.</div></div>'}
     <h2>Balanços anuais anteriores</h2>
     <div class="cartao lista">${anuais.map(linhaAnual).join("")}</div>
-    <div style="display:flex;flex-direction:column;gap:2px"><h2>Números</h2>${(inst.numeros || []).length ? `<span class="subtitulo">${descricaoCurta({ tipo: "ITR", tri: inst.numeros[inst.numeros.length - 1].periodo.slice(0, 2), ano: 2000 + Number(inst.numeros[inst.numeros.length - 1].periodo.slice(2)) })} · vs. tri anterior</span>` : ""}</div>
+    <div style="display:flex;flex-direction:column;gap:2px"><h2>Números</h2>${inst.numeros && inst.numeros.atual ? `<span class="subtitulo">Acumulado do ${inst.numeros.atual.rotulo.replace(/ (\d{4})$/, " de $1")} · vs. mesmo período do ano anterior</span>` : ""}</div>
     ${blocoNumeros(inst)}`;
   tela.querySelectorAll("[data-ind]").forEach((b) => b.addEventListener("click", () => {
     estado.indicador = b.dataset.ind;
@@ -377,11 +399,11 @@ function telaInstituicoes() {
 
 function telaNumeros() {
   const segue = seguindo();
-  const lista = estado.dados.instituicoes.filter((i) => segue(i.id) && (i.numeros || []).length);
+  const lista = estado.dados.instituicoes.filter((i) => segue(i.id) && i.numeros && i.numeros.atual);
   const linha = (i) => {
-    const u = i.numeros[i.numeros.length - 1];
+    const u = i.numeros.atual;
     return `<a class="item" href="#inst/${i.id}"><div class="logo">${esc(i.sigla)}</div>
-      <div class="meio"><div class="nome">${esc(i.nome)}</div><div class="info">Lucro ${reais(u.lucro)} · Over 90 ${pct(u.over90)} · ${u.periodo}</div></div>
+      <div class="meio"><div class="nome">${esc(i.nome)}</div><div class="info">Lucro ${rotuloCurto(u.rotulo)} ${reais(u.lucro)} · Over 90 ${pct(u.over90)}</div></div>
       <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A90A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a>`;
   };
   tela.innerHTML = `
