@@ -305,7 +305,7 @@ function telaInstituicao(id) {
     ${ultimo ? blocoBalanco(ultimo, "Os PDFs ainda não chegaram à base da CVM. Veja no site de RI, no topo.") : '<div class="cartao lista"><div class="vazio">Nenhum balanço encontrado.</div></div>'}
     <h2>Balanços anuais anteriores</h2>
     <div class="cartao lista">${anuais.map(linhaAnual).join("")}</div>
-    <div class="cabeca-secao"><h2>Números</h2>${(inst.numeros || []).length ? `<span class="subtitulo">${descricaoCurta({ tipo: "ITR", tri: inst.numeros[inst.numeros.length - 1].periodo.slice(0, 2), ano: 2000 + Number(inst.numeros[inst.numeros.length - 1].periodo.slice(2)) })} · vs. tri anterior</span>` : ""}</div>
+    <div style="display:flex;flex-direction:column;gap:2px"><h2>Números</h2>${(inst.numeros || []).length ? `<span class="subtitulo">${descricaoCurta({ tipo: "ITR", tri: inst.numeros[inst.numeros.length - 1].periodo.slice(0, 2), ano: 2000 + Number(inst.numeros[inst.numeros.length - 1].periodo.slice(2)) })} · vs. tri anterior</span>` : ""}</div>
     ${blocoNumeros(inst)}`;
   tela.querySelectorAll("[data-ind]").forEach((b) => b.addEventListener("click", () => {
     estado.indicador = b.dataset.ind;
