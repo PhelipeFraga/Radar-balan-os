@@ -9,9 +9,9 @@ Detalhes do IF.data:
   acumulado até setembro = junho + setembro.
 - Estágio 3 ("ativos problemáticos") e Over 90 ("inadimplência", atraso acima de
   90 dias) só existem desde 2025 (Resolução CMN 4.966), no conglomerado prudencial.
-- Antes de 2025 entra a carteira E-H (conglomerado financeiro): pela Resolução 2.682,
-  todo atraso acima de 90 dias ficava no mínimo no nível E. Escolha do Phelipe; o
-  "vencido" do IF.data conta só parcelas e ficaria abaixo do Over 90.
+- Antes de 2025 a carteira E-H (conglomerado financeiro) ocupa o lugar do Estágio 3,
+  como a medida de crédito problemático da regra antiga (Resolução 2.682). Escolha do Phelipe.
+  O Over 90 fica sem dado nesses anos.
 - Saem 2 a 3 meses depois do fim do trimestre.
 """
 
@@ -96,18 +96,18 @@ def _mes(codigos, anomes):
         if not v:
             continue
         item = {"lucro_sem": _pega(v, "Lucro L"), "carteira": _pega(v, "Carteira de Cr"), "basileia": _pega(v, "de Basileia"),
-                "estagio3": None, "over90": None, "atraso_tipo": None}
+                "estagio3": None, "over90": None, "estagio_tipo": None}
         n = novo.get(cp)
         if n and _pega(n, "Total Geral"):
             total = _pega(n, "Total Geral")
             prob, inad = _pega(n, "Ativos problem"), _pega(n, "Inadimpl")
             item["estagio3"] = prob / total if prob is not None else None
             item["over90"] = inad / total if inad is not None else None
-            item["atraso_tipo"] = "90"
+            item["estagio_tipo"] = "E3"
         eh = niveis.get(cf)
         if eh and eh["total"]:
-            item["over90"] = eh["eh"] / eh["total"]
-            item["atraso_tipo"] = "EH"
+            item["estagio3"] = eh["eh"] / eh["total"]
+            item["estagio_tipo"] = "EH"
         saida[raiz] = item
     return saida
 
@@ -157,7 +157,7 @@ def coletar(raizes, hoje, cache):
             meio = (dados.get(ano * 100 + 6) or {}).get(raiz) or {}
             lucro = lucro + meio["lucro_sem"] if lucro is not None and meio.get("lucro_sem") is not None else None
         return {"rotulo": rotulo, "lucro": lucro, "carteira": fim["carteira"], "basileia": fim["basileia"],
-                "estagio3": fim["estagio3"], "over90": fim["over90"], "atraso_tipo": fim["atraso_tipo"]}
+                "estagio3": fim["estagio3"], "over90": fim["over90"], "estagio_tipo": fim["estagio_tipo"]}
 
     acumulado = ROTULO_ACUMULADO[mes_atual]
     saida = {}

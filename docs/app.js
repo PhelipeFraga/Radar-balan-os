@@ -226,7 +226,7 @@ function blocoNumeros(inst) {
   const atual = n.atual || {}, anterior = n.anterior || {};
   const anoAnterior = (anterior.rotulo || "").slice(-4);
   const escolhido = INDICADORES.find((i) => i.id === estado.indicador) || INDICADORES[0];
-  const nomeCartao = (ind) => ind.id === "lucro" ? `Lucro acumulado · ${atual.rotulo || ""}` : ind.id === "over90" && atual.atraso_tipo === "EH" ? "Carteira E–H" : ind.nome.replace("Lucro do trimestre", "Lucro");
+  const nomeCartao = (ind) => ind.id === "lucro" ? `Lucro acumulado · ${atual.rotulo || ""}` : ind.id === "estagio3" && atual.estagio_tipo === "EH" ? "Carteira E–H" : ind.nome.replace("Lucro do trimestre", "Lucro");
   const cartoes = INDICADORES.map((ind, k) => {
     const v = variacao(ind, atual[ind.id], anterior[ind.id], anterior.rotulo ? rotuloCurto(anterior.rotulo) : "ano anterior");
     const ativo = ind.id === escolhido.id;
@@ -243,11 +243,11 @@ function blocoNumeros(inst) {
   const todos = [...anos, ...pares];
   const valores = todos.map((s) => s[escolhido.id]).filter((x) => x != null);
   const maior = Math.max(...valores.map(Math.abs), 0) || 1;
-  const temEH = escolhido.id === "over90" && todos.some((s) => s.atraso_tipo === "EH" && s.over90 != null);
+  const temEH = escolhido.id === "estagio3" && todos.some((s) => s.estagio_tipo === "EH" && s.estagio3 != null);
   const barra = (s, destaque) => {
     const v = s[escolhido.id];
     const altura = v == null ? 0 : Math.max(4, Math.round(Math.abs(v) / maior * 110));
-    const eh = escolhido.id === "over90" && s.atraso_tipo === "EH";
+    const eh = escolhido.id === "estagio3" && s.estagio_tipo === "EH";
     const cor = v != null && v < 0 ? VERMELHO : destaque ? "var(--azul)" : eh ? "#F5C99A" : "#C9D2E8";
     const rotulo = v == null ? "–" : escolhido.tipo === "pct" ? virgula(v * 100, 1) : virgula(v / 1e9, Math.abs(v) >= 1e11 ? 0 : 1);
     return `<div style="flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:5px;height:140px">
@@ -259,7 +259,7 @@ function blocoNumeros(inst) {
     + (pares.length ? `<div style="width:1px;align-self:stretch;background:var(--linha);margin:0 2px"></div>` : "")
     + pares.map((s) => barra(s, s === n.atual)).join("");
   const unidade = escolhido.tipo === "pct" ? "em %" : "em R$ bilhões";
-  const legenda = temEH ? `<div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--suave)"><i style="width:10px;height:10px;border-radius:3px;background:#F5C99A;display:block"></i>Até 2024: carteira E–H (antes da 4.966 o BC não publica o Over 90)</div>` : "";
+  const legenda = temEH ? `<div style="display:flex;align-items:center;gap:6px;font-size:12px;color:var(--suave)"><i style="width:10px;height:10px;border-radius:3px;background:#F5C99A;display:block"></i>Até 2024: carteira E–H (antes da 4.966 não existia Estágio 3)</div>` : "";
   const tituloGrafico = escolhido.id === "lucro" ? "Lucro" : escolhido.nome;
 
   return `<div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">${cartoes}</div>
@@ -268,7 +268,7 @@ function blocoNumeros(inst) {
       <div role="img" aria-label="Gráfico de ${tituloGrafico} por ano" style="display:flex;align-items:flex-end;gap:6px">${grafico}</div>
       ${legenda}
     </div>
-    <p class="nota">Fonte: Banco Central (IF.data), grupo prudencial. Os números saem 2 a 3 meses depois do fim do trimestre. Estágio 3 e Over 90 são % da carteira e existem desde 2025 (Resolução 4.966); até 2024, o lugar do Over 90 é da carteira E–H. Toque num cartão para ver o gráfico dele.</p>`;
+    <p class="nota">Fonte: Banco Central (IF.data), grupo prudencial. Os números saem 2 a 3 meses depois do fim do trimestre. Estágio 3 e Over 90 são % da carteira e existem desde 2025 (Resolução 4.966); até 2024, o lugar do Estágio 3 é da carteira E–H. Toque num cartão para ver o gráfico dele.</p>`;
 }
 
 function telaInstituicao(id) {

@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-11T01:04-03:00",
+ "atualizado": "2026-10-11T01:06-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -265,27 +265,27 @@
       "lucro": 802695179.0300009,
       "carteira": 25433207168.16,
       "basileia": 0.15234085443375,
-      "estagio3": null,
-      "over90": 0.04026195648643853,
-      "atraso_tipo": "EH"
+      "estagio3": 0.04026195648643853,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 865126000.859998,
       "carteira": 23922455267.65,
       "basileia": 0.149449585017999,
-      "estagio3": null,
-      "over90": 0.047833064656355596,
-      "atraso_tipo": "EH"
+      "estagio3": 0.047833064656355596,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 991857042.900008,
       "carteira": 22760842994.93,
       "basileia": 0.164773835842474,
-      "estagio3": null,
-      "over90": 0.025453097283926807,
-      "atraso_tipo": "EH"
+      "estagio3": 0.025453097283926807,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -294,7 +294,7 @@
       "basileia": 0.162822129401054,
       "estagio3": 0.03988980125472196,
       "over90": 0.009428985070595884,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -304,7 +304,7 @@
      "basileia": 0.161796402088591,
      "estagio3": 0.039460317029550225,
      "over90": 0.010273707659041393,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -313,7 +313,7 @@
      "basileia": 0.172952735284047,
      "estagio3": 0.03857884713414317,
      "over90": 0.013804818757517531,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -912,27 +912,27 @@
       "lucro": 339458963.03999996,
       "carteira": 30436117319.4,
       "basileia": 0.147886412404462,
-      "estagio3": null,
-      "over90": 0.0287247364821471,
-      "atraso_tipo": "EH"
+      "estagio3": 0.0287247364821471,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 209449738.96999842,
       "carteira": 35494580684.65,
       "basileia": 0.146777509170255,
-      "estagio3": null,
-      "over90": 0.03126626627702851,
-      "atraso_tipo": "EH"
+      "estagio3": 0.03126626627702851,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 195724753.45000038,
       "carteira": 42762797550.07,
       "basileia": 0.129403079032774,
-      "estagio3": null,
-      "over90": 0.019267290992485742,
-      "atraso_tipo": "EH"
+      "estagio3": 0.019267290992485742,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -941,7 +941,7 @@
       "basileia": null,
       "estagio3": 0.054656787762885795,
       "over90": 0.030532438893641732,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -951,7 +951,7 @@
      "basileia": null,
      "estagio3": 0.2797522044586734,
      "over90": 0.19716775638316736,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -960,7 +960,7 @@
      "basileia": 0.1391422409306,
      "estagio3": 0.02925256048923068,
      "over90": 0.01712332288892938,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -1244,27 +1244,27 @@
       "lucro": 7841836970.17,
       "carteira": 119733197313.28,
       "basileia": 0.150810083432553,
-      "estagio3": null,
-      "over90": 0.08928206560447152,
-      "atraso_tipo": "EH"
+      "estagio3": 0.08928206560447152,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 9924565497.70001,
       "carteira": 123734467507.07,
       "basileia": 0.175197129548518,
-      "estagio3": null,
-      "over90": 0.07640386159354863,
-      "atraso_tipo": "EH"
+      "estagio3": 0.07640386159354863,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 11789387059.05,
       "carteira": 156471496476.42,
       "basileia": 0.157063385668635,
-      "estagio3": null,
-      "over90": 0.039840245972212,
-      "atraso_tipo": "EH"
+      "estagio3": 0.039840245972212,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -1273,7 +1273,7 @@
       "basileia": 0.155032580722116,
       "estagio3": 0.06333953232495493,
       "over90": 0.05333347599379612,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -1283,7 +1283,7 @@
      "basileia": 0.160421550832961,
      "estagio3": 0.07906904843615632,
      "over90": 0.06639921976901929,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -1292,7 +1292,7 @@
      "basileia": 0.161503551081828,
      "estagio3": 0.06819312213323778,
      "over90": 0.05544825373716663,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -1561,27 +1561,27 @@
       "lucro": 278637155.840001,
       "carteira": 23669604301.99,
       "basileia": 0.135424625890527,
-      "estagio3": null,
-      "over90": 0.05555945083523526,
-      "atraso_tipo": "EH"
+      "estagio3": 0.05555945083523526,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 189557910.87000003,
       "carteira": 23851248234.96,
       "basileia": 0.132864625882532,
-      "estagio3": null,
-      "over90": 0.044411178698596246,
-      "atraso_tipo": "EH"
+      "estagio3": 0.044411178698596246,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 419964744.06,
       "carteira": 26354591025,
       "basileia": 0.132104548208101,
-      "estagio3": null,
-      "over90": 0.04529472443590925,
-      "atraso_tipo": "EH"
+      "estagio3": 0.04529472443590925,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -1590,7 +1590,7 @@
       "basileia": 0.132382345846517,
       "estagio3": 0.05334838766061768,
       "over90": 0.02900692770757788,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -1600,7 +1600,7 @@
      "basileia": 0.133229295716163,
      "estagio3": 0.06493141752649828,
      "over90": 0.04061041002054637,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -1609,7 +1609,7 @@
      "basileia": 0.127258904299183,
      "estagio3": 0.053276631940606355,
      "over90": 0.03144949706476919,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -1858,27 +1858,27 @@
       "lucro": 40899625.49999997,
       "carteira": 5374188220.19,
       "basileia": 0.113917013097207,
-      "estagio3": null,
-      "over90": 0.06752410088211078,
-      "atraso_tipo": "EH"
+      "estagio3": 0.06752410088211078,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 180878279.81,
       "carteira": 7424402894.78,
       "basileia": 0.124051806693169,
-      "estagio3": null,
-      "over90": 0.03204645744046096,
-      "atraso_tipo": "EH"
+      "estagio3": 0.03204645744046096,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 258543985.8,
       "carteira": 9866553060.48,
       "basileia": 0.145380102058547,
-      "estagio3": null,
-      "over90": 0.03531715748433697,
-      "atraso_tipo": "EH"
+      "estagio3": 0.03531715748433697,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -1887,7 +1887,7 @@
       "basileia": 0.146884091147115,
       "estagio3": 0.05572952110333289,
       "over90": 0.03566086241932053,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -1897,7 +1897,7 @@
      "basileia": 0.143133791746668,
      "estagio3": 0.059948000122858475,
      "over90": 0.037961761856109576,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -1906,7 +1906,7 @@
      "basileia": 0.140853982314851,
      "estagio3": 0.0718050007120183,
      "over90": 0.03933169831780447,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -2287,27 +2287,27 @@
       "lucro": 1122314170.9099998,
       "carteira": 19757320267.75,
       "basileia": 0.122934234690129,
-      "estagio3": null,
-      "over90": 0.0332717458792545,
-      "atraso_tipo": "EH"
+      "estagio3": 0.0332717458792545,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 1345150693.19,
       "carteira": 25825034715.48,
       "basileia": 0.130321570069351,
-      "estagio3": null,
-      "over90": 0.02977724422187578,
-      "atraso_tipo": "EH"
+      "estagio3": 0.02977724422187578,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 1132026942.2199998,
       "carteira": 32341385381.36,
       "basileia": 0.137230744307485,
-      "estagio3": null,
-      "over90": 0.043435689501717584,
-      "atraso_tipo": "EH"
+      "estagio3": 0.043435689501717584,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -2316,7 +2316,7 @@
       "basileia": 0.132801435051273,
       "estagio3": null,
       "over90": null,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -2326,7 +2326,7 @@
      "basileia": 0.130151044127038,
      "estagio3": 0.10627143357349449,
      "over90": 0.06428544761858837,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -2335,7 +2335,7 @@
      "basileia": 0.140406884460844,
      "estagio3": 0.07135553556951096,
      "over90": 0.03089876120640833,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -2654,27 +2654,27 @@
       "lucro": 31354791181.22,
       "carteira": 891401673776.78,
       "basileia": 0.16654817585656,
-      "estagio3": null,
-      "over90": 0.05975334390726708,
-      "atraso_tipo": "EH"
+      "estagio3": 0.05975334390726708,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 34732431949.79,
       "carteira": 975463193960.5,
       "basileia": 0.154729875130962,
-      "estagio3": null,
-      "over90": 0.06584442397016442,
-      "atraso_tipo": "EH"
+      "estagio3": 0.06584442397016442,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 36115969234.14,
       "carteira": 1100566418670.43,
       "basileia": 0.137549111403841,
-      "estagio3": null,
-      "over90": 0.0697957302804175,
-      "atraso_tipo": "EH"
+      "estagio3": 0.0697957302804175,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -2683,7 +2683,7 @@
       "basileia": 0.151297835513664,
       "estagio3": 0.08624962896974067,
       "over90": 0.052698928969713885,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -2693,7 +2693,7 @@
      "basileia": 0.139146075963478,
      "estagio3": 0.09332224624980215,
      "over90": 0.058618380817364715,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -2702,7 +2702,7 @@
      "basileia": 0.141437998015428,
      "estagio3": 0.08621313093565774,
      "over90": 0.041121576263004556,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -2893,27 +2893,27 @@
       "lucro": 2015148182.1799989,
       "carteira": 13413880025.01,
       "basileia": 0.137226804182584,
-      "estagio3": null,
-      "over90": 0.0514481760238858,
-      "atraso_tipo": "EH"
+      "estagio3": 0.0514481760238858,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 2111561729.179999,
       "carteira": 13200115952.64,
       "basileia": 0.127968845847208,
-      "estagio3": null,
-      "over90": 0.057785785145237877,
-      "atraso_tipo": "EH"
+      "estagio3": 0.057785785145237877,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 2344429571.44,
       "carteira": 17153023314.11,
       "basileia": 0.143387755354154,
-      "estagio3": null,
-      "over90": 0.03825880844516595,
-      "atraso_tipo": "EH"
+      "estagio3": 0.03825880844516595,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -2922,7 +2922,7 @@
       "basileia": 0.140019732882351,
       "estagio3": 0.07908142527472002,
       "over90": 0.04683125246507972,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -2932,7 +2932,7 @@
      "basileia": 0.151372833645037,
      "estagio3": 0.10884991185959993,
      "over90": 0.0803962089607999,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -2941,7 +2941,7 @@
      "basileia": 0.135197389463615,
      "estagio3": 0.049437674861831246,
      "over90": 0.03574768040700225,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -3160,27 +3160,27 @@
       "lucro": 75512430.1600002,
       "carteira": 3991919732.17,
       "basileia": 0.135675185270924,
-      "estagio3": null,
-      "over90": 0.049809796138844654,
-      "atraso_tipo": "EH"
+      "estagio3": 0.049809796138844654,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 47470552.54999983,
       "carteira": 4539094413.94,
       "basileia": 0.133885379576225,
-      "estagio3": null,
-      "over90": 0.044988732814243454,
-      "atraso_tipo": "EH"
+      "estagio3": 0.044988732814243454,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 146703661.70999992,
       "carteira": 5165802397.04,
       "basileia": 0.13941308507183,
-      "estagio3": null,
-      "over90": 0.05354036551004336,
-      "atraso_tipo": "EH"
+      "estagio3": 0.05354036551004336,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -3189,7 +3189,7 @@
       "basileia": 0.136236787652684,
       "estagio3": 0.09964010662647561,
       "over90": 0.07279249347387538,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -3199,7 +3199,7 @@
      "basileia": 0.133466585643667,
      "estagio3": 0.10422385763391553,
      "over90": 0.07817568031321502,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -3208,7 +3208,7 @@
      "basileia": 0.126729210665613,
      "estagio3": 0.1019005782803826,
      "over90": 0.08664654014935565,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -3457,27 +3457,27 @@
       "lucro": 330042911.57,
       "carteira": 7939247180.13,
       "basileia": 0.149574143196718,
-      "estagio3": null,
-      "over90": 0.039849844439974996,
-      "atraso_tipo": "EH"
+      "estagio3": 0.039849844439974996,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 370619945.89,
       "carteira": 9523389008.55,
       "basileia": 0.14596270355721,
-      "estagio3": null,
-      "over90": 0.036826462657016897,
-      "atraso_tipo": "EH"
+      "estagio3": 0.036826462657016897,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 392487112.26,
       "carteira": 11755654044.16,
       "basileia": 0.140114499001519,
-      "estagio3": null,
-      "over90": 0.03300041603578433,
-      "atraso_tipo": "EH"
+      "estagio3": 0.03300041603578433,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -3486,7 +3486,7 @@
       "basileia": 0.142842838670087,
       "estagio3": 0.036373152349289076,
       "over90": 0.02308107801146964,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -3496,7 +3496,7 @@
      "basileia": 0.148850730223572,
      "estagio3": 0.044628232020540434,
      "over90": 0.02679256026716705,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -3505,7 +3505,7 @@
      "basileia": 0.140316023845215,
      "estagio3": 0.04128455043102657,
      "over90": 0.024249267346237124,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -3696,27 +3696,27 @@
       "lucro": 179178292.34,
       "carteira": 10576870653.99,
       "basileia": 0.161550993144389,
-      "estagio3": null,
-      "over90": 0.02359007341324304,
-      "atraso_tipo": "EH"
+      "estagio3": 0.02359007341324304,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 281127985.69,
       "carteira": 12940911715.55,
       "basileia": 0.15057925790516,
-      "estagio3": null,
-      "over90": 0.027110697013598254,
-      "atraso_tipo": "EH"
+      "estagio3": 0.027110697013598254,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 368068562.89,
       "carteira": 14282848305.09,
       "basileia": 0.150856864522771,
-      "estagio3": null,
-      "over90": 0.03611752895181761,
-      "atraso_tipo": "EH"
+      "estagio3": 0.03611752895181761,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -3725,7 +3725,7 @@
       "basileia": 0.166574942370242,
       "estagio3": 0.03796739812163969,
       "over90": 0.031731734955176,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -3735,7 +3735,7 @@
      "basileia": 0.167422596474558,
      "estagio3": 0.04186531599050925,
      "over90": 0.036054275404649,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -3744,7 +3744,7 @@
      "basileia": 0.138942695973698,
      "estagio3": 0.025509876104210506,
      "over90": 0.025127399028110117,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -3963,27 +3963,27 @@
       "lucro": 714933947.949998,
       "carteira": 49121869486.07,
       "basileia": 0.175688597585043,
-      "estagio3": null,
-      "over90": 0.05152650890283759,
-      "atraso_tipo": "EH"
+      "estagio3": 0.05152650890283759,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 870103937.920001,
       "carteira": 53669310501.09,
       "basileia": 0.167613501591007,
-      "estagio3": null,
-      "over90": 0.05399075793805938,
-      "atraso_tipo": "EH"
+      "estagio3": 0.05399075793805938,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 915575669.160001,
       "carteira": 62058944487.63,
       "basileia": 0.172072364152171,
-      "estagio3": null,
-      "over90": 0.04185415341800502,
-      "atraso_tipo": "EH"
+      "estagio3": 0.04185415341800502,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -3992,7 +3992,7 @@
       "basileia": 0.195447471896882,
       "estagio3": 0.06161493571635125,
       "over90": 0.04193146128033685,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -4002,7 +4002,7 @@
      "basileia": 0.159097945723375,
      "estagio3": 0.0696301046497444,
      "over90": 0.04574753308894987,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -4011,7 +4011,7 @@
      "basileia": 0.161732433771142,
      "estagio3": 0.05414344460433148,
      "over90": 0.02947804554684084,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -4325,27 +4325,27 @@
       "lucro": 20749799869.08999,
       "carteira": 656943552094.55,
       "basileia": 0.148498225534897,
-      "estagio3": null,
-      "over90": 0.09529230970217475,
-      "atraso_tipo": "EH"
+      "estagio3": 0.09529230970217475,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 15158182853.73001,
       "carteira": 628599608164.43,
       "basileia": 0.15823910401071,
-      "estagio3": null,
-      "over90": 0.1018703075163898,
-      "atraso_tipo": "EH"
+      "estagio3": 0.1018703075163898,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 19112590775.89999,
       "carteira": 719192298557.73,
       "basileia": 0.147827828888604,
-      "estagio3": null,
-      "over90": 0.07460151848629162,
-      "atraso_tipo": "EH"
+      "estagio3": 0.07460151848629162,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -4354,7 +4354,7 @@
       "basileia": 0.15777707276213,
       "estagio3": 0.06596777383911799,
       "over90": 0.03826009380895556,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -4364,7 +4364,7 @@
      "basileia": 0.155573261111153,
      "estagio3": 0.07323347433119891,
      "over90": 0.04012578264118502,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -4373,7 +4373,7 @@
      "basileia": 0.154738218299966,
      "estagio3": 0.07198672982290169,
      "over90": 0.038414801718299814,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -4569,7 +4569,7 @@
       "basileia": null,
       "estagio3": null,
       "over90": null,
-      "atraso_tipo": null
+      "estagio_tipo": null
      },
      {
       "rotulo": "2023",
@@ -4578,7 +4578,7 @@
       "basileia": 0.392954659246215,
       "estagio3": null,
       "over90": null,
-      "atraso_tipo": null
+      "estagio_tipo": null
      },
      {
       "rotulo": "2024",
@@ -4587,7 +4587,7 @@
       "basileia": 0.215700242441822,
       "estagio3": null,
       "over90": null,
-      "atraso_tipo": null
+      "estagio_tipo": null
      },
      {
       "rotulo": "2025",
@@ -4596,7 +4596,7 @@
       "basileia": 0.180386859027056,
       "estagio3": null,
       "over90": null,
-      "atraso_tipo": null
+      "estagio_tipo": null
      }
     ],
     "atual": {
@@ -4606,7 +4606,7 @@
      "basileia": 0.20352582397617,
      "estagio3": null,
      "over90": null,
-     "atraso_tipo": null
+     "estagio_tipo": null
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -4615,7 +4615,7 @@
      "basileia": 0.142790979833804,
      "estagio3": null,
      "over90": null,
-     "atraso_tipo": null
+     "estagio_tipo": null
     },
     "ate": 202606
    }
@@ -4802,27 +4802,27 @@
       "lucro": 1103405110.849998,
       "carteira": 48548551128.83,
       "basileia": 0.128639726962686,
-      "estagio3": null,
-      "over90": 0.036579970894102955,
-      "atraso_tipo": "EH"
+      "estagio3": 0.036579970894102955,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 1101928687.82,
       "carteira": 48229465152.71,
       "basileia": 0.138661969840972,
-      "estagio3": null,
-      "over90": 0.04355295020639585,
-      "atraso_tipo": "EH"
+      "estagio3": 0.04355295020639585,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 1689278940.009999,
       "carteira": 52850761468.18,
       "basileia": 0.124962862098853,
-      "estagio3": null,
-      "over90": 0.033883084661717314,
-      "atraso_tipo": "EH"
+      "estagio3": 0.033883084661717314,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -4831,7 +4831,7 @@
       "basileia": 0.13338686241899,
       "estagio3": 0.04206849587955,
       "over90": 0.022004826863087974,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -4841,7 +4841,7 @@
      "basileia": 0.128352856440634,
      "estagio3": 0.04069951976037048,
      "over90": 0.02515363314000229,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -4850,7 +4850,7 @@
      "basileia": 0.139260946216547,
      "estagio3": 0.056487662301482805,
      "over90": 0.03406063480775136,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -5119,27 +5119,27 @@
       "lucro": 30151609856.26,
       "carteira": 907171119997.55,
       "basileia": 0.149725640831586,
-      "estagio3": null,
-      "over90": 0.0663151758981968,
-      "atraso_tipo": "EH"
+      "estagio3": 0.0663151758981968,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 34470030751.43,
       "carteira": 908909475482.25,
       "basileia": 0.170253453913278,
-      "estagio3": null,
-      "over90": 0.06219667102245065,
-      "atraso_tipo": "EH"
+      "estagio3": 0.06219667102245065,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 40933627073.45,
       "carteira": 1023792028428.55,
       "basileia": 0.165146671731428,
-      "estagio3": null,
-      "over90": 0.043979599865744505,
-      "atraso_tipo": "EH"
+      "estagio3": 0.043979599865744505,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -5148,7 +5148,7 @@
       "basileia": 0.1518384433194,
       "estagio3": 0.036179049692310956,
       "over90": 0.021803461243172062,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -5158,7 +5158,7 @@
      "basileia": 0.153516322031136,
      "estagio3": 0.03771120206752811,
      "over90": 0.02326894236479351,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -5167,7 +5167,7 @@
      "basileia": 0.16531858996047,
      "estagio3": 0.03664290852864874,
      "over90": 0.022088362918450986,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -5538,27 +5538,27 @@
       "lucro": 200617309.8600003,
       "carteira": 10973593435.67,
       "basileia": 0.152097182761206,
-      "estagio3": null,
-      "over90": 0.045440095803243534,
-      "atraso_tipo": "EH"
+      "estagio3": 0.045440095803243534,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 421853881.109999,
       "carteira": 13996098840.34,
       "basileia": 0.169849231077389,
-      "estagio3": null,
-      "over90": 0.03921706959008945,
-      "atraso_tipo": "EH"
+      "estagio3": 0.03921706959008945,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 754524851.3900001,
       "carteira": 17127666080.84,
       "basileia": 0.180659086274649,
-      "estagio3": null,
-      "over90": 0.0217577516204283,
-      "atraso_tipo": "EH"
+      "estagio3": 0.0217577516204283,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -5567,7 +5567,7 @@
       "basileia": 0.13532181647926,
       "estagio3": 0.037398935147120116,
       "over90": 0.030602028861809693,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -5577,7 +5577,7 @@
      "basileia": 0.17217066441111,
      "estagio3": 0.04871029246227358,
      "over90": 0.030823768801935887,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -5586,7 +5586,7 @@
      "basileia": 0.170766177309581,
      "estagio3": 0.047538049571165905,
      "over90": 0.023321214363745017,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -5825,27 +5825,27 @@
       "lucro": 118912795.06,
       "carteira": 6370221870.97,
       "basileia": 0.213256213391663,
-      "estagio3": null,
-      "over90": 0.01687249027525537,
-      "atraso_tipo": "EH"
+      "estagio3": 0.01687249027525537,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 96882851.28999999,
       "carteira": 6969416781.54,
       "basileia": 0.174511402043204,
-      "estagio3": null,
-      "over90": 0.015474733266873004,
-      "atraso_tipo": "EH"
+      "estagio3": 0.015474733266873004,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 90865495.1600001,
       "carteira": 7760719661.01,
       "basileia": 0.165611121682821,
-      "estagio3": null,
-      "over90": 0.012090393547057814,
-      "atraso_tipo": "EH"
+      "estagio3": 0.012090393547057814,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -5854,7 +5854,7 @@
       "basileia": 0.166683618491346,
       "estagio3": 0.017714347026042767,
       "over90": 0.013057491562187433,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -5864,7 +5864,7 @@
      "basileia": 0.156864502332113,
      "estagio3": 0.01689708535439823,
      "over90": 0.010418730151367064,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -5873,7 +5873,7 @@
      "basileia": 0.148915521923023,
      "estagio3": 0.015394029738576362,
      "over90": 0.012789864604843878,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
@@ -6142,27 +6142,27 @@
       "lucro": 13467726478.90002,
       "carteira": 491896940549.89,
       "basileia": 0.139390322721551,
-      "estagio3": null,
-      "over90": 0.09392351053883799,
-      "atraso_tipo": "EH"
+      "estagio3": 0.09392351053883799,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2023",
       "lucro": 9667872283.459911,
       "carteira": 519234692993.72,
       "basileia": 0.145011387481414,
-      "estagio3": null,
-      "over90": 0.08943757746071583,
-      "atraso_tipo": "EH"
+      "estagio3": 0.08943757746071583,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2024",
       "lucro": 13443241895.60999,
       "carteira": 549931161092.8,
       "basileia": 0.142837960928734,
-      "estagio3": null,
-      "over90": 0.06474594998639985,
-      "atraso_tipo": "EH"
+      "estagio3": 0.06474594998639985,
+      "over90": null,
+      "estagio_tipo": "EH"
      },
      {
       "rotulo": "2025",
@@ -6171,7 +6171,7 @@
       "basileia": 0.153637627761873,
       "estagio3": 0.07351034183287154,
       "over90": 0.03731718768226415,
-      "atraso_tipo": "90"
+      "estagio_tipo": "E3"
      }
     ],
     "atual": {
@@ -6181,7 +6181,7 @@
      "basileia": 0.153354410988322,
      "estagio3": 0.077756709882791,
      "over90": 0.04027940110344162,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "anterior": {
      "rotulo": "1º semestre 2025",
@@ -6190,7 +6190,7 @@
      "basileia": 0.15022187338007,
      "estagio3": 0.06648236276016345,
      "over90": 0.03131696340641998,
-     "atraso_tipo": "90"
+     "estagio_tipo": "E3"
     },
     "ate": 202606
    }
