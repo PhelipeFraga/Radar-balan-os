@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-14T06:22-03:00",
+ "atualizado": "2026-10-14T10:27-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -257,7 +257,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 802695179.0300009,
+      "carteira": 25433207168.16,
+      "basileia": 0.15234085443375,
+      "estagio3": 0.04026195648643853,
+      "vencidos": 0.004370787562005712,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 865126000.859998,
+      "carteira": 23922455267.65,
+      "basileia": 0.149449585017999,
+      "estagio3": 0.047833064656355596,
+      "vencidos": 0.026829921750985516,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 991857042.900008,
+      "carteira": 22760842994.93,
+      "basileia": 0.164773835842474,
+      "estagio3": 0.025453097283926807,
+      "vencidos": 0.00842780782167465,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 1019586531.730002,
+      "carteira": 22770068961.66,
+      "basileia": 0.162822129401054,
+      "estagio3": 0.03988980125472196,
+      "vencidos": 0.012317387504921125,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 493191319.149999,
+     "carteira": 21568121678.27,
+     "basileia": 0.161796402088591,
+     "estagio3": 0.039460317029550225,
+     "vencidos": 0.009923332531153286,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 478170480.820001,
+     "carteira": 20166049800.51,
+     "basileia": 0.172952735284047,
+     "estagio3": 0.03857884713414317,
+     "vencidos": 0.016044801498539565,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 27634,
@@ -845,7 +904,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 339458963.03999996,
+      "carteira": 30436117319.4,
+      "basileia": 0.147886412404462,
+      "estagio3": 0.0287247364821471,
+      "vencidos": 0.018573800439585515,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 209449738.96999842,
+      "carteira": 35494580684.65,
+      "basileia": 0.146777509170255,
+      "estagio3": 0.03126626627702851,
+      "vencidos": 0.018796139229396113,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 195724753.45000038,
+      "carteira": 42762797550.07,
+      "basileia": 0.129403079032774,
+      "estagio3": 0.019267290992485742,
+      "vencidos": 0.00808544245809658,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": null,
+      "carteira": null,
+      "basileia": null,
+      "estagio3": 0.054656787762885795,
+      "vencidos": 0.07815471730815605,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": null,
+     "carteira": null,
+     "basileia": null,
+     "estagio3": 0.2797522044586734,
+     "vencidos": 0.10813305809540887,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 532838339.009998,
+     "carteira": 58590720833.25,
+     "basileia": 0.1391422409306,
+     "estagio3": 0.02925256048923068,
+     "vencidos": 0.010263358298977442,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 22616,
@@ -1118,7 +1236,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 7841836970.17,
+      "carteira": 119733197313.28,
+      "basileia": 0.150810083432553,
+      "estagio3": 0.08928206560447152,
+      "vencidos": 0.02464878682481415,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 9924565497.70001,
+      "carteira": 123734467507.07,
+      "basileia": 0.175197129548518,
+      "estagio3": 0.07640386159354863,
+      "vencidos": 0.03850658928254282,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 11789387059.05,
+      "carteira": 156471496476.42,
+      "basileia": 0.157063385668635,
+      "estagio3": 0.039840245972212,
+      "vencidos": 0.0177004372282421,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 15947049594.24,
+      "carteira": 208516447179.84,
+      "basileia": 0.155032580722116,
+      "estagio3": 0.06333953232495493,
+      "vencidos": 0.03083159875377554,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 9471540322.49002,
+     "carteira": 215378010334.36,
+     "basileia": 0.160421550832961,
+     "estagio3": 0.07906904843615632,
+     "vencidos": 0.038972087148469274,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 7219144956.24,
+     "carteira": 186111609557.55,
+     "basileia": 0.161503551081828,
+     "estagio3": 0.06819312213323778,
+     "vencidos": 0.03477891533621268,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 24600,
@@ -1376,7 +1553,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 278637155.840001,
+      "carteira": 23669604301.99,
+      "basileia": 0.135424625890527,
+      "estagio3": 0.05555945083523526,
+      "vencidos": 0.048107791628394785,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 189557910.87000003,
+      "carteira": 23851248234.96,
+      "basileia": 0.132864625882532,
+      "estagio3": 0.044411178698596246,
+      "vencidos": 0.03424499705464146,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 419964744.06,
+      "carteira": 26354591025,
+      "basileia": 0.132104548208101,
+      "estagio3": 0.04529472443590925,
+      "vencidos": 0.04848705560842366,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 560696493.03,
+      "carteira": 21735606047.2,
+      "basileia": 0.132382345846517,
+      "estagio3": 0.05334838766061768,
+      "vencidos": 0.030073696258409943,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 304554828.56,
+     "carteira": 22619522588.82,
+     "basileia": 0.133229295716163,
+     "estagio3": 0.06493141752649828,
+     "vencidos": 0.035116602554353483,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 240131814.42,
+     "carteira": 22797099698.82,
+     "basileia": 0.127258904299183,
+     "estagio3": 0.053276631940606355,
+     "vencidos": 0.03164039511959223,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 20567,
@@ -1614,7 +1850,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 40899625.49999997,
+      "carteira": 5374188220.19,
+      "basileia": 0.113917013097207,
+      "estagio3": 0.06752410088211078,
+      "vencidos": 0.0039722994496920955,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 180878279.81,
+      "carteira": 7424402894.78,
+      "basileia": 0.124051806693169,
+      "estagio3": 0.03204645744046096,
+      "vencidos": 0.004989141957213438,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 258543985.8,
+      "carteira": 9866553060.48,
+      "basileia": 0.145380102058547,
+      "estagio3": 0.03531715748433697,
+      "vencidos": 0.012289095523795436,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 444710617.6,
+      "carteira": 12325515389.26,
+      "basileia": 0.146884091147115,
+      "estagio3": 0.05572952110333289,
+      "vencidos": 0.020919435915888396,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 314465387.87,
+     "carteira": 19519320419.65,
+     "basileia": 0.143133791746668,
+     "estagio3": 0.059948000122858475,
+     "vencidos": 0.024990959844645288,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 156462988.22,
+     "carteira": 11306300639.91,
+     "basileia": 0.140853982314851,
+     "estagio3": 0.0718050007120183,
+     "vencidos": 0.033563478912450415,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 21466,
@@ -1984,7 +2279,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 1122314170.9099998,
+      "carteira": 19757320267.75,
+      "basileia": 0.122934234690129,
+      "estagio3": 0.0332717458792545,
+      "vencidos": 0.009156017069743502,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 1345150693.19,
+      "carteira": 25825034715.48,
+      "basileia": 0.130321570069351,
+      "estagio3": 0.02977724422187578,
+      "vencidos": 0.013305078915464936,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 1132026942.2199998,
+      "carteira": 32341385381.36,
+      "basileia": 0.137230744307485,
+      "estagio3": 0.043435689501717584,
+      "vencidos": 0.01519851697528297,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 1105418282.570002,
+      "carteira": 38591917337.15,
+      "basileia": 0.132801435051273,
+      "estagio3": null,
+      "vencidos": 0.03666399041080619,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 353059516.54,
+     "carteira": 38713829302.5,
+     "basileia": 0.130151044127038,
+     "estagio3": 0.10627143357349449,
+     "vencidos": 0.05369606159041315,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 575159411.050001,
+     "carteira": 33096835807.48,
+     "basileia": 0.140406884460844,
+     "estagio3": 0.07135553556951096,
+     "vencidos": 0.0276084899298552,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 1023,
@@ -2292,7 +2646,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 31354791181.22,
+      "carteira": 891401673776.78,
+      "basileia": 0.16654817585656,
+      "estagio3": 0.05975334390726708,
+      "vencidos": 0.0152766870917292,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 34732431949.79,
+      "carteira": 975463193960.5,
+      "basileia": 0.154729875130962,
+      "estagio3": 0.06584442397016442,
+      "vencidos": 0.016702253512299273,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 36115969234.14,
+      "carteira": 1100566418670.43,
+      "basileia": 0.137549111403841,
+      "estagio3": 0.0697957302804175,
+      "vencidos": 0.019451895655632007,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 18229732202.94993,
+      "carteira": 1116280384685.53,
+      "basileia": 0.151297835513664,
+      "estagio3": 0.08624962896974067,
+      "vencidos": 0.037445030086614636,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 6550624863.77,
+     "carteira": 1128399194489.67,
+     "basileia": 0.139146075963478,
+     "estagio3": 0.09332224624980215,
+     "vencidos": 0.041115507093501945,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 10039499366.24,
+     "carteira": 1126926229250.09,
+     "basileia": 0.141437998015428,
+     "estagio3": 0.08621313093565774,
+     "vencidos": 0.028200375430852364,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 1228,
@@ -2472,7 +2885,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 2015148182.1799989,
+      "carteira": 13413880025.01,
+      "basileia": 0.137226804182584,
+      "estagio3": 0.0514481760238858,
+      "vencidos": 0.016298167584798944,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 2111561729.179999,
+      "carteira": 13200115952.64,
+      "basileia": 0.127968845847208,
+      "estagio3": 0.057785785145237877,
+      "vencidos": 0.022123206707540893,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 2344429571.44,
+      "carteira": 17153023314.11,
+      "basileia": 0.143387755354154,
+      "estagio3": 0.03825880844516595,
+      "vencidos": 0.016121003895711646,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 3200213939.62,
+      "carteira": 18930770928.91,
+      "basileia": 0.140019732882351,
+      "estagio3": 0.07908142527472002,
+      "vencidos": 0.032802927343463247,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 1077598715.68,
+     "carteira": 17779920357.22,
+     "basileia": 0.151372833645037,
+     "estagio3": 0.10884991185959993,
+     "vencidos": 0.04172962427180777,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 1424798153.1,
+     "carteira": 18147582449.07,
+     "basileia": 0.135197389463615,
+     "estagio3": 0.049437674861831246,
+     "vencidos": 0.026081115794943148,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 1120,
@@ -2680,7 +3152,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 75512430.1600002,
+      "carteira": 3991919732.17,
+      "basileia": 0.135675185270924,
+      "estagio3": 0.049809796138844654,
+      "vencidos": 0.027478219819579482,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 47470552.54999983,
+      "carteira": 4539094413.94,
+      "basileia": 0.133885379576225,
+      "estagio3": 0.044988732814243454,
+      "vencidos": 0.024447971116867754,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 146703661.70999992,
+      "carteira": 5165802397.04,
+      "basileia": 0.13941308507183,
+      "estagio3": 0.05354036551004336,
+      "vencidos": 0.03292946309528791,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 151469028.5499999,
+      "carteira": 5419505090.68,
+      "basileia": 0.136236787652684,
+      "estagio3": 0.09964010662647561,
+      "vencidos": 0.05672560340050994,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 62758009.75,
+     "carteira": 5638031156.96,
+     "basileia": 0.133466585643667,
+     "estagio3": 0.10422385763391553,
+     "vencidos": 0.06490836201202224,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 44871783.2199999,
+     "carteira": 5167632309.43,
+     "basileia": 0.126729210665613,
+     "estagio3": 0.1019005782803826,
+     "vencidos": 0.07872315469695171,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 1155,
@@ -2918,7 +3449,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 330042911.57,
+      "carteira": 7939247180.13,
+      "basileia": 0.149574143196718,
+      "estagio3": 0.039849844439974996,
+      "vencidos": 0.008568908494573983,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 370619945.89,
+      "carteira": 9523389008.55,
+      "basileia": 0.14596270355721,
+      "estagio3": 0.036826462657016897,
+      "vencidos": 0.009812965172461408,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 392487112.26,
+      "carteira": 11755654044.16,
+      "basileia": 0.140114499001519,
+      "estagio3": 0.03300041603578433,
+      "vencidos": 0.01022797350661975,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 413435174.83,
+      "carteira": 12215377562.61,
+      "basileia": 0.142842838670087,
+      "estagio3": 0.036373152349289076,
+      "vencidos": 0.011689257358682282,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 226056964.43,
+     "carteira": 12460034861.04,
+     "basileia": 0.148850730223572,
+     "estagio3": 0.044628232020540434,
+     "vencidos": 0.013078226053900827,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 193766584.91,
+     "carteira": 11938363609.45,
+     "basileia": 0.140316023845215,
+     "estagio3": 0.04128455043102657,
+     "vencidos": 0.011241113264062262,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 1171,
@@ -3098,7 +3688,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 179178292.34,
+      "carteira": 10576870653.99,
+      "basileia": 0.161550993144389,
+      "estagio3": 0.02359007341324304,
+      "vencidos": 0.0093410499430405,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 281127985.69,
+      "carteira": 12940911715.55,
+      "basileia": 0.15057925790516,
+      "estagio3": 0.027110697013598254,
+      "vencidos": 0.009074114821361272,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 368068562.89,
+      "carteira": 14282848305.09,
+      "basileia": 0.150856864522771,
+      "estagio3": 0.03611752895181761,
+      "vencidos": 0.010598904119601767,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 200856876.06000012,
+      "carteira": 14982788066.44,
+      "basileia": 0.166574942370242,
+      "estagio3": 0.03796739812163969,
+      "vencidos": 0.016368051963877115,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 100804909.7,
+     "carteira": 15444766128.2,
+     "basileia": 0.167422596474558,
+     "estagio3": 0.04186531599050925,
+     "vencidos": 0.015837136242708966,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 125629953.01,
+     "carteira": 14776501686.92,
+     "basileia": 0.138942695973698,
+     "estagio3": 0.025509876104210506,
+     "vencidos": 0.012711625131870597,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 1210,
@@ -3306,7 +3955,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 714933947.949998,
+      "carteira": 49121869486.07,
+      "basileia": 0.175688597585043,
+      "estagio3": 0.05152650890283759,
+      "vencidos": 0.012163578140404006,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 870103937.920001,
+      "carteira": 53669310501.09,
+      "basileia": 0.167613501591007,
+      "estagio3": 0.05399075793805938,
+      "vencidos": 0.014048398832987639,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 915575669.160001,
+      "carteira": 62058944487.63,
+      "basileia": 0.172072364152171,
+      "estagio3": 0.04185415341800502,
+      "vencidos": 0.013437027355204497,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 1604271943.789998,
+      "carteira": 61214623394.78,
+      "basileia": 0.195447471896882,
+      "estagio3": 0.06161493571635125,
+      "vencidos": 0.02574307888427234,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 546547018.780001,
+     "carteira": 60428053201.93,
+     "basileia": 0.159097945723375,
+     "estagio3": 0.0696301046497444,
+     "vencidos": 0.02942044261230097,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 618879306.819999,
+     "carteira": 60626233500.47,
+     "basileia": 0.161732433771142,
+     "estagio3": 0.05414344460433148,
+     "vencidos": 0.02309162322937745,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 906,
@@ -3609,7 +4317,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 20749799869.08999,
+      "carteira": 656943552094.55,
+      "basileia": 0.148498225534897,
+      "estagio3": 0.09529230970217475,
+      "vencidos": 0.025153848364139593,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 15158182853.73001,
+      "carteira": 628599608164.43,
+      "basileia": 0.15823910401071,
+      "estagio3": 0.1018703075163898,
+      "vencidos": 0.032481854499284264,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 19112590775.89999,
+      "carteira": 719192298557.73,
+      "basileia": 0.147827828888604,
+      "estagio3": 0.07460151848629162,
+      "vencidos": 0.02146682392817885,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 24587442102.0,
+      "carteira": 888483840736.21,
+      "basileia": 0.15777707276213,
+      "estagio3": 0.06596777383911799,
+      "vencidos": 0.024730640609463842,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 12112800045.93,
+     "carteira": 929928148205.21,
+     "basileia": 0.155573261111153,
+     "estagio3": 0.07323347433119891,
+     "vencidos": 0.027431283141319266,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 11877774740.8,
+     "carteira": 822921249290.08,
+     "basileia": 0.154738218299966,
+     "estagio3": 0.07198672982290169,
+     "vencidos": 0.02401324948880665,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 21733,
@@ -3792,7 +4559,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 1872747928.130001,
+      "carteira": 889089390.86,
+      "basileia": null,
+      "estagio3": null,
+      "vencidos": null,
+      "estagio_tipo": null
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 2468163221.08,
+      "carteira": 2449597770.89,
+      "basileia": 0.392954659246215,
+      "estagio3": null,
+      "vencidos": null,
+      "estagio_tipo": null
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 1769542867.19,
+      "carteira": 1566254652.88,
+      "basileia": 0.215700242441822,
+      "estagio3": null,
+      "vencidos": null,
+      "estagio_tipo": null
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 2282358881.99,
+      "carteira": 0.0,
+      "basileia": 0.180386859027056,
+      "estagio3": null,
+      "vencidos": null,
+      "estagio_tipo": null
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 700769233.350001,
+     "carteira": 0.0,
+     "basileia": 0.20352582397617,
+     "estagio3": null,
+     "vencidos": null,
+     "estagio_tipo": null
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 812352550.5,
+     "carteira": 0.0,
+     "basileia": 0.142790979833804,
+     "estagio3": null,
+     "vencidos": null,
+     "estagio_tipo": null
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 20796,
@@ -3968,7 +4794,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 1103405110.849998,
+      "carteira": 48548551128.83,
+      "basileia": 0.128639726962686,
+      "estagio3": 0.036579970894102955,
+      "vencidos": 0.00992883580131708,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 1101928687.82,
+      "carteira": 48229465152.71,
+      "basileia": 0.138661969840972,
+      "estagio3": 0.04355295020639585,
+      "vencidos": 0.02264649865288062,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 1689278940.009999,
+      "carteira": 52850761468.18,
+      "basileia": 0.124962862098853,
+      "estagio3": 0.033883084661717314,
+      "vencidos": 0.009239250088350625,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 1796580645.689999,
+      "carteira": 60597399746.71,
+      "basileia": 0.13338686241899,
+      "estagio3": 0.04206849587955,
+      "vencidos": 0.011948765958200817,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 901620603.120001,
+     "carteira": 63321103247.21,
+     "basileia": 0.128352856440634,
+     "estagio3": 0.04069951976037048,
+     "vencidos": 0.014879760887041321,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 867720753.599999,
+     "carteira": 54623949442.4,
+     "basileia": 0.139260946216547,
+     "estagio3": 0.056487662301482805,
+     "vencidos": 0.017193011411227057,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 19348,
@@ -4226,7 +5111,66 @@
      "fonte": "confirmada",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 30151609856.26,
+      "carteira": 907171119997.55,
+      "basileia": 0.149725640831586,
+      "estagio3": 0.0663151758981968,
+      "vencidos": 0.02097576145849503,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 34470030751.43,
+      "carteira": 908909475482.25,
+      "basileia": 0.170253453913278,
+      "estagio3": 0.06219667102245065,
+      "vencidos": 0.018749809384950664,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 40933627073.45,
+      "carteira": 1023792028428.55,
+      "basileia": 0.165146671731428,
+      "estagio3": 0.043979599865744505,
+      "vencidos": 0.016112692196102285,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 46718890178.8102,
+      "carteira": 1232077361244.98,
+      "basileia": 0.1518384433194,
+      "estagio3": 0.036179049692310956,
+      "vencidos": 0.01875715675692131,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 24670305939.7,
+     "carteira": 1235230835976.66,
+     "basileia": 0.153516322031136,
+     "estagio3": 0.03771120206752811,
+     "vencidos": 0.019977714581693173,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 22630172376.8799,
+     "carteira": 1150011696539.05,
+     "basileia": 0.16531858996047,
+     "estagio3": 0.03664290852864874,
+     "vencidos": 0.018954023044118636,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 1309,
@@ -4586,7 +5530,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 200617309.8600003,
+      "carteira": 10973593435.67,
+      "basileia": 0.152097182761206,
+      "estagio3": 0.045440095803243534,
+      "vencidos": 0.017027868586148152,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 421853881.109999,
+      "carteira": 13996098840.34,
+      "basileia": 0.169849231077389,
+      "estagio3": 0.03921706959008945,
+      "vencidos": 0.021508748422566174,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 754524851.3900001,
+      "carteira": 17127666080.84,
+      "basileia": 0.180659086274649,
+      "estagio3": 0.0217577516204283,
+      "vencidos": 0.01181262292331652,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 755566285.55,
+      "carteira": 22668635445.89,
+      "basileia": 0.13532181647926,
+      "estagio3": 0.037398935147120116,
+      "vencidos": 0.018845668066324976,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 549087948.17,
+     "carteira": 23658775834.71,
+     "basileia": 0.17217066441111,
+     "estagio3": 0.04871029246227358,
+     "vencidos": 0.017812831320756294,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 484494679.92,
+     "carteira": 18196543579.56,
+     "basileia": 0.170766177309581,
+     "estagio3": 0.047538049571165905,
+     "vencidos": 0.0158598764578092,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 20729,
@@ -4814,7 +5817,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 118912795.06,
+      "carteira": 6370221870.97,
+      "basileia": 0.213256213391663,
+      "estagio3": 0.01687249027525537,
+      "vencidos": 0.0030792639371364804,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 96882851.28999999,
+      "carteira": 6969416781.54,
+      "basileia": 0.174511402043204,
+      "estagio3": 0.015474733266873004,
+      "vencidos": 0.0029590366735741526,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 90865495.1600001,
+      "carteira": 7760719661.01,
+      "basileia": 0.165611121682821,
+      "estagio3": 0.012090393547057814,
+      "vencidos": 0.0025991096201218662,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 125409434.3199999,
+      "carteira": 8897844370.36,
+      "basileia": 0.166683618491346,
+      "estagio3": 0.017714347026042767,
+      "vencidos": 0.004468965275804926,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 63847953.4000001,
+     "carteira": 10228933936.22,
+     "basileia": 0.156864502332113,
+     "estagio3": 0.01689708535439823,
+     "vencidos": 0.002861957428286603,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 80025355.52,
+     "carteira": 8658032336.53,
+     "basileia": 0.148915521923023,
+     "estagio3": 0.015394029738576362,
+     "vencidos": 0.0034027892471064354,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   },
   {
    "id": 20532,
@@ -5072,7 +6134,66 @@
      "fonte": "prazo",
      "status": "previsto"
     }
-   ]
+   ],
+   "numeros": {
+    "anos": [
+     {
+      "rotulo": "2022",
+      "lucro": 13467726478.90002,
+      "carteira": 491896940549.89,
+      "basileia": 0.139390322721551,
+      "estagio3": 0.09392351053883799,
+      "vencidos": 0.024031599292617813,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2023",
+      "lucro": 9667872283.459911,
+      "carteira": 519234692993.72,
+      "basileia": 0.145011387481414,
+      "estagio3": 0.08943757746071583,
+      "vencidos": 0.021343127546314705,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2024",
+      "lucro": 13443241895.60999,
+      "carteira": 549931161092.8,
+      "basileia": 0.142837960928734,
+      "estagio3": 0.06474594998639985,
+      "vencidos": 0.021769173675631758,
+      "estagio_tipo": "EH"
+     },
+     {
+      "rotulo": "2025",
+      "lucro": 16394625557.84,
+      "carteira": 553946352182,
+      "basileia": 0.153637627761873,
+      "estagio3": 0.07351034183287154,
+      "vencidos": 0.030709263630606817,
+      "estagio_tipo": "E3"
+     }
+    ],
+    "atual": {
+     "rotulo": "1º semestre 2026",
+     "lucro": 7727558574.50988,
+     "carteira": 551585817453.36,
+     "basileia": 0.153354410988322,
+     "estagio3": 0.077756709882791,
+     "vencidos": 0.03281835004911625,
+     "estagio_tipo": "E3"
+    },
+    "anterior": {
+     "rotulo": "1º semestre 2025",
+     "lucro": 7815123149.70999,
+     "carteira": 528855438053.19,
+     "basileia": 0.15022187338007,
+     "estagio3": 0.06648236276016345,
+     "vencidos": 0.026733449760305544,
+     "estagio_tipo": "E3"
+    },
+    "ate": 202606
+   }
   }
  ]
 }
