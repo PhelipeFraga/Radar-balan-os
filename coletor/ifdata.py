@@ -42,9 +42,11 @@ def _get(caminho, params):
 
 
 def _relatorio(anomes, tipo, rel, codigos):
-    filtro = " or ".join(f"CodInst eq '{c}'" for c in sorted(codigos))
-    return _get("IfDataValores(AnoMes=@AnoMes,TipoInstituicao=@TipoInstituicao,Relatorio=@Relatorio)",
-                {"@AnoMes": anomes, "@TipoInstituicao": tipo, "@Relatorio": f"'{rel}'", "$filter": filtro})
+    params = {"@AnoMes": anomes, "@TipoInstituicao": tipo, "@Relatorio": f"'{rel}'"}
+    if len(codigos) <= 40:  # poucos: filtra no Banco Central; muitos (pares): baixa tudo e filtra aqui
+        params["$filter"] = " or ".join(f"CodInst eq '{c}'" for c in sorted(codigos))
+    linhas = _get("IfDataValores(AnoMes=@AnoMes,TipoInstituicao=@TipoInstituicao,Relatorio=@Relatorio)", params)
+    return [l for l in linhas if l["CodInst"] in codigos] if len(codigos) > 40 else linhas
 
 
 def _codigos(raizes, anomes):
@@ -182,5 +184,45 @@ def coletar(raizes, hoje, cache):
         atual = periodo(raiz, ano_atual, mes_atual, f"{acumulado} {ano_atual}")
         anterior = periodo(raiz, ano_atual - 1, mes_atual, f"{acumulado} {ano_atual - 1}")
         if atual or lista:
-            saida[raiz] = {"anos": lista, "atual": atual, "anterior": anterior, "ate": ultimo}
+            saida[raiz] = {"anos": lista, "atual": atual, "anterior": anterior, "ate": ultimo, "cod": codigos[raiz][0]}
     return saida
+
+
+SEGMENTOS = ("S1", "S2", "S3", "S4")
+
+
+def pares(ultimo):
+    """Todas as instituições do IF.data por segmento do BC (S1 a S4), no último período publicado.
+
+    {"ate": AAAAMM, "segmentos": {"S1": [{"cod", "nome", "lucro", "carteira", "basileia", "estagio3", "vencidos"}]},
+     "segmento_de": {cod: "S1"}}
+    """
+    cad = {c["CodInst"]: c for c in _get("IfDataCadastro(AnoMes=@AnoMes)", {"@AnoMes": ultimo})}
+    resumo = _get("IfDataValores(AnoMes=@AnoMes,TipoInstituicao=@TipoInstituicao,Relatorio=@Relatorio)",
+                  {"@AnoMes": ultimo, "@TipoInstituicao": 1, "@Relatorio": "'1'"})
+    cods = {l["CodInst"] for l in resumo}
+
+    def segmento(cod):
+        c = cad.get(cod) or {}
+        if c.get("Sr"):
+            return c["Sr"]
+        lider = str(c.get("CnpjInstituicaoLider") or "")
+        return (cad.get(lider) or {}).get("Sr")
+
+    todos = {cod: (cod, None) for cod in cods if segmento(cod) in SEGMENTOS}
+    fim = _mes(todos, ultimo)
+    meio = _mes(todos, ultimo // 100 * 100 + 6) if ultimo % 100 > 6 else {}
+    segmentos, segmento_de = {}, {}
+    for cod, v in fim.items():
+        lucro = v["lucro_sem"]
+        if meio:
+            m = meio.get(cod) or {}
+            lucro = lucro + m["lucro_sem"] if lucro is not None and m.get("lucro_sem") is not None else None
+        nome = (cad.get(cod) or {}).get("NomeInstituicao") or cod
+        nome = nome.replace(" - PRUDENCIAL", "").replace("- PRUDENCIAL", "").strip()
+        seg = segmento(cod)
+        segmento_de[cod] = seg
+        segmentos.setdefault(seg, []).append({"cod": cod, "nome": nome, "lucro": lucro, "carteira": v["carteira"],
+                                              "basileia": v["basileia"], "estagio3": v["estagio3"], "vencidos": v["vencidos"]})
+    print(f"  pares: {', '.join(f'{s} {len(segmentos.get(s, []))}' for s in SEGMENTOS)}")
+    return {"ate": ultimo, "segmentos": segmentos, "segmento_de": segmento_de}

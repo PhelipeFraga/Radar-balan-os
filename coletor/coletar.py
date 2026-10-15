@@ -369,14 +369,34 @@ def montar():
             i["eventos"].append(ev)
 
     print("Números no Banco Central (IF.data)...")
-    numeros_bc(inst)
+    pares = numeros_bc(inst)
 
     print("Fintechs na SEC...")
     inst.update(fintechs_sec(periodos))
 
+    # Se o Banco Central estiver fora do ar nesta rodada, mantém os números da rodada anterior.
+    anterior = {}
+    arq = SAIDA / "dados.json"
+    if arq.exists():
+        try:
+            anterior = json.loads(arq.read_text(encoding="utf-8"))
+        except ValueError:
+            anterior = {}
+    if anterior:
+        antigos = {i["id"]: i.get("numeros") for i in anterior.get("instituicoes", [])}
+        mantidos = 0
+        for cod, i in inst.items():
+            if not i.get("numeros") and antigos.get(cod):
+                i["numeros"] = antigos[cod]
+                mantidos += 1
+        if mantidos:
+            print(f"  Banco Central sem resposta: mantidos os números de {mantidos} instituições da rodada anterior")
+        if not pares and anterior.get("pares"):
+            pares = anterior["pares"]
+
     lista = sorted(inst.values(), key=lambda x: x["nome"])
     SAIDA.mkdir(exist_ok=True)
-    dados = {"atualizado": datetime.now(BRT).isoformat(timespec="minutes"), "instituicoes": lista}
+    dados = {"atualizado": datetime.now(BRT).isoformat(timespec="minutes"), "instituicoes": lista, "pares": pares}
     (SAIDA / "dados.json").write_text(json.dumps(dados, ensure_ascii=False, indent=1), encoding="utf-8")
     escrever_agenda(lista)
     print(f"Pronto: {sum(len(i['eventos']) for i in lista)} eventos.")
@@ -395,6 +415,19 @@ def numeros_bc(inst):
     for cod, i in inst.items():
         if series.get(raiz[cod]):
             i["numeros"] = series[raiz[cod]]
+    ultimo = max((v["ate"] for v in series.values()), default=None)
+    if not ultimo:
+        return None
+    try:
+        p = ifdata.pares(ultimo)
+    except Exception as erro:
+        print(f"  pares indisponíveis: {erro}")
+        return None
+    for cod, i in inst.items():
+        n = i.get("numeros")
+        if n and n.get("cod") in p["segmento_de"]:
+            n["segmento"] = p["segmento_de"][n["cod"]]
+    return {"ate": p["ate"], "rotulo": next(iter(series.values()))["atual"]["rotulo"], "segmentos": p["segmentos"]}
 
 
 def fintechs_sec(periodos):
