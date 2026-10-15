@@ -67,6 +67,15 @@ RI = {
     21733: "https://ri.cielo.com.br", 27634: "https://ri.b100sa.com.br",
 }
 
+# Fintechs com sede no exterior: o balanço sai nos EUA (SEC), mas o Banco Central tem os
+# números da operação brasileira. Entram só com Números e Comparar (sem datas nem PDFs).
+FINTECHS_BC = [
+    {"id": 9000001, "nome": "Nubank", "sigla": "NU", "raiz": "18236120", "ri": "https://www.investidores.nu"},
+    {"id": 9000002, "nome": "Inter&Co", "sigla": "IN", "raiz": "00416968", "ri": "https://investors.inter.co"},
+    {"id": 9000003, "nome": "XP", "sigla": "XP", "raiz": "33264668", "ri": "https://investors.xpinc.com"},
+    {"id": 9000004, "nome": "PagBank", "sigla": "PB", "raiz": "08561701", "ri": "https://investors.pagbank.com"},
+]
+
 # Registradas nesses setores, mas sem operação de crédito relevante.
 EXCLUIR = {15717, 6041}  # Cadip, Investimentos Bemge
 
@@ -367,6 +376,11 @@ def montar():
                         ev["status"], ev["saiu_em"], ev["noticia"] = "saiu", HOJE.isoformat(), n
                         print(f"  saiu (notícia): {i['nome']} {ev['periodo']}")
             i["eventos"].append(ev)
+
+    for f in FINTECHS_BC:
+        inst[f["id"]] = {"id": f["id"], "nome": f["nome"], "sigla": f["sigla"], "razao_social": f["nome"],
+                         "cnpj": f["raiz"], "setor": "Fintech · balanço divulgado nos EUA", "orgao": "BC",
+                         "ri": f["ri"], "eventos": []}
 
     print("Números no Banco Central (IF.data)...")
     pares = numeros_bc(inst)

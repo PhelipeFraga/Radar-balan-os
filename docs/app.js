@@ -165,7 +165,7 @@ function atalhos(inst) {
   const predio = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21V10M15 21V10M2 10l10-6 10 6"/></svg>`;
   return `<div class="atalhos">
     ${inst.ri ? `<a href="${esc(inst.ri)}" target="_blank" rel="noopener">${globo}Site de RI</a>` : ""}
-    <a href="${CVM_BUSCA}" target="_blank" rel="noopener">${predio}Ver na CVM</a></div>`;
+    ${inst.orgao === "BC" ? "" : `<a href="${CVM_BUSCA}" target="_blank" rel="noopener">${predio}Ver na CVM</a>`}</div>`;
 }
 
 function capa(inst, extra = "") {
@@ -350,6 +350,14 @@ function blocoComparar(inst) {
     <p class="nota">Pares do mesmo porte no Banco Central (${SEGMENTO[n.segmento] || n.segmento}). Ordenado do maior para o menor; a seta compara com o mesmo período de ${anoAntes || "ano anterior"}.</p>`;
 }
 
+function secaoNumeros(inst) {
+  return `<div style="display:flex;flex-direction:column;gap:2px"><h2>Números</h2>${inst.numeros && inst.numeros.atual ? `<span class="subtitulo">Acumulado do ${inst.numeros.atual.rotulo.replace(/ (\d{4})$/, " de $1")} · vs. mesmo período do ano anterior</span>` : ""}</div>
+    ${inst.numeros && inst.numeros.atual ? `<div style="background:#E6E8EE;border-radius:14px;padding:4px;display:grid;grid-template-columns:1fr 1fr;gap:4px">
+      ${[["inst", "Esta instituição"], ["comparar", "Comparar"]].map(([v, rot]) => `<button data-ver="${v}" aria-pressed="${estado.verNumeros === v}" style="min-height:38px;border-radius:11px;border:none;font-size:13px;cursor:pointer;${estado.verNumeros === v ? "background:#fff;color:var(--texto);font-weight:700;box-shadow:0 2px 6px rgba(20,22,26,.08)" : "background:transparent;color:var(--suave);font-weight:600"}">${rot}</button>`).join("")}
+    </div>` : ""}
+    ${estado.verNumeros === "comparar" && inst.numeros && inst.numeros.atual ? (() => { try { return blocoComparar(inst); } catch (e) { return ""; } })() : blocoNumeros(inst)}`;
+}
+
 function telaInstituicao(id) {
   const inst = estado.dados.instituicoes.find((i) => String(i.id) === id);
   if (!inst) { tela.innerHTML = `${voltar("#instituicoes")}<div class="erro">Instituição não encontrada.</div>`; return; }
@@ -398,7 +406,11 @@ function telaInstituicao(id) {
     </div>`;
   }
 
-  tela.innerHTML = `
+  const fintech = inst.orgao === "BC";
+  tela.innerHTML = fintech ? `
+    ${capa(inst)}
+    <div class="cartao" style="padding:16px 18px"><div style="font-size:13px;color:var(--suave);line-height:1.5">${esc(inst.nome)} divulga o balanço nos EUA. Release e demonstrações ficam no site de RI, no topo. Os números abaixo são da operação brasileira, pelo Banco Central.</div></div>
+    ${secaoNumeros(inst)}` : `
     ${capa(inst)}
     <h2>Próximo balanço</h2>
     ${blocoProximo}
@@ -406,11 +418,7 @@ function telaInstituicao(id) {
     ${ultimo ? blocoBalanco(ultimo, "Os PDFs ainda não chegaram à base da CVM. Veja no site de RI, no topo.") : '<div class="cartao lista"><div class="vazio">Nenhum balanço encontrado.</div></div>'}
     <h2>Balanços anuais anteriores</h2>
     <div class="cartao lista">${anuais.map(linhaAnual).join("")}</div>
-    <div style="display:flex;flex-direction:column;gap:2px"><h2>Números</h2>${inst.numeros && inst.numeros.atual ? `<span class="subtitulo">Acumulado do ${inst.numeros.atual.rotulo.replace(/ (\d{4})$/, " de $1")} · vs. mesmo período do ano anterior</span>` : ""}</div>
-    ${inst.numeros && inst.numeros.atual ? `<div style="background:#E6E8EE;border-radius:14px;padding:4px;display:grid;grid-template-columns:1fr 1fr;gap:4px">
-      ${[["inst", "Esta instituição"], ["comparar", "Comparar"]].map(([v, rot]) => `<button data-ver="${v}" aria-pressed="${estado.verNumeros === v}" style="min-height:38px;border-radius:11px;border:none;font-size:13px;cursor:pointer;${estado.verNumeros === v ? "background:#fff;color:var(--texto);font-weight:700;box-shadow:0 2px 6px rgba(20,22,26,.08)" : "background:transparent;color:var(--suave);font-weight:600"}">${rot}</button>`).join("")}
-    </div>` : ""}
-    ${estado.verNumeros === "comparar" && inst.numeros && inst.numeros.atual ? (() => { try { return blocoComparar(inst); } catch (e) { return ""; } })() : blocoNumeros(inst)}`;
+    ${secaoNumeros(inst)}`;
   const redesenhar = () => { const y = window.scrollY; desenhar(); window.scrollTo(0, y); };
   tela.querySelectorAll("[data-ind]").forEach((b) => b.addEventListener("click", () => { estado.indicador = b.dataset.ind; redesenhar(); }));
   tela.querySelectorAll("[data-ver]").forEach((b) => b.addEventListener("click", () => { estado.verNumeros = b.dataset.ver; redesenhar(); }));
@@ -453,7 +461,7 @@ function telaInstituicoes() {
   const lista = todas.filter((i) => (estado.filtro === "todas" || segue(i.id)) && (!termo || (i.nome + " " + i.razao_social).toLowerCase().includes(termo)));
   const proximo = (i) => {
     const fut = i.eventos.filter((e) => e.status !== "saiu" && dataLocal(e.data) >= h).sort((a, b) => a.data.localeCompare(b.data))[0];
-    if (!fut) return "Sem data prevista";
+    if (!fut) return i.orgao === "BC" ? "Números do Banco Central" : "Sem data prevista";
     return `${fut.fonte === "confirmada" ? "Próximo" : "Prazo"}: ${curta(dataLocal(fut.data))} · ${fut.periodo}`;
   };
   const qtdSegue = todas.filter((i) => segue(i.id)).length;
