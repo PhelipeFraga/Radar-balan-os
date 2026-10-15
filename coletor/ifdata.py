@@ -202,12 +202,18 @@ def pares(ultimo):
                   {"@AnoMes": ultimo, "@TipoInstituicao": 1, "@Relatorio": "'1'"})
     cods = {l["CodInst"] for l in resumo}
 
+    # Segmento por conglomerado: o próprio registro, o líder ou qualquer instituição do grupo que o informe.
+    seg_grupo = {}
+    for c in cad.values():
+        if c.get("Sr"):
+            for chave in (c.get("CodConglomeradoPrudencial"), c.get("CodConglomeradoFinanceiro")):
+                if chave and seg_grupo.get(chave, "S9") > c["Sr"]:
+                    seg_grupo[chave] = c["Sr"]
+
     def segmento(cod):
         c = cad.get(cod) or {}
-        if c.get("Sr"):
-            return c["Sr"]
         lider = str(c.get("CnpjInstituicaoLider") or "")
-        return (cad.get(lider) or {}).get("Sr")
+        return c.get("Sr") or (cad.get(lider) or {}).get("Sr") or seg_grupo.get(cod)
 
     todos = {cod: (cod, None) for cod in cods if segmento(cod) in SEGMENTOS}
     fim = _mes(todos, ultimo)

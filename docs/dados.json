@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-15T06:22-03:00",
+ "atualizado": "2026-10-15T09:56-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -315,7 +315,9 @@
      "vencidos": 0.016044801498539565,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0080312",
+    "segmento": "S3"
    }
   },
   {
@@ -962,7 +964,9 @@
      "vencidos": 0.010263358298977442,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0080288",
+    "segmento": "S3"
    }
   },
   {
@@ -1294,7 +1298,9 @@
      "vencidos": 0.03477891533621268,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0080336",
+    "segmento": "S1"
    }
   },
   {
@@ -1611,7 +1617,9 @@
      "vencidos": 0.03164039511959223,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0080178",
+    "segmento": "S3"
    }
   },
   {
@@ -1908,7 +1916,9 @@
      "vencidos": 0.033563478912450415,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0080374",
+    "segmento": "S3"
    }
   },
   {
@@ -2337,7 +2347,9 @@
      "vencidos": 0.0276084899298552,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0081249",
+    "segmento": "S3"
    }
   },
   {
@@ -2704,7 +2716,9 @@
      "vencidos": 0.028200375430852364,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0080329",
+    "segmento": "S1"
    }
   },
   {
@@ -2943,7 +2957,9 @@
      "vencidos": 0.026081115794943148,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0081593",
+    "segmento": "S2"
    }
   },
   {
@@ -3210,7 +3226,9 @@
      "vencidos": 0.07872315469695171,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0081634",
+    "segmento": "S4"
    }
   },
   {
@@ -3507,7 +3525,9 @@
      "vencidos": 0.011241113264062262,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0080147",
+    "segmento": "S3"
    }
   },
   {
@@ -3746,7 +3766,9 @@
      "vencidos": 0.012711625131870597,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0081586",
+    "segmento": "S3"
    }
   },
   {
@@ -4013,7 +4035,9 @@
      "vencidos": 0.02309162322937745,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0080154",
+    "segmento": "S2"
    }
   },
   {
@@ -4375,7 +4399,9 @@
      "vencidos": 0.02401324948880665,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0080075",
+    "segmento": "S1"
    }
   },
   {
@@ -4617,7 +4643,8 @@
      "vencidos": null,
      "estagio_tipo": null
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0084710"
    }
   },
   {
@@ -4852,7 +4879,9 @@
      "vencidos": 0.017193011411227057,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0081744",
+    "segmento": "S3"
    }
   },
   {
@@ -5169,7 +5198,9 @@
      "vencidos": 0.018954023044118636,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0080099",
+    "segmento": "S1"
    }
   },
   {
@@ -5588,7 +5619,9 @@
      "vencidos": 0.0158598764578092,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0080123",
+    "segmento": "S3"
    }
   },
   {
@@ -5875,7 +5908,9 @@
      "vencidos": 0.0034027892471064354,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0080233",
+    "segmento": "S4"
    }
   },
   {
@@ -6192,9 +6227,3786 @@
      "vencidos": 0.026733449760305544,
      "estagio_tipo": "E3"
     },
-    "ate": 202606
+    "ate": 202606,
+    "cod": "C0080185",
+    "segmento": "S1"
    }
   }
  ],
- "pares": null
+ "pares": {
+  "ate": 202606,
+  "rotulo": "1º semestre 2026",
+  "segmentos": {
+   "S4": [
+    {
+     "cod": "C0084545",
+     "nome": "DEUTSCHE SPARKASSEN LEASING DO BRASIL",
+     "lucro": -3451535.73,
+     "carteira": 612579965.21,
+     "basileia": 0.152074256106379,
+     "estagio3": 0.05060018602965193,
+     "vencidos": 0.030862608329614516
+    },
+    {
+     "cod": "41180092",
+     "nome": "COOPERATIVA DE CRÉDITO - SICREDI EXPANSÃO",
+     "lucro": 25851761.45,
+     "carteira": 1338221935.38,
+     "basileia": 0.259766361057526,
+     "estagio3": 0.050060302811931884,
+     "vencidos": 0.022960726017441098
+    },
+    {
+     "cod": "C0082640",
+     "nome": "SIMPAUL CCVM",
+     "lucro": 2020963.14,
+     "carteira": 0.0,
+     "basileia": 2.11824167986128,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0081799",
+     "nome": "BANCO DIGIMAIS",
+     "lucro": -581405581.28,
+     "carteira": 1491826002.94,
+     "basileia": -0.0461891616143403,
+     "estagio3": 0.28431115135745605,
+     "vencidos": 0.10271050342105759
+    },
+    {
+     "cod": "00106180",
+     "nome": "CENTRAL DAS COOPERATIVAS DE CRÉDITO DOS ESTADOS DE MATO GROSSO, MATO GROSSO DO SUL E DO MUNICÍPIO DE CACOAL/RO - SICOOB CENTRAL RONDON",
+     "lucro": 6958.68000001073,
+     "carteira": 0.0,
+     "basileia": 0.195904212394373,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "81206039",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO RIO PARANÁ - SICREDI RIO PARANÁ",
+     "lucro": 54084246.02,
+     "carteira": 1893981706.83,
+     "basileia": 0.238962998672922,
+     "estagio3": 0.07095264585272357,
+     "vencidos": 0.032426382669431264
+    },
+    {
+     "cod": "C0083728",
+     "nome": "COLUNA S.A. DTVM",
+     "lucro": -3164820.88,
+     "carteira": 0.0,
+     "basileia": 0.0403297331963876,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0084174",
+     "nome": "RB INVESTIMENTOS DTVM",
+     "lucro": null,
+     "carteira": null,
+     "basileia": 0.190026798367934,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0082248",
+     "nome": "EFX CC LTDA.",
+     "lucro": -296238.22,
+     "carteira": 0.0,
+     "basileia": 0.118545183499953,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0087171",
+     "nome": "VERT DTVM",
+     "lucro": 1258649.41,
+     "carteira": 0.0,
+     "basileia": 0.589562669817599,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0084253",
+     "nome": "OSLO CAPITAL DTVM S.A.",
+     "lucro": -3275090.44,
+     "carteira": 0.0,
+     "basileia": 0.139275338007092,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "87779625",
+     "nome": "COOPERATIVA DE CRÉDITO COOPERAÇÃO - SICREDI COOPERAÇÃO",
+     "lucro": 28129629.16,
+     "carteira": 978352678.49,
+     "basileia": 0.261192276366603,
+     "estagio3": 0.07991668896932826,
+     "vencidos": 0.040776378817341606
+    },
+    {
+     "cod": "C0086622",
+     "nome": "S3 CACEIS BRASIL DTVM",
+     "lucro": 110534996.91,
+     "carteira": 0.0,
+     "basileia": 0.650375417283789,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0085520",
+     "nome": "OXY CH",
+     "lucro": 4425605.14,
+     "carteira": 319197926.67,
+     "basileia": 0.209859649411024,
+     "estagio3": 0.09727271417893257,
+     "vencidos": 0.007107381689738088
+    },
+    {
+     "cod": "C0083553",
+     "nome": "MIDWAY S.A. - SCFI",
+     "lucro": 53482328.5300006,
+     "carteira": 4911403782.93,
+     "basileia": 0.182249400625883,
+     "estagio3": 0.2816505575577015,
+     "vencidos": 0.29080084425959124
+    },
+    {
+     "cod": "C0085960",
+     "nome": "CELCOIN IP",
+     "lucro": null,
+     "carteira": null,
+     "basileia": 0.173464380922787,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0081294",
+     "nome": "BRAZA BANK BCO CÂMBIO",
+     "lucro": 5413609.11000001,
+     "carteira": 0.0,
+     "basileia": 0.148215950279794,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0084576",
+     "nome": "BANCO KOMATSU DO BRASIL",
+     "lucro": 19733440.74,
+     "carteira": 1238078561.89,
+     "basileia": 0.326220119192784,
+     "estagio3": 0.02565441390884792,
+     "vencidos": 0.007862741939742096
+    },
+    {
+     "cod": "92555150",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DA REGIÃO ALTOS DA SERRA - SICREDI ALTOS DA SERRA RS/SC",
+     "lucro": 51432755.95,
+     "carteira": 3269864842.88,
+     "basileia": 0.177017307868598,
+     "estagio3": 0.07427742262640147,
+     "vencidos": 0.038304445087628196
+    },
+    {
+     "cod": "C0086086",
+     "nome": "INCO SEP",
+     "lucro": 268845.560000001,
+     "carteira": 0.0,
+     "basileia": 0.810463322556551,
+     "estagio3": 0.003815850477993673,
+     "vencidos": 0.00632087146516158
+    },
+    {
+     "cod": "C0080264",
+     "nome": "SOCIETE GENERALE",
+     "lucro": 59340243.4399988,
+     "carteira": 124565733.07,
+     "basileia": 0.300915335548572,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "70119680",
+     "nome": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DO NORDESTE - CENTRAL SICREDI NORDESTE",
+     "lucro": 747244.679999996,
+     "carteira": 0.0,
+     "basileia": 0.532239451626786,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0081397",
+     "nome": "BCO CATERPILLAR S.A.",
+     "lucro": 21772345.4999999,
+     "carteira": 5699352023.26,
+     "basileia": 0.192009586091874,
+     "estagio3": 0.030573352937185216,
+     "vencidos": 0.011153691341271506
+    },
+    {
+     "cod": "C0080666",
+     "nome": "HAITONG",
+     "lucro": -20340276.44,
+     "carteira": 206228174.3,
+     "basileia": 0.238162138490062,
+     "estagio3": 0.15271021416977604,
+     "vencidos": 0.025205799670797818
+    },
+    {
+     "cod": "C0085427",
+     "nome": "CREDIARE CFI",
+     "lucro": -1901120.64999999,
+     "carteira": 297422914.78,
+     "basileia": 0.235662252962301,
+     "estagio3": 0.33393884228078463,
+     "vencidos": 0.2654586086906168
+    },
+    {
+     "cod": "C0080824",
+     "nome": "GAZINCRED SCFI",
+     "lucro": null,
+     "carteira": null,
+     "basileia": null,
+     "estagio3": 0.16490337970462943,
+     "vencidos": 0.13191759875756318
+    },
+    {
+     "cod": "C0086859",
+     "nome": "GLOBAL INV SERVICES DTVM",
+     "lucro": -1675380.81,
+     "carteira": 0.0,
+     "basileia": 0.14457516356213,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0082970",
+     "nome": "CSILATINA A.M. S.A.",
+     "lucro": 25385785.28,
+     "carteira": 513699255.5,
+     "basileia": 0.271805954672886,
+     "estagio3": 0.012256261277189383,
+     "vencidos": 0.0014627460509545793
+    },
+    {
+     "cod": "10736214",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DO PLANALTO CENTRAL - SICREDI PLANALTO CENTRAL",
+     "lucro": -11297275.85,
+     "carteira": 2316099636.54,
+     "basileia": 0.162094608059213,
+     "estagio3": 0.1566946044317446,
+     "vencidos": 0.08333150115923953
+    },
+    {
+     "cod": "C0081225",
+     "nome": "BANCO B3",
+     "lucro": 38365443.82,
+     "carteira": 0.0,
+     "basileia": 1.39874590435106,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0086952",
+     "nome": "CATÁLISE DTVM PRUDENCIAL",
+     "lucro": 303334.89,
+     "carteira": 0.0,
+     "basileia": 0.21852122407216,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0087858",
+     "nome": "ATUAL CC",
+     "lucro": -161850.42,
+     "carteira": 0.0,
+     "basileia": 0.277654687320095,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0080862",
+     "nome": "EBURY BANCO DE CÂMBIO",
+     "lucro": 13167031.48,
+     "carteira": 0.0,
+     "basileia": 0.155496131292269,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "04243780",
+     "nome": "CENTRAL SICOOB UNI DE COOPERATIVAS DE CRÉDITO",
+     "lucro": 28639669.51,
+     "carteira": 171308061.08,
+     "basileia": 0.139249155070104,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "97489280",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO INTEGRAÇÃO BAHIA - SICREDI INTEGRAÇÃO BAHIA - BA",
+     "lucro": 792826.890000006,
+     "carteira": 156449649.4,
+     "basileia": 0.262560169600715,
+     "estagio3": 0.10466710204376815,
+     "vencidos": 0.04829434550401565
+    },
+    {
+     "cod": "C0081177",
+     "nome": "AF ESTADO DE PERNAMBUCO S.A.",
+     "lucro": -1308138.6,
+     "carteira": 21006887.28,
+     "basileia": 1.28288348216462,
+     "estagio3": 0.11061110429818236,
+     "vencidos": 0.0332249390535529
+    },
+    {
+     "cod": "03566655",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO CELEIRO CENTRO OESTE - SICREDI CELEIRO CENTRO OESTE",
+     "lucro": 17860837.19,
+     "carteira": 2543543974.08,
+     "basileia": 0.206711388122511,
+     "estagio3": 0.11148069985302039,
+     "vencidos": 0.08602995856006793
+    },
+    {
+     "cod": "78414067",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO VANGUARDA - SICREDI VANGUARDA PR/SP/RJ",
+     "lucro": 164126517.62,
+     "carteira": 6820737009.76,
+     "basileia": 0.217286092682673,
+     "estagio3": 0.06476770762792394,
+     "vencidos": 0.03515015540381178
+    },
+    {
+     "cod": "C0083539",
+     "nome": "BANCO AFINZ BM",
+     "lucro": -93370127.56,
+     "carteira": 1383534318.74,
+     "basileia": 0.0868406886748513,
+     "estagio3": 0.4158706429506775,
+     "vencidos": 0.37746000772487537
+    },
+    {
+     "cod": "C0088352",
+     "nome": "HARMOS SCFI",
+     "lucro": -2692574.52,
+     "carteira": 105788.45,
+     "basileia": null,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "34148882",
+     "nome": "COOPERATIVA CENTRAL DE CRÉDITO DA BAHIA LTDA - SICOOB CENTRAL BA",
+     "lucro": 8344358.11000001,
+     "carteira": 15897406.84,
+     "basileia": 0.138352471069378,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0082798",
+     "nome": "RJI CTVM",
+     "lucro": 371090.959999997,
+     "carteira": 0.0,
+     "basileia": 0.174850958782095,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0081036",
+     "nome": "AG. FOMENTO ESTADO DE RORAIMA",
+     "lucro": null,
+     "carteira": null,
+     "basileia": 0.8322423267774803,
+     "estagio3": 0.47374966587715245,
+     "vencidos": 0.3686272692370428
+    },
+    {
+     "cod": "C0082918",
+     "nome": "GERAL CCVM LTDA",
+     "lucro": 580566.95,
+     "carteira": 0.0,
+     "basileia": 0.209823632078596,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "04237413",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO NATIVA - SICREDI NATIVA PE/BA",
+     "lucro": 6068241.40999999,
+     "carteira": 256475396.74,
+     "basileia": 0.225823762051661,
+     "estagio3": 0.06319053717692945,
+     "vencidos": 0.03647909992565902
+    },
+    {
+     "cod": "C0084040",
+     "nome": "OLIVEIRA TRUST DTVM S.A.",
+     "lucro": 51311652.86,
+     "carteira": 0.0,
+     "basileia": 0.135805013122992,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0087243",
+     "nome": "ACTUAL DTVM",
+     "lucro": 531407.230000001,
+     "carteira": 0.0,
+     "basileia": null,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "89468565",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DA REGIÃO DA PRODUÇÃO - SICREDI REGIÃO DA PRODUÇÃO RS/SC/MG",
+     "lucro": -21007473.88,
+     "carteira": 2649064800.34,
+     "basileia": 0.157323674561319,
+     "estagio3": 0.08673039542862235,
+     "vencidos": 0.034901853188950525
+    },
+    {
+     "cod": "C0082420",
+     "nome": "REMITLY CC LTDA.",
+     "lucro": 1436074.42,
+     "carteira": 0.0,
+     "basileia": 1.72955994012589,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "70431630",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO UNIVALES - SICREDI UNIVALES MT/RO",
+     "lucro": 11184135.78,
+     "carteira": 2093168692.26,
+     "basileia": 0.245155736701013,
+     "estagio3": 0.11620046612288239,
+     "vencidos": 0.07434581405701854
+    },
+    {
+     "cod": "C0088510",
+     "nome": "BANCO SANY BRASIL",
+     "lucro": 124829.32,
+     "carteira": 46411530.77,
+     "basileia": 1.90375961108397,
+     "estagio3": 0.0,
+     "vencidos": 0.00017213125134353592
+    },
+    {
+     "cod": "C0084002",
+     "nome": "VIC DTVM S/A",
+     "lucro": 5234984.45,
+     "carteira": 0.0,
+     "basileia": 0.321201732701505,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "04886317",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DOS INTEGRANTES DA MAGISTRATURA E DO MINISTÉRIO PÚBLICO NO ESTADO DO PARANÁ - SICREDI CREDJURIS",
+     "lucro": 1573153.96,
+     "carteira": 45433295.22,
+     "basileia": 0.345468149104308,
+     "estagio3": 0.004771302521453778,
+     "vencidos": 0.0014852085802611625
+    },
+    {
+     "cod": "C0081775",
+     "nome": "BANCO RNX S.A.",
+     "lucro": -378727.790000001,
+     "carteira": 50266537.02,
+     "basileia": 0.251108585530945,
+     "estagio3": 0.21642741042776129,
+     "vencidos": 0.14775958746907916
+    },
+    {
+     "cod": "C0085197",
+     "nome": "HEDGEPOINT GLOBAL MARKETS DTVM",
+     "lucro": 1049388.97,
+     "carteira": 0.0,
+     "basileia": 0.220190322286272,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "81723108",
+     "nome": "CREDICOAMO CREDITO RURAL COOPERATIVA",
+     "lucro": 150861384.54,
+     "carteira": 2112845553.63,
+     "basileia": 0.717494706121204,
+     "estagio3": 0.048384344711272925,
+     "vencidos": 0.07181403016297845
+    },
+    {
+     "cod": "88894548",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO UNIÃO - SICREDI UNIAO RS/ES",
+     "lucro": 101194526.07,
+     "carteira": 6280671391.21,
+     "basileia": 0.165484305414194,
+     "estagio3": 0.05314808269520797,
+     "vencidos": 0.02458118410065637
+    },
+    {
+     "cod": "C0084617",
+     "nome": "LIMINE TRUST DTVM",
+     "lucro": 7163071.52,
+     "carteira": 0.0,
+     "basileia": 0.574920757085975,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "67960229",
+     "nome": "COOPERATIVA DE CRÉDITO CREDIGUAÇU - SICOOB CREDIGUAÇU",
+     "lucro": 21287081.16,
+     "carteira": 800711326.84,
+     "basileia": 0.266505315686751,
+     "estagio3": 0.11462793922587569,
+     "vencidos": 0.05270839806209539
+    },
+    {
+     "cod": "C0080941",
+     "nome": "GENIAL",
+     "lucro": -72542443.38,
+     "carteira": 349554182.06,
+     "basileia": 0.0781511687658605,
+     "estagio3": 0.04969127586299811,
+     "vencidos": 0.06963244682477969
+    },
+    {
+     "cod": "C0084057",
+     "nome": "INTESA SANPAOLO BRASIL S.A.",
+     "lucro": 40983196.6100001,
+     "carteira": 1049271274.34,
+     "basileia": 0.3901828025344,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0086275",
+     "nome": "MAREE IP",
+     "lucro": 190085620.01,
+     "carteira": 20025066.3,
+     "basileia": 0.291217323305175,
+     "estagio3": 0.0017755887018127247,
+     "vencidos": 0.0062387229911491735
+    },
+    {
+     "cod": "C0080305",
+     "nome": "PEFISA S.A.",
+     "lucro": 5622540.10000002,
+     "carteira": 3146654082.96,
+     "basileia": 0.121096585219674,
+     "estagio3": 0.32003720949636044,
+     "vencidos": 0.3287945402996653
+    },
+    {
+     "cod": "C0081359",
+     "nome": "BANCO PORTO REAL DE INVEST.S.A",
+     "lucro": 576549.21,
+     "carteira": 8506909.01,
+     "basileia": 2.1036399393336,
+     "estagio3": 0.0,
+     "vencidos": 0.016283941233294866
+    },
+    {
+     "cod": "C0086392",
+     "nome": "WNT CAPITAL DTVM",
+     "lucro": 563027.46,
+     "carteira": 0.0,
+     "basileia": 1.81272687338936,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "79457883",
+     "nome": "COOPERATIVA DE CRÉDITO E INVESTIMENTO DE LIVRE ADMISSÃO AGROEMPRESARIAL - SICREDI AGROEMPRESARIAL PR/SP",
+     "lucro": 56092296.73,
+     "carteira": 2405513223.73,
+     "basileia": 0.222752343661504,
+     "estagio3": 0.07656812000127329,
+     "vencidos": 0.03892039586081061
+    },
+    {
+     "cod": "C0085568",
+     "nome": "GREEN ALTERNATIVE INVESTMENTS DTVM",
+     "lucro": -92228.9999999998,
+     "carteira": 0.0,
+     "basileia": 0.26724447917658,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0084239",
+     "nome": "OM DTVM LTDA",
+     "lucro": 1984720.72,
+     "carteira": 0.0,
+     "basileia": 0.264984167342474,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "81099491",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO VALE DO PIQUIRI ABCD - SICREDI VALE DO PIQUIRI ABCD PR/SP",
+     "lucro": 15132263.5300002,
+     "carteira": 7916771315.85,
+     "basileia": 0.151744770507985,
+     "estagio3": 0.07310416483448717,
+     "vencidos": 0.03349610662165975
+    },
+    {
+     "cod": "90497256",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO INTERESTADOS - SICREDI INTERESTADOS",
+     "lucro": 67567358.31,
+     "carteira": 2414153796.09,
+     "basileia": 0.218199462689945,
+     "estagio3": 0.07239095299905997,
+     "vencidos": 0.05913671152835813
+    },
+    {
+     "cod": "03212823",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DOS MILITARES ESTADUAIS E SERVIDORES DA SEGURANÇA DO ESTADO DO RIO GRANDE DO SUL - SICREDI TRADIÇÃO RS",
+     "lucro": 1082849.73,
+     "carteira": 76651375.59,
+     "basileia": 0.256919298576912,
+     "estagio3": 0.03697855853108142,
+     "vencidos": 0.015288057629176136
+    },
+    {
+     "cod": "87900601",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO BOTUCARAÍ - SICREDI BOTUCARAÍ RS/MG",
+     "lucro": 38049230.54,
+     "carteira": 2440660675.03,
+     "basileia": 0.163379031125821,
+     "estagio3": 0.05990854948006687,
+     "vencidos": 0.02507569702628244
+    },
+    {
+     "cod": "72257793",
+     "nome": "SICREDI VEREDAS COOPERATIVA DE CREDITO",
+     "lucro": 32068836.1,
+     "carteira": 698461175.15,
+     "basileia": 0.337998388173375,
+     "estagio3": 0.04994183184786827,
+     "vencidos": 0.026640858139991754
+    },
+    {
+     "cod": "81607046",
+     "nome": "COOPERATIVA DE CRÉDITO DE LIVRE ADMISSÃO DE ASSOCIADOS SÃO MIGUEL DO OESTE - SICOOB SÃO MIGUEL SC/PR/RS",
+     "lucro": 90156364.5699999,
+     "carteira": 4669445280.76,
+     "basileia": 0.151029365634122,
+     "estagio3": 0.07076637315292225,
+     "vencidos": 0.018059205575336204
+    },
+    {
+     "cod": "88530142",
+     "nome": "COOPERATIVA DE CRÉDITO E INVESTIMENTO LIBERDADE - SICREDI LIBERDADE",
+     "lucro": 27996089.71,
+     "carteira": 1032279392.21,
+     "basileia": 0.28564810794525197,
+     "estagio3": 0.05109488121943495,
+     "vencidos": 0.02895572403015249
+    },
+    {
+     "cod": "C0082987",
+     "nome": "HPE FINANCIAL SERVICES AM",
+     "lucro": 54469531,
+     "carteira": 1820850216.87,
+     "basileia": 0.894610019255247,
+     "estagio3": 0.006635539495933344,
+     "vencidos": 0.00555265413305001
+    },
+    {
+     "cod": "C0083759",
+     "nome": "NOVA FUTURA CTVM LTDA",
+     "lucro": -1056316.8,
+     "carteira": 0.0,
+     "basileia": 0.256814220437844,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "02398976",
+     "nome": "SISPRIME DO BRASIL - COOPERATIVA DE CRÉDITO",
+     "lucro": 166110180.8,
+     "carteira": 5767254175.95,
+     "basileia": 0.225255555914128,
+     "estagio3": 0.06956168925600058,
+     "vencidos": 0.02087632841223376
+    },
+    {
+     "cod": "04463602",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DA REGIÃO CENTRO OESTE PAULISTA - SICREDI CENTRO OESTE PAULISTA",
+     "lucro": 12411240.82,
+     "carteira": 1240905226.62,
+     "basileia": 0.167749720641266,
+     "estagio3": 0.0882380862130399,
+     "vencidos": 0.03191146218376109
+    },
+    {
+     "cod": "03793242",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DO SUL DO ESTADO DE SANTA CATARINA - SICREDI SUL SC",
+     "lucro": 30620896.67,
+     "carteira": 1931981350.25,
+     "basileia": 0.164214366054858,
+     "estagio3": 0.0745360447591939,
+     "vencidos": 0.03431879134360399
+    },
+    {
+     "cod": "67096909",
+     "nome": "COOPERATIVA DE CRÉDITO CREDICOCAPEC",
+     "lucro": 24708295.44,
+     "carteira": 1006355581.46,
+     "basileia": 0.27076611284394,
+     "estagio3": 0.06829497121228759,
+     "vencidos": 0.014070457322124162
+    },
+    {
+     "cod": "C0087119",
+     "nome": "EQI INVESTIMENTOS CTVM",
+     "lucro": 55820270.46,
+     "carteira": 0.0,
+     "basileia": 0.224440005516365,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "26408161",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DO CENTRO SUL DO MATO GROSSO DO SUL E BAHIA - SICREDI CENTRO-SUL MS/BA",
+     "lucro": -11290373.8800001,
+     "carteira": 5865696267.59,
+     "basileia": 0.190282031460631,
+     "estagio3": 0.12900070806904368,
+     "vencidos": 0.07583716325631171
+    },
+    {
+     "cod": "C0081335",
+     "nome": "BCO INBURSA S.A.",
+     "lucro": 50460553.2799999,
+     "carteira": 13506814304.77,
+     "basileia": 0.13421239284192,
+     "estagio3": 0.012272380177713758,
+     "vencidos": 0.0018088153411119114
+    },
+    {
+     "cod": "C0087061",
+     "nome": "MERCADO BITCOIN",
+     "lucro": -14192076.4,
+     "carteira": 9215485.83,
+     "basileia": 0.611494784379889,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0081926",
+     "nome": "INTERCAM CC LTDA",
+     "lucro": -685766.900000001,
+     "carteira": 0.0,
+     "basileia": 0.106780644171855,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "04853988",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO BANDEIRANTES - SICREDI BANDEIRANTES SP",
+     "lucro": 1217858.47,
+     "carteira": 168485341.25,
+     "basileia": 0.222892030593956,
+     "estagio3": 0.09714016075104498,
+     "vencidos": 0.04414578571360564
+    },
+    {
+     "cod": "14568725",
+     "nome": "COOPERATIVA CENTRAL DE ECONOMIA E CRÉDITO SICOOB UNIMAIS RIO LTDA.",
+     "lucro": 12663126.74,
+     "carteira": 29297732.95,
+     "basileia": 0.120606661111355,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0081603",
+     "nome": "BCO KDB BRASIL S.A.",
+     "lucro": 25873645.6900001,
+     "carteira": 734756609.45,
+     "basileia": 0.400746186897855,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0081957",
+     "nome": "FOURTRADE COR. DE CAMBIO LTDA",
+     "lucro": 317569.71,
+     "carteira": 0.0,
+     "basileia": 0.121991744245254,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0081696",
+     "nome": "BCO TRICURY S.A.",
+     "lucro": 18534351.99,
+     "carteira": 317009620.52,
+     "basileia": 0.459454780419526,
+     "estagio3": 0.07466873208646889,
+     "vencidos": 0.08411245576857418
+    },
+    {
+     "cod": "C0082547",
+     "nome": "ATIVA S.A. CTCV",
+     "lucro": -366652.519999996,
+     "carteira": 0.0,
+     "basileia": 0.14511880450943,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "32995755",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DO SUDOESTE MT/PA - SICREDI SUDOESTE MT/PA",
+     "lucro": 74919699.0499999,
+     "carteira": 5139880119.23,
+     "basileia": 0.18664662750187,
+     "estagio3": 0.1162380951271179,
+     "vencidos": 0.06882293210565323
+    },
+    {
+     "cod": "81706616",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO VALOR SUSTENTÁVEL - SICREDI VALOR SUSTENTÁVEL PR/SP",
+     "lucro": -11001672.56,
+     "carteira": 1483649068.98,
+     "basileia": 0.143828333356256,
+     "estagio3": 0.06097326503226285,
+     "vencidos": 0.04115484852722175
+    },
+    {
+     "cod": "79086997",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO PARANAPANEMA SERRANA PR/SP/RJ - SICREDI PARANAPANEMA SERRANA PR/SP/RJ",
+     "lucro": 10378964.14,
+     "carteira": 1903319411.24,
+     "basileia": 0.147022457845625,
+     "estagio3": 0.09112211711121312,
+     "vencidos": 0.039193662881081316
+    },
+    {
+     "cod": "C0082619",
+     "nome": "TULLETT PREBON BRASIL S.A. CTVM",
+     "lucro": 5480041.03,
+     "carteira": 0.0,
+     "basileia": 0.346782154402747,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "07070495",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO EMPREENDEDORES - SICREDI EMPREENDEDORES PR",
+     "lucro": 3544145.02,
+     "carteira": 128231976.96,
+     "basileia": 0.220503914152237,
+     "estagio3": 0.0777225647207944,
+     "vencidos": 0.043151642703357154
+    },
+    {
+     "cod": "C0081823",
+     "nome": "BCO WOORI BANK DO BRASIL S.A.",
+     "lucro": -8463182.15999999,
+     "carteira": 32399582.92,
+     "basileia": 0.513962488069859,
+     "estagio3": 0.0,
+     "vencidos": 0.0008507086739358399
+    },
+    {
+     "cod": "03046391",
+     "nome": "UNIPRIME CENTRAL NACIONAL - CENTRAL NACIONAL DE COOPERATIVA DE CREDITO",
+     "lucro": -737172.260000002,
+     "carteira": 0.0,
+     "basileia": 0.141968883657444,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0084538",
+     "nome": "VORTX DTVM",
+     "lucro": 36456984.44,
+     "carteira": 0.0,
+     "basileia": 0.289289218443496,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0080783",
+     "nome": "BANCO TRAVELEX",
+     "lucro": 3788637.42999998,
+     "carteira": 21648988.45,
+     "basileia": 0.128764598399594,
+     "estagio3": 0.12437131425170607,
+     "vencidos": 0.20743273361699976
+    },
+    {
+     "cod": "C0084734",
+     "nome": "AL5 S.A. SCFI",
+     "lucro": -1540480.81,
+     "carteira": 357563209.27,
+     "basileia": 0.161391088722478,
+     "estagio3": 0.06375572076181578,
+     "vencidos": 0.03881926788119207
+    },
+    {
+     "cod": "C0084882",
+     "nome": "QI SCD",
+     "lucro": 214159408.87,
+     "carteira": 202040134,
+     "basileia": 0.238786869838606,
+     "estagio3": 0.9729159154144115,
+     "vencidos": 0.00959402728267004
+    },
+    {
+     "cod": "73113243",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DE ARARAQUARA E REGIÃO - SICREDI MORADA DO SOL SP",
+     "lucro": 7057700.40000001,
+     "carteira": 713183137.77,
+     "basileia": 0.181143721214163,
+     "estagio3": 0.08292786212915969,
+     "vencidos": 0.03755168950729717
+    },
+    {
+     "cod": "C0086770",
+     "nome": "KANASTRA FINANCEIRA CFI",
+     "lucro": 1769389.71,
+     "carteira": 42728.55,
+     "basileia": 1.64997732684355,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "87784088",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO SUL MINAS DO RIO GRANDE DO SUL E MINAS GERAIS - SICREDI SUL MINAS RS/MG.",
+     "lucro": 10536246.37,
+     "carteira": 1911625286.37,
+     "basileia": 0.148553351723687,
+     "estagio3": 0.04768723141722859,
+     "vencidos": 0.022739114314358013
+    },
+    {
+     "cod": "C0080518",
+     "nome": "OPPORTUNITY",
+     "lucro": 1961343.53,
+     "carteira": 0.0,
+     "basileia": 0.569162335139111,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "07206072",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO NOVOS HORIZONTES - SICREDI NOVOS HORIZONTES PR/SP/RJ",
+     "lucro": 56029191.98,
+     "carteira": 2511047725.8,
+     "basileia": 0.190176486303155,
+     "estagio3": 0.0422069167617332,
+     "vencidos": 0.018881226548609947
+    },
+    {
+     "cod": "C0085702",
+     "nome": "NEON PAGAMENTOS IP",
+     "lucro": 42406262.4899998,
+     "carteira": 6531514390.52,
+     "basileia": 0.126245737766821,
+     "estagio3": 0.31447906676307774,
+     "vencidos": 0.2646763252352462
+    },
+    {
+     "cod": "C0081115",
+     "nome": "AF PARANÁ",
+     "lucro": 178193444.23,
+     "carteira": 1705317721.61,
+     "basileia": 1.21378488548929,
+     "estagio3": 0.044801356318406906,
+     "vencidos": 0.009642684471420753
+    },
+    {
+     "cod": "91586982",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO SICREDI PIONEIRA RS - SICREDI PIONEIRA RS",
+     "lucro": 93377227.3300001,
+     "carteira": 6209919873.95,
+     "basileia": 0.177213276870814,
+     "estagio3": 0.0627163745724283,
+     "vencidos": 0.025622115991532673
+    },
+    {
+     "cod": "90729369",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO REGIÕES DAS CULTURAS - SICREDI DAS CULTURAS RS/MG",
+     "lucro": 46265740.1,
+     "carteira": 2104047269.47,
+     "basileia": 0.243768675124606,
+     "estagio3": 0.0938937626458432,
+     "vencidos": 0.047601478428693805
+    },
+    {
+     "cod": "04484490",
+     "nome": "COOPERATIVA DE CRÉDITO POUPANÇA E INVESTIMENTO DA ALTA NOROESTE DE SÃO PAULO - SICREDI ALTA NOROESTE SP",
+     "lucro": -2348067.35,
+     "carteira": 587887631.19,
+     "basileia": 0.193255025244589,
+     "estagio3": 0.12488840252182937,
+     "vencidos": 0.06382523336148836
+    },
+    {
+     "cod": "C0085977",
+     "nome": "ACTIVTRADES CCTVM",
+     "lucro": -385913.93,
+     "carteira": 0.0,
+     "basileia": 0.384295008371401,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0080927",
+     "nome": "CAIXA GERAL",
+     "lucro": -10819119.9300001,
+     "carteira": 754119792.21,
+     "basileia": 0.21518096447827,
+     "estagio3": 0.28481800896305687,
+     "vencidos": 0.14678053011231482
+    },
+    {
+     "cod": "C0083845",
+     "nome": "TRADERS DTVM",
+     "lucro": -7173571.12,
+     "carteira": 0.0,
+     "basileia": 2.35318300935026,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0080790",
+     "nome": "FINAXIS",
+     "lucro": -3414387.19000001,
+     "carteira": 0.0,
+     "basileia": 0.254620740405124,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0087786",
+     "nome": "URBANO SCFI",
+     "lucro": 4830757.77,
+     "carteira": 0.0,
+     "basileia": 0.535054892150968,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0080233",
+     "nome": "PARANÁ BANCO",
+     "lucro": 63847953.4000001,
+     "carteira": 10228933936.22,
+     "basileia": 0.156864502332113,
+     "estagio3": 0.01689708535439823,
+     "vencidos": 0.002861957428286603
+    },
+    {
+     "cod": "00966246",
+     "nome": "COOPERATIVA DE CREDITO CREDICERIPA - SICOOB CREDICERIPA",
+     "lucro": 16433696.36,
+     "carteira": 904588689.17,
+     "basileia": 0.219482025532573,
+     "estagio3": 0.09315191247966974,
+     "vencidos": 0.03497461837767585
+    },
+    {
+     "cod": "C0083632",
+     "nome": "CREFISA S.A. CFI",
+     "lucro": 91266603.6300009,
+     "carteira": 4221079531.53,
+     "basileia": 0.49082613847219,
+     "estagio3": 0.4577582651367284,
+     "vencidos": 0.3758735239231093
+    },
+    {
+     "cod": "C0082516",
+     "nome": "AMARIL FRANKLIN CTV LTDA",
+     "lucro": -273442.76,
+     "carteira": 0.0,
+     "basileia": 0.741222044744263,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "44469161",
+     "nome": "COOPERATIVA DE CRÉDITO PRO",
+     "lucro": 27160196.06,
+     "carteira": 1228231522.84,
+     "basileia": 0.227298693098446,
+     "estagio3": 0.06972785412010002,
+     "vencidos": 0.017249513594076442
+    },
+    {
+     "cod": "C0083670",
+     "nome": "SENFFNET IP",
+     "lucro": 19797751.9699998,
+     "carteira": 1731251607.95,
+     "basileia": 0.149064310173297,
+     "estagio3": 0.06934620281454135,
+     "vencidos": 0.017524890088440808
+    },
+    {
+     "cod": "C0080893",
+     "nome": "BANCO BARI DE INVESTIMENTO E FINANCI.",
+     "lucro": 30054512.09,
+     "carteira": 2113637122.86,
+     "basileia": 0.209815567974448,
+     "estagio3": 0.03276069365932592,
+     "vencidos": 0.006794311437247653
+    },
+    {
+     "cod": "C0086347",
+     "nome": "LEV DTVM",
+     "lucro": -1811519.85,
+     "carteira": 0.0,
+     "basileia": 0.165822244146128,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0082413",
+     "nome": "BRX SCC LTDA.",
+     "lucro": -82657.4699999997,
+     "carteira": 0.0,
+     "basileia": 0.15192388373189,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "54401286",
+     "nome": "COOPERATIVA DE CRÉDITO COCRE",
+     "lucro": 19164775.75,
+     "carteira": 782751681.71,
+     "basileia": 0.203298411337961,
+     "estagio3": 0.10314459850773676,
+     "vencidos": 0.045068114550541154
+    },
+    {
+     "cod": "C0081627",
+     "nome": "STATE STREET BRASIL",
+     "lucro": 6627549.57,
+     "carteira": 0.0,
+     "basileia": 2.28417624190968,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0083577",
+     "nome": "SOCINAL S.A. CFI",
+     "lucro": 1786918.32,
+     "carteira": 417860670.04,
+     "basileia": 0.179925306863271,
+     "estagio3": 0.0012642824371932619,
+     "vencidos": 0.0018071943787357357
+    },
+    {
+     "cod": "C0082750",
+     "nome": "SENSO CCVM S.A.",
+     "lucro": -2744647.29,
+     "carteira": 0.0,
+     "basileia": -0.792541335175827,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "88038260",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO PLANALTO - SICREDI PLANALTO RS/MG",
+     "lucro": 64128280.2499999,
+     "carteira": 5157460404.8,
+     "basileia": 0.203407050199975,
+     "estagio3": 0.08553855684462681,
+     "vencidos": 0.0601440519392249
+    },
+    {
+     "cod": "C0083584",
+     "nome": "ZEMA CFI",
+     "lucro": 15112478.69,
+     "carteira": 486820269.85,
+     "basileia": 0.237212242778658,
+     "estagio3": 0.11709177745005493,
+     "vencidos": 0.08981433734610839
+    },
+    {
+     "cod": "87510475",
+     "nome": "COOPERATIVA DE CRÉDITO ROTA DAS TERRAS - SICREDI   ROTA DAS TERRAS",
+     "lucro": -15713792.36,
+     "carteira": 1963578791.32,
+     "basileia": 0.168173440624854,
+     "estagio3": 0.12620943428311382,
+     "vencidos": 0.07533803917752699
+    },
+    {
+     "cod": "C0081232",
+     "nome": "BCO KEB DO BRASIL SA",
+     "lucro": 3040091.48999999,
+     "carteira": 172689935.4,
+     "basileia": 0.622100893644819,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "33022690",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DO NOROESTE DE MATO GROSSO, ACRE E AMAZONAS - SICREDI BIOMAS",
+     "lucro": -37366904.15,
+     "carteira": 1955612576.49,
+     "basileia": 0.14547429060065,
+     "estagio3": 0.14487470012736894,
+     "vencidos": 0.06790524824304157
+    },
+    {
+     "cod": "C0084325",
+     "nome": "AZIMUT BRASIL DTVM",
+     "lucro": -32915.2299999996,
+     "carteira": 0.0,
+     "basileia": 0.248381953615893,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0080831",
+     "nome": "VIA CERTA CFI",
+     "lucro": 6783616.02999999,
+     "carteira": 368551527.93,
+     "basileia": 0.148456702015754,
+     "estagio3": 0.34549646351823543,
+     "vencidos": 0.2956710150700275
+    },
+    {
+     "cod": "C0084356",
+     "nome": "MONOPÓLIO CC",
+     "lucro": -26450.6799999998,
+     "carteira": 0.0,
+     "basileia": 0.122154239105451,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0082035",
+     "nome": "AGK CC S.A.",
+     "lucro": 1026753.25,
+     "carteira": 0.0,
+     "basileia": 0.160420066833515,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0084978",
+     "nome": "EFI S.A. IP",
+     "lucro": 12749356.38,
+     "carteira": 92093181.25,
+     "basileia": 0.123734369865996,
+     "estagio3": 0.18591348482814543,
+     "vencidos": 0.19164771423600926
+    },
+    {
+     "cod": "C0081919",
+     "nome": "FAIR CC S.A.",
+     "lucro": -1302545.67,
+     "carteira": 0.0,
+     "basileia": 0.137440573066423,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "87733770",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO CONEXÃO - SICREDI CONEXÃO",
+     "lucro": 43689605.8799999,
+     "carteira": 3904118914.71,
+     "basileia": 0.165916216654275,
+     "estagio3": 0.06122683854491854,
+     "vencidos": 0.0226077744950286
+    },
+    {
+     "cod": "C0083838",
+     "nome": "QORE DTVM LTDA",
+     "lucro": 2345519.69,
+     "carteira": 0.0,
+     "basileia": 0.39572699810343,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0087418",
+     "nome": "BCP SECURITIES DTVM",
+     "lucro": -558999.25,
+     "carteira": 0.0,
+     "basileia": 0.241186139987644,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "92796564",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO SUL RIOGRANDENSE - SICREDI ORIGENS RS",
+     "lucro": 35402067.3199999,
+     "carteira": 2063713495.21,
+     "basileia": 0.205756987781183,
+     "estagio3": 0.08856842035461371,
+     "vencidos": 0.03561249760540166
+    },
+    {
+     "cod": "C0082224",
+     "nome": "DOURADA CORRETORA",
+     "lucro": 345468.16,
+     "carteira": 0.0,
+     "basileia": 0.146032343063927,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0085771",
+     "nome": "ASAAS GESTAO FINANCEIRA IP",
+     "lucro": 2594958.65999996,
+     "carteira": 7115160.38,
+     "basileia": 0.413116280454408,
+     "estagio3": 0.07344005152246418,
+     "vencidos": 0.08397818130362035
+    },
+    {
+     "cod": "78825270",
+     "nome": "COOPERATIVA DE CRÉDITO DE LIVRE ADMISSÃO DE ASSOCIADOS - SICOOB MAXICRÉDITO",
+     "lucro": 139861973.87,
+     "carteira": 7818296367.97,
+     "basileia": 0.155514795843546,
+     "estagio3": 0.08593031890641929,
+     "vencidos": 0.030785832400654935
+    },
+    {
+     "cod": "04525997",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DOS PROFESSORES, FUNCIONÁRIOS E ALUNOS DA UNIVERSIDADE DE CAXIAS DO SUL - SICREDI EDUCAÇÃO RS",
+     "lucro": -512650.77,
+     "carteira": 116760612.65,
+     "basileia": 0.155848702010346,
+     "estagio3": 0.07182748797652097,
+     "vencidos": 0.030421479334310376
+    },
+    {
+     "cod": "C0083704",
+     "nome": "FACTA S.A. CFI",
+     "lucro": 42754377.71,
+     "carteira": 4410743838.94,
+     "basileia": 0.185366535216348,
+     "estagio3": 0.09423900247244715,
+     "vencidos": 0.03377489602348365
+    },
+    {
+     "cod": "C0082712",
+     "nome": "CODEPE CORRETORA DE VAL. S.A.",
+     "lucro": 448272.01,
+     "carteira": 0.0,
+     "basileia": 0.798614206600745,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "53935029",
+     "nome": "COOPERATIVA DE CRÉDITO COOCRELIVRE",
+     "lucro": 16907202.66,
+     "carteira": 269069200.17,
+     "basileia": 0.582148677286331,
+     "estagio3": 0.12346829930823755,
+     "vencidos": 0.06386134626561125
+    },
+    {
+     "cod": "06332931",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DO CERRADO DE GOIÁS - SICREDI CERRADO GO",
+     "lucro": -36780093.3300001,
+     "carteira": 1899727219.68,
+     "basileia": 0.159923150377726,
+     "estagio3": 0.16810961997208004,
+     "vencidos": 0.07714938981193889
+    },
+    {
+     "cod": "C0081081",
+     "nome": "AFAL",
+     "lucro": -5726145.85,
+     "carteira": 21419589.59,
+     "basileia": 0.558347226221759,
+     "estagio3": 0.2769086683128411,
+     "vencidos": 0.10145908748425701
+    },
+    {
+     "cod": "C0080910",
+     "nome": "BNY MELLON",
+     "lucro": -210572394.63,
+     "carteira": 0.0,
+     "basileia": 0.368277089519361,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0081380",
+     "nome": "BANCO SEMEAR",
+     "lucro": -1585066.09000002,
+     "carteira": 621054875.98,
+     "basileia": 0.133106800718391,
+     "estagio3": 0.10583649591484862,
+     "vencidos": 0.11463252589333395
+    },
+    {
+     "cod": "C0080721",
+     "nome": "YAMAHA MOTOR",
+     "lucro": 44464728.6000002,
+     "carteira": 3072886653.66,
+     "basileia": 0.171664411214611,
+     "estagio3": 0.11726372037115539,
+     "vencidos": 0.031411962390960634
+    },
+    {
+     "cod": "C0082372",
+     "nome": "BROKER BRASIL CC LTDA.",
+     "lucro": 1208771.85,
+     "carteira": 0.0,
+     "basileia": 0.252607259613446,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0084033",
+     "nome": "BGC LIQUIDEZ DTVM LTDA",
+     "lucro": 22646278.32,
+     "carteira": 0.0,
+     "basileia": 0.505281762620304,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0087250",
+     "nome": "SANTS SCD",
+     "lucro": -503970.000000002,
+     "carteira": 29501.21,
+     "basileia": null,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0080800",
+     "nome": "RANDON",
+     "lucro": 59415895.3599999,
+     "carteira": 2462709550.19,
+     "basileia": 0.138452409303576,
+     "estagio3": 0.07766393913449735,
+     "vencidos": 0.028025212803121664
+    },
+    {
+     "cod": "C0085300",
+     "nome": "BANCO XCMG BRASIL",
+     "lucro": 8897495.29,
+     "carteira": 828394539.19,
+     "basileia": 0.290121113057053,
+     "estagio3": 0.006398681587812947,
+     "vencidos": 0.002509090169192066
+    },
+    {
+     "cod": "C0084985",
+     "nome": "BULLLA IP",
+     "lucro": 51793257.65,
+     "carteira": 738532097.02,
+     "basileia": 0.109387878552836,
+     "estagio3": 0.30459742701591713,
+     "vencidos": 0.11645883499594929
+    },
+    {
+     "cod": "C0084552",
+     "nome": "SINOSSERRA FINANCEIRA S/A",
+     "lucro": 1290381.08,
+     "carteira": 163348112.89,
+     "basileia": 0.164458139023563,
+     "estagio3": 0.08665772152292975,
+     "vencidos": 0.043063346579737295
+    },
+    {
+     "cod": "C0084703",
+     "nome": "REALIZE SCFI",
+     "lucro": 87800512.6100001,
+     "carteira": 5052519979.58,
+     "basileia": 0.167706212366249,
+     "estagio3": 0.29440718400820853,
+     "vencidos": 0.30112635887872147
+    },
+    {
+     "cod": "C0087975",
+     "nome": "RIO BRAVO INVESTIMENTOS DTVM",
+     "lucro": -857175.13,
+     "carteira": 0.0,
+     "basileia": 0.145670517238027,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0081342",
+     "nome": "BCO INDUSCRED DE INVESTIM. S/A",
+     "lucro": -905108.999999999,
+     "carteira": 8348429.67,
+     "basileia": 3.11507042711929,
+     "estagio3": 0.4427316952036304,
+     "vencidos": 0.4406186076821792
+    },
+    {
+     "cod": "C0084514",
+     "nome": "TERRA INVESTIMENTOS DTVM",
+     "lucro": null,
+     "carteira": null,
+     "basileia": null,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0082664",
+     "nome": "WARREN CCVM LTDA",
+     "lucro": -12511148.56,
+     "carteira": 0.0,
+     "basileia": -0.0022022765328486,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0083467",
+     "nome": "DM SCFI",
+     "lucro": 46275991.5800002,
+     "carteira": 3539406077.89,
+     "basileia": 0.156129335893118,
+     "estagio3": 0.37067604990149217,
+     "vencidos": 0.40168048337760925
+    },
+    {
+     "cod": "C0084899",
+     "nome": "BANCO PACCAR",
+     "lucro": 34966234.2200001,
+     "carteira": 7613096302.24,
+     "basileia": 0.357405616122699,
+     "estagio3": 0.12699403287661093,
+     "vencidos": 0.024307970047503173
+    },
+    {
+     "cod": "95424891",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DO VALE DO RIO PARDO - SICREDI VALE DO RIO PARDO RS",
+     "lucro": 59804923.59,
+     "carteira": 1467304845.14,
+     "basileia": 0.289202397788603,
+     "estagio3": 0.060873613236288156,
+     "vencidos": 0.027777534227231605
+    },
+    {
+     "cod": "03000142",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DOS POLICIAIS FEDERAIS DO RIO GRANDE DO SUL E SANTA CATARINA - SICREDI POL RS/SC",
+     "lucro": 161554.200000002,
+     "carteira": 65300919.92,
+     "basileia": 0.18941722435489,
+     "estagio3": 0.008454109360293949,
+     "vencidos": 0.002860824364413209
+    },
+    {
+     "cod": "C0082994",
+     "nome": "CHG-MERIDIAN DO BRASIL AM S.A.",
+     "lucro": 8874242.97999995,
+     "carteira": 242680329.38,
+     "basileia": 0.12189555149803,
+     "estagio3": 0.058583995030328656,
+     "vencidos": 0.024216582170763164
+    },
+    {
+     "cod": "C0085331",
+     "nome": "ACCREDITO SCD",
+     "lucro": 1626407.89,
+     "carteira": 37015903.76,
+     "basileia": 0.194783233523516,
+     "estagio3": 0.36210852454780423,
+     "vencidos": 0.3304819929140578
+    },
+    {
+     "cod": "C0080659",
+     "nome": "RENDIMENTO",
+     "lucro": 76654209.8200001,
+     "carteira": 535639751.57,
+     "basileia": 0.132763802186132,
+     "estagio3": 0.07369925809155001,
+     "vencidos": 0.05686108552039777
+    },
+    {
+     "cod": "C0085654",
+     "nome": "LIONS TRUST DTVM PRUDENCIAL",
+     "lucro": 420971.790000002,
+     "carteira": 0.0,
+     "basileia": 0.211329698492448,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "24654881",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO UNIÃO DOS ESTADOS DE MATO GROSSO DO SUL, TOCANTINS E OESTE DA BAHIA - SICREDI UNIÃO MS/TO E OESTE DA BA",
+     "lucro": 47444986.2799998,
+     "carteira": 5390916657.4,
+     "basileia": 0.167741737339605,
+     "estagio3": 0.11542839761890261,
+     "vencidos": 0.0558370646335305
+    },
+    {
+     "cod": "C0086354",
+     "nome": "TRUSTEE/BANVOX",
+     "lucro": null,
+     "carteira": null,
+     "basileia": 0.122517232419055,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "42873828",
+     "nome": "COOPERATIVA DE CRÉDITO AGROCREDI LTDA. - SICOOB AGROCREDI",
+     "lucro": 81922612.7200001,
+     "carteira": 844152845.74,
+     "basileia": 0.443041956322702,
+     "estagio3": 0.10820893868160578,
+     "vencidos": 0.046086383111051094
+    },
+    {
+     "cod": "C0081634",
+     "nome": "BCO DO EST. DE SE S.A.",
+     "lucro": 62758009.75,
+     "carteira": 5638031156.96,
+     "basileia": 0.133466585643667,
+     "estagio3": 0.10422385763391553,
+     "vencidos": 0.06490836201202224
+    },
+    {
+     "cod": "C0082932",
+     "nome": "MIRAE ASSET (BRASIL) CCTVM",
+     "lucro": 9852806.31,
+     "carteira": 0.0,
+     "basileia": 0.869909294203326,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0081122",
+     "nome": "AG. FOMENTO ESTADO DO TOCANTINS",
+     "lucro": -351096.38,
+     "carteira": 44291137.93,
+     "basileia": 0.526430227031119,
+     "estagio3": 0.23650717833219062,
+     "vencidos": 0.05511923342585904
+    },
+    {
+     "cod": "05036532",
+     "nome": "CENTRAL DAS COOPERATIVAS DE CREDITO UNICOOB - SICOOB CENTRAL UNICOOB",
+     "lucro": 41528226.0699999,
+     "carteira": 0.0,
+     "basileia": 0.126576040051918,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0088170",
+     "nome": "CALCARD IP",
+     "lucro": 6371948.7,
+     "carteira": 264681335.03,
+     "basileia": 0.214747672021966,
+     "estagio3": 0.39683620183174395,
+     "vencidos": 0.41560671395361143
+    },
+    {
+     "cod": "32428294",
+     "nome": "COOPERATIVA CENTRAL DE CREDITO DO ESPIRITO SANTO - SICOOB CENTRAL ES",
+     "lucro": 19394410.14,
+     "carteira": 124826862.34,
+     "basileia": 0.16684410959586,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "87853206",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO OURO BRANCO - SICREDI OURO BRANCO RS/MG",
+     "lucro": 63191728.7299999,
+     "carteira": 3014083522.97,
+     "basileia": 0.197328625354456,
+     "estagio3": 0.066736882400353,
+     "vencidos": 0.01742336739003259
+    },
+    {
+     "cod": "C0085489",
+     "nome": "FFCRED SCD",
+     "lucro": 75044.2000000007,
+     "carteira": 2726580.15,
+     "basileia": 0.0998634341091097,
+     "estagio3": 0.1947309577238901,
+     "vencidos": 0.1761580747395901
+    },
+    {
+     "cod": "C0081438",
+     "nome": "BCO TRIANGULO S.A.",
+     "lucro": 6615762.98000003,
+     "carteira": 2081190501.97,
+     "basileia": 0.145027069401339,
+     "estagio3": 0.2397485049184267,
+     "vencidos": 0.22311891383354
+    },
+    {
+     "cod": "C0088390",
+     "nome": "BPCE EQUIPMENT AM",
+     "lucro": -1004750.74000003,
+     "carteira": 981109334.56,
+     "basileia": 0.10902101659168,
+     "estagio3": 0.11129530952922476,
+     "vencidos": 0.0019407359808123166
+    },
+    {
+     "cod": "87733077",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO ESSÊNCIA RS/ES - SICREDI ESSÊNCIA",
+     "lucro": 47362755.5,
+     "carteira": 2418705389.45,
+     "basileia": 0.231730575328963,
+     "estagio3": 0.0565042259086801,
+     "vencidos": 0.024491201953237056
+    },
+    {
+     "cod": "88099247",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO RAÍZES - SICREDI RAÍZES RS/SC/MG",
+     "lucro": 49611957.78,
+     "carteira": 2122930367.05,
+     "basileia": 0.250622084339045,
+     "estagio3": 0.07055537943469446,
+     "vencidos": 0.03565987845121494
+    },
+    {
+     "cod": "C0081012",
+     "nome": "OURIBANK",
+     "lucro": 178173190.34,
+     "carteira": 1481345851.04,
+     "basileia": 0.175589369564029,
+     "estagio3": 0.04207127882517622,
+     "vencidos": 0.04888404552383315
+    },
+    {
+     "cod": "06078926",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DOS ESCRIVÃES, NOTÁRIOS E REGISTRADORES NO ESTADO DO PARANÁ - SICREDI CREDENOREG PR",
+     "lucro": 5374225.57,
+     "carteira": 35008018.64,
+     "basileia": 0.535460475267987,
+     "estagio3": 0.039351420285185915,
+     "vencidos": 0.021875147632871638
+    },
+    {
+     "cod": "C0081641",
+     "nome": "SOCIAL BANK BANCO MULTIPLO",
+     "lucro": -502287.54,
+     "carteira": 2071140.95,
+     "basileia": 2.73633645091024,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "37442605",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO NORTE MATO-GROSSENSE E OESTE PARAENSE - SICREDI GRANDES RIOS MT/PA/AM",
+     "lucro": 27824484.2,
+     "carteira": 3134146175.56,
+     "basileia": 0.225562528155723,
+     "estagio3": 0.15427120882573833,
+     "vencidos": 0.06363553436053476
+    },
+    {
+     "cod": "21198087",
+     "nome": "COOPERATIVA CENTRAL DE CRÉDITO E INVESTIMENTO COM INTERAÇÃO SOLIDÁRIA - CENTRAL CRESOL SICOPER",
+     "lucro": 9644633.28000001,
+     "carteira": 70447162.5,
+     "basileia": 0.188706161879568,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0084277",
+     "nome": "MAF-BRL TRUST",
+     "lucro": 14034805.31,
+     "carteira": 0.0,
+     "basileia": 0.18760393848725,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0081469",
+     "nome": "BCO CEDULA S.A.",
+     "lucro": -277351.71,
+     "carteira": 0.0,
+     "basileia": 1.33277334470095,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0080350",
+     "nome": "FATOR",
+     "lucro": 14860177.09,
+     "carteira": 89806665.55,
+     "basileia": 0.189407225857892,
+     "estagio3": 1.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0081830",
+     "nome": "ICBC DO BRASIL BM S.A.",
+     "lucro": -13524693,
+     "carteira": 186376663.45,
+     "basileia": 0.771151322272711,
+     "estagio3": 0.29405930116426315,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "90608712",
+     "nome": "COOPERATIVA DE CRÉDITO SICREDI SERRANA RS/ES",
+     "lucro": 113959137.46,
+     "carteira": 6300099545.59,
+     "basileia": 0.172327476367003,
+     "estagio3": 0.06946349395069296,
+     "vencidos": 0.022451138575433776
+    },
+    {
+     "cod": "02923389",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO SICREDI SERIGY - SICREDI SERIGY SE/BA",
+     "lucro": 9849645.20999999,
+     "carteira": 420988031.07,
+     "basileia": 0.287356537570438,
+     "estagio3": 0.04986730117784403,
+     "vencidos": 0.014376470357089437
+    },
+    {
+     "cod": "26191078",
+     "nome": "COOPERATIVA DE CRÉDITO DE LIVRE ADMISSÃO DA REGIÃO SUL DO MARANHÃO - SICREDI SUL DO MARANHÃO",
+     "lucro": -542566.0,
+     "carteira": 12147954.84,
+     "basileia": 0.396459246051001,
+     "estagio3": 0.18362680220118682,
+     "vencidos": 0.08427946816729338
+    },
+    {
+     "cod": "79063574",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO NORTE SUL - SICREDI NORTE SUL",
+     "lucro": 15024900.83,
+     "carteira": 1648007714.45,
+     "basileia": 0.188094158824329,
+     "estagio3": 0.07504500906871381,
+     "vencidos": 0.03906379251907122
+    },
+    {
+     "cod": "C0085719",
+     "nome": "AZUMI DTVM PRUDENCIAL",
+     "lucro": 625387.749999999,
+     "carteira": 0.0,
+     "basileia": 0.140010216130356,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0086457",
+     "nome": "FISERV DO BRASIL IP",
+     "lucro": 8072179.11000001,
+     "carteira": 52344490.87,
+     "basileia": 0.166719534151853,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "41255225",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO CENTRO PERNAMBUCANA - SICREDI CENTRO PERNAMBUCANA PE",
+     "lucro": 4530589.04999999,
+     "carteira": 148234942.58,
+     "basileia": 0.42717934521084,
+     "estagio3": 0.07034200827276237,
+     "vencidos": 0.03651513716872459
+    },
+    {
+     "cod": "82527557",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO FRONTEIRAS DO PARANÁ, SANTA CATARINA E SÃO PAULO - SICREDI FRONTEIRAS PR/SC/SP",
+     "lucro": 14812665.9100001,
+     "carteira": 3007321791.41,
+     "basileia": 0.179423654183325,
+     "estagio3": 0.09117989916026452,
+     "vencidos": 0.0329384774234973
+    },
+    {
+     "cod": "C0085647",
+     "nome": "WISE BRASIL CC",
+     "lucro": 15704587.7700001,
+     "carteira": 0.0,
+     "basileia": 0.120938308657224,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0084796",
+     "nome": "TROCKA CC",
+     "lucro": 210620.55,
+     "carteira": 0.0,
+     "basileia": 0.13630362900533,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "77984870",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO TERRA DOS PINHEIRAIS DO PARANÁ E NOROESTE PAULISTA - SICREDI PLANALTO DAS ÁGUAS PR/SP",
+     "lucro": 19314728.17,
+     "carteira": 1804806345.53,
+     "basileia": 0.161334850537522,
+     "estagio3": 0.10681335735865125,
+     "vencidos": 0.04735108212284617
+    },
+    {
+     "cod": "87780284",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO VALE DO JAGUARI E ZONA DA MATA - SICREDI VALE DO JAGUARI E ZONA DA MATA RS/MG",
+     "lucro": 31025792.91,
+     "carteira": 1313914470.37,
+     "basileia": 0.253774350166432,
+     "estagio3": 0.08798116163022729,
+     "vencidos": 0.04917210146016026
+    },
+    {
+     "cod": "C0085513",
+     "nome": "STARK SCD",
+     "lucro": -2752091.32000002,
+     "carteira": 71857564.73,
+     "basileia": 0.183282549044001,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "82065285",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO SOMA PR/SC/SP - SICREDI SOMA",
+     "lucro": 31315524.07,
+     "carteira": 2604415855.43,
+     "basileia": 0.167146549296108,
+     "estagio3": 0.05970472143219225,
+     "vencidos": 0.030000915004645756
+    },
+    {
+     "cod": "C0081050",
+     "nome": "AGENCIA FOMENTO GOIAS",
+     "lucro": 1045930.4,
+     "carteira": 144825170.08,
+     "basileia": 0.544718786345502,
+     "estagio3": 0.09465230649520671,
+     "vencidos": 0.05070339518694616
+    },
+    {
+     "cod": "C0085630",
+     "nome": "PLANTAE CFI",
+     "lucro": 322753.040000001,
+     "carteira": 153366532.46,
+     "basileia": 0.146157553405226,
+     "estagio3": 0.0,
+     "vencidos": 0.06309087724281132
+    },
+    {
+     "cod": "08041950",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DO SISTEMA DE JUSTIÇA NO ESTADO DO CEARÁ - SICREDI COOPERJURIS",
+     "lucro": 2307868.46,
+     "carteira": 57330879.99,
+     "basileia": 0.25202377895434,
+     "estagio3": 0.015134052151385021,
+     "vencidos": 0.0058690329480819165
+    },
+    {
+     "cod": "C0087092",
+     "nome": "GALAPAGOS CAPITAL DTVM",
+     "lucro": 134991.339999999,
+     "carteira": 0.0,
+     "basileia": 0.11120023322225,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0085898",
+     "nome": "RECARGAPAY IP",
+     "lucro": 14742239.42,
+     "carteira": 269286435.29,
+     "basileia": 0.191205475128907,
+     "estagio3": 0.17807348599426043,
+     "vencidos": 0.1947869450247351
+    },
+    {
+     "cod": "C0084019",
+     "nome": "UNIDA DTVM LTDA",
+     "lucro": -1381376.83,
+     "carteira": 0.0,
+     "basileia": 0.191880124694606,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "91159764",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DE LAJEADO - SICREDI INTEGRAÇÃO RS/MG",
+     "lucro": 91287996.59,
+     "carteira": 2253044590.79,
+     "basileia": 0.221179319413886,
+     "estagio3": 0.06161062269349882,
+     "vencidos": 0.024978788921178476
+    },
+    {
+     "cod": "89990501",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DE IBIRAIARAS - SICREDI IBIRAIARAS RS/MG",
+     "lucro": 43744516.05,
+     "carteira": 2442815725.88,
+     "basileia": 0.24906759954262,
+     "estagio3": 0.06246273294042955,
+     "vencidos": 0.03326868308618733
+    },
+    {
+     "cod": "C0085788",
+     "nome": "TENTOS CFI",
+     "lucro": 4370069.85,
+     "carteira": 408416229.42,
+     "basileia": 0.203839852936484,
+     "estagio3": 0.0059100087710318,
+     "vencidos": 0.004617825686127499
+    },
+    {
+     "cod": "C0082107",
+     "nome": "GUITTA CC LTDA",
+     "lucro": 553349.290000005,
+     "carteira": 0.0,
+     "basileia": 0.101081063145582,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0082080",
+     "nome": "BOA VIAGEM SCC LTDA.",
+     "lucro": -351309.309999999,
+     "carteira": 0.0,
+     "basileia": 0.125420759552489,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0084349",
+     "nome": "BANCO RIBEIRÃO PRETO",
+     "lucro": 17940844.38,
+     "carteira": 988469011.69,
+     "basileia": 0.162819280136966,
+     "estagio3": 0.02842372293516521,
+     "vencidos": 0.010483857065157098
+    },
+    {
+     "cod": "C0085173",
+     "nome": "COBUCCIO SCFI",
+     "lucro": -222653448.63,
+     "carteira": 1820873314.83,
+     "basileia": 1.03491619638103,
+     "estagio3": 0.0003019420234356855,
+     "vencidos": 0.00038099312094273265
+    },
+    {
+     "cod": "88471024",
+     "nome": "COOPERATIVA DE CRÉDITO GERAÇÕES - SICREDI GERAÇÕES RS/MG",
+     "lucro": 15172434.0700001,
+     "carteira": 1774617093.52,
+     "basileia": 0.192041162331032,
+     "estagio3": 0.06049177070058687,
+     "vencidos": 0.029283861028806826
+    },
+    {
+     "cod": "C0088534",
+     "nome": "BANCO TRATON BRASIL S.A.",
+     "lucro": 27428371.87,
+     "carteira": 5045598003.63,
+     "basileia": 0.233966656977592,
+     "estagio3": 0.015864650201393278,
+     "vencidos": 0.0028314754608550255
+    },
+    {
+     "cod": "80230774",
+     "nome": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DOS ESTADOS DO PARANÁ, SÃO PAULO E RIO DE JANEIRO - CENTRAL SICREDI PR/SP/RJ",
+     "lucro": -2.6775524020195e-08,
+     "carteira": 0.0,
+     "basileia": 0.272556858342198,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0081414",
+     "nome": "BCO CARGILL S.A.",
+     "lucro": 36714109.67,
+     "carteira": 3015051704.56,
+     "basileia": 2.01057465661523,
+     "estagio3": 0.024817081571972165,
+     "vencidos": 0.008648147733000915
+    },
+    {
+     "cod": "02924977",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DOS PROFISSIONAIS MÉDICOS E DA SAÚDE DE CURITIBA E REGIÃO METROPOLITANA - SICREDI MEDICRED PR",
+     "lucro": 1326735.77,
+     "carteira": 44098428.6,
+     "basileia": 0.250703021014015,
+     "estagio3": 0.061387038295489256,
+     "vencidos": 0.020412042561266146
+    },
+    {
+     "cod": "70241658",
+     "nome": "SICREDI RECIFE - COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO SICREDI RECIFE",
+     "lucro": 1606177.07999999,
+     "carteira": 472543799.14,
+     "basileia": 0.204649473084486,
+     "estagio3": 0.06012380930783037,
+     "vencidos": 0.027736437160257702
+    },
+    {
+     "cod": "C0080886",
+     "nome": "WESTERN UNION",
+     "lucro": 3999890.42000001,
+     "carteira": 0.0,
+     "basileia": 0.396864612020082,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0085238",
+     "nome": "SUMUP IP",
+     "lucro": -40141100.72,
+     "carteira": 33491091.43,
+     "basileia": 0.213551791121974,
+     "estagio3": 0.37418792124724276,
+     "vencidos": 0.4193775187530256
+    },
+    {
+     "cod": "87437687",
+     "nome": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DO SUL E SUDESTE - CENTRAL SICREDI SUL/SUDESTE",
+     "lucro": 0.0100000202655792,
+     "carteira": 0.0,
+     "basileia": 0.255229148430998,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0085874",
+     "nome": "MÉRITO DTVM",
+     "lucro": 1200371.59,
+     "carteira": 13696414.8,
+     "basileia": 0.406606753220178,
+     "estagio3": 0.0,
+     "vencidos": 0.004677409816490742
+    },
+    {
+     "cod": "C0081689",
+     "nome": "BANCO IBM S.A.",
+     "lucro": 11933349.79,
+     "carteira": 577335465.74,
+     "basileia": 0.584574865647315,
+     "estagio3": 0.02880354092157397,
+     "vencidos": 0.0014297325440591824
+    },
+    {
+     "cod": "C0083814",
+     "nome": "BR-CAPITAL DTVM S.A.",
+     "lucro": 1081647.73,
+     "carteira": 0.0,
+     "basileia": 0.50409550468281,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0083807",
+     "nome": "DILLON S/A DTVM",
+     "lucro": -84417.2400000002,
+     "carteira": 0.0,
+     "basileia": 0.65899323457772,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "03662047",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DAS CARREIRAS DO MINISTÉRIO PÚBLICO, TRIBUNAL DE CONTAS E SECRETARIA DA FAZENDA DO RIO GRANDE DO SUL - SICREDI MP RS",
+     "lucro": 567511.06,
+     "carteira": 31963127.5,
+     "basileia": 0.238263686326968,
+     "estagio3": 0.019632852973147475,
+     "vencidos": 0.0058626562558099
+    },
+    {
+     "cod": "C0085537",
+     "nome": "VIS DTVM",
+     "lucro": 689098.280000001,
+     "carteira": 0.0,
+     "basileia": 0.144861390054055,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0080855",
+     "nome": "RODOBENS",
+     "lucro": 234731472.88,
+     "carteira": 2169339223.62,
+     "basileia": 0.157505575610103,
+     "estagio3": 0.06935902724266692,
+     "vencidos": 0.023019775822096
+    },
+    {
+     "cod": "19962468",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DA ADVOCACIA E SERVENTUÁRIOS DO PODER JUDICIÁRIO NO ESTADO DO RIO GRANDE DO SUL - SICREDI COOABCRED RS",
+     "lucro": 851132.390000001,
+     "carteira": 30324120.01,
+     "basileia": 0.299235570555223,
+     "estagio3": 0.07085193841055698,
+     "vencidos": 0.029994059461958687
+    },
+    {
+     "cod": "95594941",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DAS REGIÕES CENTRO DO RS E MG - SICREDI REGIÃO CENTRO RS/MG",
+     "lucro": 39849174.71,
+     "carteira": 2825842585.45,
+     "basileia": 0.211512685253795,
+     "estagio3": 0.08267458278481848,
+     "vencidos": 0.04059882849109482
+    },
+    {
+     "cod": "C0081256",
+     "nome": "ANDBANK",
+     "lucro": -13487018.76,
+     "carteira": 2357588218.65,
+     "basileia": 0.12205254311308,
+     "estagio3": 0.13151401876892124,
+     "vencidos": 0.04607426363583279
+    },
+    {
+     "cod": "03042597",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DE CAMPO GRANDE E REGIÃO - SICREDI CAMPO GRANDE MS/GO",
+     "lucro": -17502407.29,
+     "carteira": 2347045177.06,
+     "basileia": 0.171876802645793,
+     "estagio3": 0.12057141753504981,
+     "vencidos": 0.06463442757001255
+    },
+    {
+     "cod": "03502131",
+     "nome": "COOPERATIVA CENTRAL DE CRÉDITO DO NORTE DO BRASIL - SICOOB NORTE",
+     "lucro": 31484576.1700001,
+     "carteira": 0.0,
+     "basileia": 0.176687693669555,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0086581",
+     "nome": "CLOUDWALK IP",
+     "lucro": 552378114.16,
+     "carteira": 939743363.39,
+     "basileia": 0.321104575569115,
+     "estagio3": 0.328957293228656,
+     "vencidos": 0.21867007524783716
+    },
+    {
+     "cod": "81192106",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO NOSSA TERRA - SICREDI NOSSA TERRA PR/SP",
+     "lucro": 12753365.36,
+     "carteira": 1775078963.1,
+     "basileia": 0.17291677929717,
+     "estagio3": 0.0702619550684015,
+     "vencidos": 0.0366680047636163
+    },
+    {
+     "cod": "26549311",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO INTEGRAÇÃO DO SUL DE MATO GROSSO, AMAPÁ E PARÁ - SICREDI INTEGRAÇÃO MT/AP/PA",
+     "lucro": 14757794.17,
+     "carteira": 1553691465.73,
+     "basileia": 0.19190560017132,
+     "estagio3": 0.11803244168000536,
+     "vencidos": 0.0640193511788225
+    },
+    {
+     "cod": "C0080226",
+     "nome": "H.H.PICCHIONI",
+     "lucro": -100805.67,
+     "carteira": 0.0,
+     "basileia": 0.377241217963683,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0085582",
+     "nome": "ID CTVM",
+     "lucro": 3053743.73,
+     "carteira": 0.0,
+     "basileia": 0.176730066360718,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "35571249",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO SICREDI EVOLUÇÃO - SICREDI EVOLUÇÃO",
+     "lucro": 61350618.69,
+     "carteira": 2203746964,
+     "basileia": 0.296826666713183,
+     "estagio3": 0.04659760161471791,
+     "vencidos": 0.020487202651874495
+    },
+    {
+     "cod": "C0081579",
+     "nome": "BCO ABN AMRO CLEARING",
+     "lucro": 22995853.77,
+     "carteira": 0.0,
+     "basileia": 0.651571632532693,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "87780268",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO UNIÃO DE ESTADOS RIO GRANDE DO SUL, SANTA CATARINA E MINAS GERAIS - SICREDI UNIESTADOS",
+     "lucro": 72763779.2000001,
+     "carteira": 4355200279.28,
+     "basileia": 0.182144100477319,
+     "estagio3": 0.10123890376172735,
+     "vencidos": 0.03372400623112544
+    },
+    {
+     "cod": "03750034",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DOS JUÍZES E CARREIRAS PÚBLICAS DO DIREITO DO ESTADO DO RIO GRANDE DO SUL - SICREDI AJURIS RS",
+     "lucro": 2758214.64,
+     "carteira": 49985808.34,
+     "basileia": 0.282658243526909,
+     "estagio3": 0.0025738801600430016,
+     "vencidos": 0.0023148263701646805
+    },
+    {
+     "cod": "C0084088",
+     "nome": "STONEX DTVM",
+     "lucro": 19514610.6,
+     "carteira": 0.0,
+     "basileia": 0.733211790453915,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0084026",
+     "nome": "SUL AMERICA INVEST DTVM S.A.",
+     "lucro": 30391082.09,
+     "carteira": 0.0,
+     "basileia": 0.927405462696297,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0082097",
+     "nome": "SOL CC",
+     "lucro": null,
+     "carteira": null,
+     "basileia": null,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0087281",
+     "nome": "MONTE BRAVO CTVM",
+     "lucro": -5785100.66,
+     "carteira": 0.0,
+     "basileia": 0.215312514191462,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0084507",
+     "nome": "BECKER FINANCEIRA S.A. - CFI",
+     "lucro": null,
+     "carteira": null,
+     "basileia": null,
+     "estagio3": 0.14903880754755303,
+     "vencidos": 0.11142316268380122
+    },
+    {
+     "cod": "C0085922",
+     "nome": "NIXFIN SCD",
+     "lucro": 483982.8,
+     "carteira": 0.0,
+     "basileia": 6.16483529915139,
+     "estagio3": 1.0,
+     "vencidos": 1.0
+    },
+    {
+     "cod": "C0081098",
+     "nome": "AG. FOMENTO AMAPA S.A.",
+     "lucro": -596156.58,
+     "carteira": 11332845.14,
+     "basileia": 0.647235660217191,
+     "estagio3": 0.4601143025136623,
+     "vencidos": 0.058557640294707315
+    },
+    {
+     "cod": "C0086440",
+     "nome": "SOLFÁCIL SCFI",
+     "lucro": 214425.979999998,
+     "carteira": 639823.53,
+     "basileia": 0.465065252274219,
+     "estagio3": 0.052533858501076246,
+     "vencidos": 0.010026909484842854
+    },
+    {
+     "cod": "C0081500",
+     "nome": "BANCO MONEO S.A.",
+     "lucro": 23573364.79,
+     "carteira": 1678657205.14,
+     "basileia": 0.186329406854657,
+     "estagio3": 0.010761717262282462,
+     "vencidos": 0.005825207836412878
+    },
+    {
+     "cod": "C0080680",
+     "nome": "LECCA",
+     "lucro": 2429102.19,
+     "carteira": 72526146.36,
+     "basileia": 0.178507598568848,
+     "estagio3": 0.11318093644466978,
+     "vencidos": 0.031111096095491092
+    },
+    {
+     "cod": "03065046",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DO NOROESTE DO ESTADO DE SÃO PAULO - SICREDI NOROESTE SP",
+     "lucro": 19586610.95,
+     "carteira": 705477114.24,
+     "basileia": 0.197617658552685,
+     "estagio3": 0.07831838739990661,
+     "vencidos": 0.03330177781264163
+    },
+    {
+     "cod": "04388688",
+     "nome": "COOPERATIVA DE CRÉDITO SICOOB ENGECRED LTDA.",
+     "lucro": 20744720.48,
+     "carteira": 1918925982.06,
+     "basileia": 0.208478912741751,
+     "estagio3": 0.06245883157266684,
+     "vencidos": 0.018715784403840568
+    },
+    {
+     "cod": "C0083993",
+     "nome": "F D GOLD DTVM LTDA",
+     "lucro": 2054803.95,
+     "carteira": 0.0,
+     "basileia": 0.279639972381594,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0083591",
+     "nome": "CARUANA SCFI",
+     "lucro": 6353923.03999999,
+     "carteira": 848534894.05,
+     "basileia": 0.133838444441822,
+     "estagio3": 0.07207459338099656,
+     "vencidos": 0.0345002511648221
+    },
+    {
+     "cod": "C0081706",
+     "nome": "BCO LUSO BRASILEIRO S.A.",
+     "lucro": 10937913.85,
+     "carteira": 2847300852.2,
+     "basileia": 0.18219378161343,
+     "estagio3": 0.08027843600567307,
+     "vencidos": 0.039379741127925624
+    },
+    {
+     "cod": "81054686",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO INTEGRAÇÃO - SICREDI INTEGRAÇÃO PR/SC",
+     "lucro": 27251308.69,
+     "carteira": 939203524.68,
+     "basileia": 0.233507387861326,
+     "estagio3": 0.09516442009756462,
+     "vencidos": 0.04490980957098846
+    },
+    {
+     "cod": "C0080477",
+     "nome": "INDUSTRIAL DO BRASIL",
+     "lucro": 44746305.18,
+     "carteira": 5706342215.49,
+     "basileia": 0.171149089649995,
+     "estagio3": 0.03097270812696094,
+     "vencidos": 0.01955903861367968
+    },
+    {
+     "cod": "33737818",
+     "nome": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DE MATO GROSSO DO SUL, GOIÁS, DISTRITO FEDERAL E TOCANTINS - CENTRAL SICREDI BRASIL CENTRAL",
+     "lucro": 5354399.34999999,
+     "carteira": 0.0,
+     "basileia": 0.48984432578178,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0083986",
+     "nome": "HEDGE INVESTMENTS",
+     "lucro": 949308.27,
+     "carteira": 0.0,
+     "basileia": 0.265596942965092,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0081672",
+     "nome": "BCO GUANABARA S.A.",
+     "lucro": null,
+     "carteira": null,
+     "basileia": null,
+     "estagio3": 0.14194449352819108,
+     "vencidos": 0.06396717828493613
+    },
+    {
+     "cod": "C0081304",
+     "nome": "BCO DES. DO ES S.A.",
+     "lucro": 8425172.74999998,
+     "carteira": 651323164.29,
+     "basileia": 0.47324919035595,
+     "estagio3": 0.18469378877264409,
+     "vencidos": 0.02331616139807282
+    },
+    {
+     "cod": "C0085544",
+     "nome": "FINVEST DTVM",
+     "lucro": null,
+     "carteira": null,
+     "basileia": 0.132219990938382,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0085836",
+     "nome": "KIKAI SCD PRUDENCIAL",
+     "lucro": 274229.080000001,
+     "carteira": 0.0,
+     "basileia": 0.37759065134911,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "72128440",
+     "nome": "COOPERATIVA DE CREDITO, POUPANCA E INVESTIMENTO DO RIO DE JANEIRO - SICREDI RIO RJ",
+     "lucro": -866742.000000001,
+     "carteira": 188112870.4,
+     "basileia": 0.20169211054039,
+     "estagio3": 0.08196427535535487,
+     "vencidos": 0.03595249287897674
+    },
+    {
+     "cod": "81466286",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO CAMPOS GERAIS, GRANDE CURITIBA, VALE DO RIBEIRA E FORÇA DOS VENTOS - SICREDI CAMPOS GERAIS E GRANDE CURITIBA PR/SP",
+     "lucro": 112755800.72,
+     "carteira": 7514226627.05,
+     "basileia": 0.167921493017063,
+     "estagio3": 0.07598213307469284,
+     "vencidos": 0.035747353085440296
+    },
+    {
+     "cod": "33667205",
+     "nome": "COOPERATIVA CENTRAL DE CRÉDITO, POUPANÇA E INVESTIMENTO DO CENTRO NORTE DO BRASIL - CENTRAL SICREDI CENTRO NORTE",
+     "lucro": 9699210.72999999,
+     "carteira": 0.0,
+     "basileia": 0.192292207263714,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0080635",
+     "nome": "BMW",
+     "lucro": 58657804.6700001,
+     "carteira": 3669171857.49,
+     "basileia": 0.214221540824016,
+     "estagio3": 0.013313167883141916,
+     "vencidos": 0.004240230923707532
+    },
+    {
+     "cod": "C0080549",
+     "nome": "CM CAPITAL MARKETS",
+     "lucro": -2653955.68999999,
+     "carteira": 0.0,
+     "basileia": 0.193715653583841,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "04632856",
+     "nome": "CREDISIS - CENTRAL DE COOPERATIVAS DE CRÉDITO",
+     "lucro": 7764839.99000003,
+     "carteira": 97702768.93,
+     "basileia": 0.245548706434355,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0084143",
+     "nome": "PACIFIC INVEST DTVM LTDA",
+     "lucro": -324179.5,
+     "carteira": 0.0,
+     "basileia": null,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "87067757",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO CENTRO SERRA - SICREDI CENTRO SERRA RS",
+     "lucro": 87876188.57,
+     "carteira": 1032474047.16,
+     "basileia": 0.467626394693605,
+     "estagio3": 0.06846042631791746,
+     "vencidos": 0.02732247427538032
+    },
+    {
+     "cod": "81115149",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO GRANDES LAGOS DO PARANÁ E LITORAL PAULISTA - SICREDI GRANDES LAGOS PR/SP",
+     "lucro": 21764262.36,
+     "carteira": 1272254116.63,
+     "basileia": 0.18538938094431,
+     "estagio3": 0.0831021658269392,
+     "vencidos": 0.032652383052314396
+    },
+    {
+     "cod": "C0085348",
+     "nome": "MAGALUPAY IP",
+     "lucro": 40079662.81,
+     "carteira": 429184582.03,
+     "basileia": null,
+     "estagio3": 0.030279174641938973,
+     "vencidos": 0.03834008062390353
+    },
+    {
+     "cod": "95213211",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO CAMINHO DAS ÁGUAS RS - SICREDI CAMINHO DAS ÁGUAS RS",
+     "lucro": 9280040.16999999,
+     "carteira": 1774848287.76,
+     "basileia": 0.16007322588437,
+     "estagio3": 0.061595717664039325,
+     "vencidos": 0.026755425722315422
+    },
+    {
+     "cod": "02843443",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DO NORTE E NORDESTE DE SANTA CATARINA - SICREDI NORTE SC",
+     "lucro": 80059500.9099999,
+     "carteira": 2502039406.03,
+     "basileia": 0.238932311825514,
+     "estagio3": 0.07329602323198108,
+     "vencidos": 0.03532506444138839
+    },
+    {
+     "cod": "C0081517",
+     "nome": "BANCO TOPÁZIO S.A.",
+     "lucro": -4355258.6,
+     "carteira": 99971421.62,
+     "basileia": 0.234488094822528,
+     "estagio3": 0.0845101643925533,
+     "vencidos": 0.03418113301546135
+    },
+    {
+     "cod": "07202627",
+     "nome": "COOPERATIVA CENTRAL DE CRÉDITO E ECONOMIA COM INTERAÇÃO SOLIDÁRIA - CRESOL CENTRAL BRASIL",
+     "lucro": 6703019.54,
+     "carteira": 117078426.26,
+     "basileia": 0.244373117954281,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "33021064",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DO ARAGUAIA E XINGU - SICREDI ARAXINGU",
+     "lucro": -94630082.36,
+     "carteira": 3029511338.86,
+     "basileia": 0.155282755636238,
+     "estagio3": 0.21613133247998306,
+     "vencidos": 0.07730343704238819
+    },
+    {
+     "cod": "C0085458",
+     "nome": "FIDD DTVM",
+     "lucro": -821617.139999999,
+     "carteira": 0.0,
+     "basileia": 0.141914535418216,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "09343038",
+     "nome": "COOPERATIVA DE CRÉDITO SICREDI ALTO SERTÃO PARAIBANO - SICREDI ALTO SERTÃO PARAIBANO",
+     "lucro": 6840531.78,
+     "carteira": 180278299.53,
+     "basileia": 0.418363397748723,
+     "estagio3": 0.018862542105601274,
+     "vencidos": 0.015566723302337814
+    },
+    {
+     "cod": "C0080381",
+     "nome": "BANCO PAULISTA",
+     "lucro": -26785006.89,
+     "carteira": 1045361780.37,
+     "basileia": 0.122859177799601,
+     "estagio3": 0.17564803580465385,
+     "vencidos": 0.07953768313811893
+    },
+    {
+     "cod": "C0080460",
+     "nome": "OMNI",
+     "lucro": 3158937.26999988,
+     "carteira": 4985687127.09,
+     "basileia": 0.146334606422687,
+     "estagio3": 0.13997019260666774,
+     "vencidos": 0.06571719026447677
+    },
+    {
+     "cod": "C0084435",
+     "nome": "GLOBAL EXCHANGE CC",
+     "lucro": -2075035.58,
+     "carteira": 0.0,
+     "basileia": -0.146476773197637,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "33416108",
+     "nome": "COOPERATIVA CENTRAL DE CRÉDITO DE GOIÁS, DISTRITO FEDERAL E TOCANTINS LTDA. - SICOOB NOVA CENTRAL",
+     "lucro": 38272080.0500001,
+     "carteira": 84756557.52,
+     "basileia": 0.111381698891188,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0081160",
+     "nome": "PIAUÍ FOMENTO",
+     "lucro": 808551.319999999,
+     "carteira": 132340944.28,
+     "basileia": 0.475548109993095,
+     "estagio3": 0.1286583326065315,
+     "vencidos": 0.05477574822821961
+    },
+    {
+     "cod": "C0082028",
+     "nome": "MONEYCORP",
+     "lucro": 551884.619999998,
+     "carteira": 0.0,
+     "basileia": 0.239486297432886,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0085805",
+     "nome": "BARU SCFI",
+     "lucro": -778417.160000001,
+     "carteira": 10375534.92,
+     "basileia": 0.460757824523885,
+     "estagio3": 0.07998459361732967,
+     "vencidos": 0.02900731892415816
+    },
+    {
+     "cod": "87900411",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO SEMENTES DO SUL - SICREDI SEMENTES DO SUL",
+     "lucro": 39535124.28,
+     "carteira": 1726546081.84,
+     "basileia": 0.263648857367332,
+     "estagio3": 0.08887582774552831,
+     "vencidos": 0.04962342250984751
+    },
+    {
+     "cod": "87781530",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO INTEGRAÇÃO DE ESTADOS DO RIO GRANDE DO SUL, SANTA CATARINA E MINAS GERAIS - SICREDI INTEGRAÇÃO DE ESTADOS RS/SC/MG",
+     "lucro": 2989851.36000004,
+     "carteira": 2510068925.03,
+     "basileia": 0.173235537506084,
+     "estagio3": 0.10594135997908875,
+     "vencidos": 0.05236282816728103
+    },
+    {
+     "cod": "C0088187",
+     "nome": "UNICRED DTVM",
+     "lucro": 83396.6200000001,
+     "carteira": 0.0,
+     "basileia": 0.735120485348042,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0082743",
+     "nome": "SITA SCCVM S.A.",
+     "lucro": 3204105.03,
+     "carteira": 0.0,
+     "basileia": 0.363459874903678,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "79052122",
+     "nome": "COOPERATIVA DE CREDITO, POUPANÇA E INVESTIMENTO ALIANÇA - SICREDI ALIANÇA PR/SP",
+     "lucro": 6265426.02999997,
+     "carteira": 4146753496.22,
+     "basileia": 0.14626117151175,
+     "estagio3": 0.08010026739387267,
+     "vencidos": 0.027302541240695206
+    },
+    {
+     "cod": "C0081067",
+     "nome": "DESENBAHIA AG FOMENTO BAHIA SA",
+     "lucro": 26004080.24,
+     "carteira": 624998714.38,
+     "basileia": 0.720689505031727,
+     "estagio3": 0.21646111118381503,
+     "vencidos": 0.03037936109090552
+    },
+    {
+     "cod": "70116611",
+     "nome": "CENTRAL DAS COOPERATIVAS DE CRÉDITO DO NORDESTE - SICOOB CENTRAL NE",
+     "lucro": 6726537.61,
+     "carteira": 31197848.69,
+     "basileia": 0.195704197597352,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "10348181",
+     "nome": "COOPERATIVA DE CRÉDITO DO VALE DO ITAJAÍ E LITORAL CATARINENSE - SICREDI VALE LITORAL SC",
+     "lucro": 97940130.18,
+     "carteira": 3339909871.75,
+     "basileia": 0.205276409197019,
+     "estagio3": 0.0676893322050955,
+     "vencidos": 0.028188440285492167
+    },
+    {
+     "cod": "C0083522",
+     "nome": "HS FINANCEIRA",
+     "lucro": 107859368.73,
+     "carteira": 220576216.55,
+     "basileia": 0.168276010874451,
+     "estagio3": 0.28706616220414344,
+     "vencidos": 0.27619786019902853
+    },
+    {
+     "cod": "C0082963",
+     "nome": "LEASEPLAN AM S.A.",
+     "lucro": 32456631.85,
+     "carteira": 0.0,
+     "basileia": 0.201881478361906,
+     "estagio3": 0.012535105910769083,
+     "vencidos": 0.009972439789538268
+    },
+    {
+     "cod": "C0088682",
+     "nome": "KINEL FOREIGN EXCHANG CC",
+     "lucro": -618998.53,
+     "carteira": 0.0,
+     "basileia": null,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "70038237",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DO RIO GRANDE DO NORTE - SICREDI RIO GRANDE DO NORTE",
+     "lucro": 30536358.9,
+     "carteira": 1244844500.49,
+     "basileia": 0.18603363986972,
+     "estagio3": 0.07648877651803833,
+     "vencidos": 0.036339996661239736
+    },
+    {
+     "cod": "C0080587",
+     "nome": "PLANNER",
+     "lucro": -32513699.11,
+     "carteira": 0.0,
+     "basileia": -0.0744164721502616,
+     "estagio3": 1.0,
+     "vencidos": 1.0
+    },
+    {
+     "cod": "C0082011",
+     "nome": "ONNIX CC LTDA.",
+     "lucro": null,
+     "carteira": null,
+     "basileia": 0.149368789525676,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0084631",
+     "nome": "TRINUS CAPITAL DTVM",
+     "lucro": -537113.139999999,
+     "carteira": 1562822.04,
+     "basileia": 0.256039169869963,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0086361",
+     "nome": "PINBANK BRASIL IP",
+     "lucro": -10616967.62,
+     "carteira": 102169.35,
+     "basileia": null,
+     "estagio3": 0.8766610913680177,
+     "vencidos": 0.2596068069501764
+    },
+    {
+     "cod": "78907607",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO CENTRO SUL - SICREDI CENTRO SUL PR/SC/RJ",
+     "lucro": 50517892.49,
+     "carteira": 2026537281.75,
+     "basileia": 0.199753087993576,
+     "estagio3": 0.08482076944480371,
+     "vencidos": 0.04161226690828161
+    },
+    {
+     "cod": "87795639",
+     "nome": "COOPERATIVA DE CRÉDITO ALIANÇA - SICREDI ALIANÇA",
+     "lucro": 63168587.7799999,
+     "carteira": 3381901574.96,
+     "basileia": 0.182737143056385,
+     "estagio3": 0.06422040549405551,
+     "vencidos": 0.03106374240052925
+    },
+    {
+     "cod": "C0082592",
+     "nome": "LEVYCAM CCV LTDA",
+     "lucro": 1495474.1,
+     "carteira": 0.0,
+     "basileia": 0.16073515101825,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0083711",
+     "nome": "STARA FINANCEIRA S.A. - CFI",
+     "lucro": 10433656.22,
+     "carteira": 1371961294.12,
+     "basileia": 0.156679172282775,
+     "estagio3": 0.023205506902111154,
+     "vencidos": 0.052303380778255915
+    },
+    {
+     "cod": "C0081263",
+     "nome": "BCO LA PROVINCIA B AIRES BCE",
+     "lucro": 2829970.87,
+     "carteira": 42411272.23,
+     "basileia": 2.34247322437411,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "89126130",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DA REGIÃO DOS VALES - SICREDI REGIÃO DOS VALES RS",
+     "lucro": 137717487.32,
+     "carteira": 1795225010.15,
+     "basileia": 0.429384249206903,
+     "estagio3": 0.10902916985190125,
+     "vencidos": 0.007374305821809169
+    },
+    {
+     "cod": "62931522",
+     "nome": "CENTRAL DAS COOPERATIVAS DE CRÉDITO DO ESTADO DE SÃO PAULO - SICOOB CENTRAL CECRESP",
+     "lucro": 28518053.83,
+     "carteira": 11503597.22,
+     "basileia": 0.219651767594362,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0081108",
+     "nome": "AFEAM",
+     "lucro": 10606081.73,
+     "carteira": 36329294.59,
+     "basileia": 0.754610261029354,
+     "estagio3": 0.11681998444773234,
+     "vencidos": 0.03015642017125302
+    },
+    {
+     "cod": "C0084181",
+     "nome": "MOMENTO DTVM LTDA.",
+     "lucro": -74221.8299999999,
+     "carteira": 0.0,
+     "basileia": 2.50407825268759,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0080408",
+     "nome": "VR",
+     "lucro": 4239633.95,
+     "carteira": 77568594.91,
+     "basileia": 0.511571817971313,
+     "estagio3": 0.01734111193972909,
+     "vencidos": 0.008478813786928288
+    },
+    {
+     "cod": "C0085441",
+     "nome": "CREDSYSTEM IP",
+     "lucro": 70660893.65,
+     "carteira": 2651602868.71,
+     "basileia": 0.172121905688457,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "84974278",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO IGUAÇU - SICREDI IGUAÇU PR/SC E REGIÃO METROPOLITANA DE CAMPINAS/SP",
+     "lucro": 39505933.4,
+     "carteira": 2759911452.45,
+     "basileia": 0.179271026211875,
+     "estagio3": 0.06471174247173625,
+     "vencidos": 0.028598173718324005
+    },
+    {
+     "cod": "C0083209",
+     "nome": "RPW S/A SCFI",
+     "lucro": 1118011.7,
+     "carteira": 209532866.59,
+     "basileia": 0.144647423263192,
+     "estagio3": 0.10229837688931537,
+     "vencidos": 0.08597353300060603
+    },
+    {
+     "cod": "C0081146",
+     "nome": "AGÊNCIA DE FOMENTO MATO GROSSO",
+     "lucro": -387495.950000004,
+     "carteira": 129319529.94,
+     "basileia": 0.652488363653987,
+     "estagio3": 0.19288242771407765,
+     "vencidos": 0.027164483204138012
+    },
+    {
+     "cod": "89049738",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO CONFIANÇA - SICREDI CONFIANÇA",
+     "lucro": 54027014.96,
+     "carteira": 1604470800.95,
+     "basileia": 0.322871338108412,
+     "estagio3": 0.07163836717398213,
+     "vencidos": 0.0324614815046298
+    },
+    {
+     "cod": "76059997",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO PROGRESSO - SICREDI PROGRESSO PR/SP",
+     "lucro": 11385035.38,
+     "carteira": 2183195090.43,
+     "basileia": 0.161195247744193,
+     "estagio3": 0.06147302571835323,
+     "vencidos": 0.019928535032990163
+    },
+    {
+     "cod": "C0081153",
+     "nome": "AF DESENVOLVE SP S.A.",
+     "lucro": 142709112.05,
+     "carteira": 2371524369.03,
+     "basileia": 0.651514282082047,
+     "estagio3": 0.07287645089666221,
+     "vencidos": 0.018000336324019175
+    },
+    {
+     "cod": "C0086024",
+     "nome": "SRM BANK IP",
+     "lucro": 12748729.42,
+     "carteira": 0.0,
+     "basileia": 0.359460497895339,
+     "estagio3": null,
+     "vencidos": null
+    }
+   ],
+   "S3": [
+    {
+     "cod": "C0080123",
+     "nome": "MERCANTIL DO BRASIL",
+     "lucro": 549087948.17,
+     "carteira": 23658775834.71,
+     "basileia": 0.17217066441111,
+     "estagio3": 0.04871029246227358,
+     "vencidos": 0.017812831320756294
+    },
+    {
+     "cod": "C0080147",
+     "nome": "BANESTES",
+     "lucro": 226056964.43,
+     "carteira": 12460034861.04,
+     "basileia": 0.148850730223572,
+     "estagio3": 0.044628232020540434,
+     "vencidos": 0.013078226053900827
+    },
+    {
+     "cod": "C0081452",
+     "nome": "SCOTIABANK BRASIL",
+     "lucro": 156951191.440001,
+     "carteira": 2503686035.18,
+     "basileia": 0.322881433929482,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0081744",
+     "nome": "BCO DAYCOVAL S.A",
+     "lucro": 901620603.120001,
+     "carteira": 63321103247.21,
+     "basileia": 0.128352856440634,
+     "estagio3": 0.04069951976037048,
+     "vencidos": 0.014879760887041321
+    },
+    {
+     "cod": "C0080532",
+     "nome": "DEUTSCHE",
+     "lucro": 101245682.979998,
+     "carteira": 3777592923.1,
+     "basileia": 0.179122331883016,
+     "estagio3": 0.025629684667845723,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0081407",
+     "nome": "BANCO CNH INDUSTRIAL CAPITAL S.A",
+     "lucro": -99496239.4999996,
+     "carteira": 20416836143.81,
+     "basileia": 0.157467921630147,
+     "estagio3": 0.1639430240466678,
+     "vencidos": 0.07271175983516238
+    },
+    {
+     "cod": "00309024",
+     "nome": "CENTRAL DAS COOPERATIVAS DE ECONOMIA E CREDITO DO ESTADO DE MINAS GERAIS LTDA. - SICOOB CENTRAL CECREMGE",
+     "lucro": 50293565.4300002,
+     "carteira": 643420223.47,
+     "basileia": 0.138708856837143,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0080673",
+     "nome": "BNP PARIBAS",
+     "lucro": 86546344.7700067,
+     "carteira": 6716037374.27,
+     "basileia": 0.165757804810064,
+     "estagio3": 0.10628818049424532,
+     "vencidos": 0.0008033715596957413
+    },
+    {
+     "cod": "C0084813",
+     "nome": "PAGSEGURO",
+     "lucro": 998384009.210001,
+     "carteira": 4618056392.62,
+     "basileia": 0.150415306911325,
+     "estagio3": 0.002247307263172799,
+     "vencidos": 0.0002692983646049572
+    },
+    {
+     "cod": "C0080491",
+     "nome": "CREDIT AGRICOLE",
+     "lucro": 137548821.38,
+     "carteira": 8948197192.07,
+     "basileia": 0.288548209987502,
+     "estagio3": 0.00029725050520926964,
+     "vencidos": 0.00029725050520926964
+    },
+    {
+     "cod": "C0081586",
+     "nome": "BCO DO EST. DO PA S.A.",
+     "lucro": 100804909.7,
+     "carteira": 15444766128.2,
+     "basileia": 0.167422596474558,
+     "estagio3": 0.04186531599050925,
+     "vencidos": 0.015837136242708966
+    },
+    {
+     "cod": "C0084844",
+     "nome": "BANCO C6",
+     "lucro": 1256055524.77,
+     "carteira": 99270787820.86,
+     "basileia": 0.125665504895386,
+     "estagio3": 0.05540500106246064,
+     "vencidos": 0.03183531199748499
+    },
+    {
+     "cod": "C0081713",
+     "nome": "BCO MUFG BRASIL S.A.",
+     "lucro": 44215037.0300068,
+     "carteira": 3443386332.63,
+     "basileia": 0.345572552285441,
+     "estagio3": 0.01824387209209474,
+     "vencidos": 0.01824387209209474
+    },
+    {
+     "cod": "C0080642",
+     "nome": "PORTO SEGURO",
+     "lucro": 173307935.570001,
+     "carteira": 20556574853.42,
+     "basileia": 0.138874174071425,
+     "estagio3": 0.15175528969451554,
+     "vencidos": 0.137565239660341
+    },
+    {
+     "cod": "C0087298",
+     "nome": "STELLANTIS",
+     "lucro": 433041596.3,
+     "carteira": 30068917677.61,
+     "basileia": 0.150633501498025,
+     "estagio3": 0.010880395014566344,
+     "vencidos": 0.0032995378434033697
+    },
+    {
+     "cod": "C0080295",
+     "nome": "BANK OF CHINA (BRASIL)",
+     "lucro": 774473.100000575,
+     "carteira": 11430609595.91,
+     "basileia": 0.153150236313756,
+     "estagio3": 0.010229867071549303,
+     "vencidos": 0.0010912983305270277
+    },
+    {
+     "cod": "C0080271",
+     "nome": "SOFISA",
+     "lucro": 39612293.4400002,
+     "carteira": 8407251399.01,
+     "basileia": 0.164997200548591,
+     "estagio3": 0.08509066667826884,
+     "vencidos": 0.040003990530124524
+    },
+    {
+     "cod": "C0080178",
+     "nome": "BMG",
+     "lucro": 304554828.56,
+     "carteira": 22619522588.82,
+     "basileia": 0.133229295716163,
+     "estagio3": 0.06493141752649828,
+     "vencidos": 0.035116602554353483
+    },
+    {
+     "cod": "C0084741",
+     "nome": "BANCO HSBC",
+     "lucro": 91853869.6400004,
+     "carteira": 5254438748.1,
+     "basileia": 0.23360693402377,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0087621",
+     "nome": "NIKOS DTVM",
+     "lucro": -2304891.16,
+     "carteira": 0.0,
+     "basileia": 0.246080471994726,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0080556",
+     "nome": "BOFA MERRILL LYNCH",
+     "lucro": 596770006.749983,
+     "carteira": 2646246683.06,
+     "basileia": 0.267171596256514,
+     "estagio3": 0.12043103676455458,
+     "vencidos": 0.12043103676455458
+    },
+    {
+     "cod": "C0081562",
+     "nome": "BCO TOYOTA DO BRASIL S.A.",
+     "lucro": 138158081.79,
+     "carteira": 10952866893.46,
+     "basileia": 0.13006018228945,
+     "estagio3": 0.012848239551432562,
+     "vencidos": 0.0033521923652306304
+    },
+    {
+     "cod": "25683434",
+     "nome": "COOPERATIVA CENTRAL DE CRÉDITO DE MINAS GERAIS LTDA. - SICOOB CENTRAL CREDIMINAS",
+     "lucro": 118530656.46,
+     "carteira": 93624153.31,
+     "basileia": 0.147440002993311,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "26529420",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO OURO VERDE - SICREDI OURO VERDE MT/PA",
+     "lucro": 138820245.09,
+     "carteira": 8240440582.12,
+     "basileia": 0.189557113490992,
+     "estagio3": 0.10523293908788606,
+     "vencidos": 0.04391146499158635
+    },
+    {
+     "cod": "C0081249",
+     "nome": "BCO DA AMAZONIA S.A.",
+     "lucro": 353059516.54,
+     "carteira": 38713829302.5,
+     "basileia": 0.130151044127038,
+     "estagio3": 0.10627143357349449,
+     "vencidos": 0.05369606159041315
+    },
+    {
+     "cod": "05463212",
+     "nome": "COOPERATIVA CENTRAL DE CRÉDITO - AILOS",
+     "lucro": 8.58271960169077e-08,
+     "carteira": 867025720.71,
+     "basileia": 0.366232297901512,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0081610",
+     "nome": "BCO CSF S.A.",
+     "lucro": 300157168.14,
+     "carteira": 18220416383.99,
+     "basileia": 0.156814538708478,
+     "estagio3": 0.2571828687123528,
+     "vencidos": 0.24885686209634897
+    },
+    {
+     "cod": "54037916",
+     "nome": "COOPERATIVA DE CREDITO CREDICITRUS",
+     "lucro": 164238813.47,
+     "carteira": 9038340585.44,
+     "basileia": 0.292964389398764,
+     "estagio3": 0.11159903673992728,
+     "vencidos": 0.052529781467356526
+    },
+    {
+     "cod": "C0081555",
+     "nome": "BCO RABOBANK INTL BRASIL S.A.",
+     "lucro": 270816145.990001,
+     "carteira": 37932272838.13,
+     "basileia": 0.142097615083413,
+     "estagio3": 0.11655127433332649,
+     "vencidos": 0.028603686359591558
+    },
+    {
+     "cod": "C0081328",
+     "nome": "BCO DES. DE MG S.A.",
+     "lucro": 71598790.4700002,
+     "carteira": 9253331313.86,
+     "basileia": 0.209477578231696,
+     "estagio3": 0.04986840086261386,
+     "vencidos": 0.010522155034423534
+    },
+    {
+     "cod": "01401771",
+     "nome": "COOPERATIVA CENTRAL DE CRÉDITO COM INTERAÇÃO SOLIDÁRIA - CENTRAL CRESOL BASER",
+     "lucro": 57735211.3199999,
+     "carteira": 99056574.26,
+     "basileia": 0.158556150346065,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0080374",
+     "nome": "PINE",
+     "lucro": 314465387.87,
+     "carteira": 19519320419.65,
+     "basileia": 0.143133791746668,
+     "estagio3": 0.059948000122858475,
+     "vencidos": 0.024990959844645288
+    },
+    {
+     "cod": "C0088022",
+     "nome": "PICPAY",
+     "lucro": 360648855.55,
+     "carteira": 26906857759.52,
+     "basileia": 0.159308630973624,
+     "estagio3": 0.11763406418414941,
+     "vencidos": 0.09115055617290661
+    },
+    {
+     "cod": "C0081665",
+     "nome": "BCO CLASSICO S.A.",
+     "lucro": 52934212.21,
+     "carteira": 0.0,
+     "basileia": 0.220062677466591,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0081483",
+     "nome": "BCO FIBRA S.A.",
+     "lucro": 155037904.55,
+     "carteira": 8514327371.68,
+     "basileia": 0.112327227900529,
+     "estagio3": 0.04410484385515984,
+     "vencidos": 0.006594365034051805
+    },
+    {
+     "cod": "79342069",
+     "nome": "COOPERATIVA DE CRÉDITO, POUPANÇA E INVESTIMENTO DEXIS - SICREDI DEXIS",
+     "lucro": 88996115.2800001,
+     "carteira": 8895731648.76,
+     "basileia": 0.161042173474999,
+     "estagio3": 0.06881002462960704,
+     "vencidos": 0.031331488823654254
+    },
+    {
+     "cod": "C0080611",
+     "nome": "HONDA",
+     "lucro": 352523380.59,
+     "carteira": 11674203629.94,
+     "basileia": 0.196258355141412,
+     "estagio3": 0.09208481790086342,
+     "vencidos": 0.02494720853765945
+    },
+    {
+     "cod": "C0080312",
+     "nome": "ABC-BRASIL",
+     "lucro": 493191319.149999,
+     "carteira": 21568121678.27,
+     "basileia": 0.161796402088591,
+     "estagio3": 0.039460317029550225,
+     "vencidos": 0.009923332531153286
+    },
+    {
+     "cod": "C0084686",
+     "nome": "STONE IP",
+     "lucro": 2811269913.73,
+     "carteira": 3109118056.79,
+     "basileia": 0.126685274043275,
+     "estagio3": 0.0014476733364415545,
+     "vencidos": 0.002098672985338255
+    },
+    {
+     "cod": "63917579",
+     "nome": "COOPERATIVA CENTRAL DE CRÉDITO DO ESTADO DE SÃO PAULO - SICOOB SÃO PAULO",
+     "lucro": 61943650.4500001,
+     "carteira": 0.0,
+     "basileia": 0.172913709173912,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "82639451",
+     "nome": "COOPERATIVA DE CREDITO VALE DO ITAJAI - VIACREDI",
+     "lucro": 405343330.5,
+     "carteira": 8725675027.73,
+     "basileia": 0.338116851363123,
+     "estagio3": 0.0952622543462952,
+     "vencidos": 0.027344698951893388
+    },
+    {
+     "cod": "C0080996",
+     "nome": "INTER",
+     "lucro": 721326054.71,
+     "carteira": 46908498713.6,
+     "basileia": 0.144014250357747,
+     "estagio3": 0.07518099009607547,
+     "vencidos": 0.04862302081330334
+    },
+    {
+     "cod": "C0083694",
+     "nome": "AGIBANK",
+     "lucro": 167734584.73,
+     "carteira": 34675579969.18,
+     "basileia": 0.138934607898073,
+     "estagio3": 0.03793838476381488,
+     "vencidos": 0.01953996953910824
+    },
+    {
+     "cod": "C0080697",
+     "nome": "MIZUHO",
+     "lucro": 40301168.7600005,
+     "carteira": 3270315648.09,
+     "basileia": 0.212554095471752,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0080288",
+     "nome": "BRB",
+     "lucro": null,
+     "carteira": null,
+     "basileia": null,
+     "estagio3": 0.2797522044586734,
+     "vencidos": 0.10813305809540887
+    },
+    {
+     "cod": "C0080422",
+     "nome": "BS2",
+     "lucro": 48202629.71,
+     "carteira": 3131759500.4,
+     "basileia": 0.139762067684049,
+     "estagio3": 0.11970661060681156,
+     "vencidos": 0.06907762443988173
+    },
+    {
+     "cod": "C0080903",
+     "nome": "ORIGINAL",
+     "lucro": 156076167.280001,
+     "carteira": 20276437014.34,
+     "basileia": null,
+     "estagio3": 0.03334936670826134,
+     "vencidos": 0.009751303289203912
+    },
+    {
+     "cod": "00315557",
+     "nome": "COOPERATIVA CENTRAL DE CRÉDITO UNICRED DO BRASIL - UNICRED DO BRASIL",
+     "lucro": 41955312.1299999,
+     "carteira": 0.0,
+     "basileia": 0.263775667207728,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0080776",
+     "nome": "SCANIA",
+     "lucro": -23328081.45,
+     "carteira": 13856075892.7,
+     "basileia": 0.128659770479981,
+     "estagio3": 0.10961500775700257,
+     "vencidos": 0.03639312247807796
+    },
+    {
+     "cod": "C0081184",
+     "nome": "APE POUPEX",
+     "lucro": 123226151.65,
+     "carteira": 5130633698.16,
+     "basileia": 0.587348568664732,
+     "estagio3": 0.023969809538998153,
+     "vencidos": 0.0007578248226752627
+    },
+    {
+     "cod": "C0084820",
+     "nome": "MERCADO PAGO IP",
+     "lucro": 104256572.830002,
+     "carteira": 33704168293.05,
+     "basileia": 0.138493385769834,
+     "estagio3": 0.1719597422288622,
+     "vencidos": 0.17608828786628938
+    },
+    {
+     "cod": "C0080219",
+     "nome": "UBS (BRASIL)",
+     "lucro": -230170439.82,
+     "carteira": 3005417132.94,
+     "basileia": 0.358575683104674,
+     "estagio3": 0.0,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0080628",
+     "nome": "MORGAN STANLEY",
+     "lucro": 454611033.970002,
+     "carteira": 232467614.27,
+     "basileia": 0.28726157242023,
+     "estagio3": 1.0,
+     "vencidos": 1.0
+    },
+    {
+     "cod": "80160260",
+     "nome": "COOPERATIVA CENTRAL DE CRÉDITO DE SANTA CATARINA E RIO GRANDE DO SUL - SICOOB CENTRAL SC/RS",
+     "lucro": 73984781.2299997,
+     "carteira": 302640545.09,
+     "basileia": 0.130644218930864,
+     "estagio3": 0.002879684141068586,
+     "vencidos": 0.0
+    },
+    {
+     "cod": "C0080116",
+     "nome": "JP MORGAN CHASE",
+     "lucro": 1059048634.63,
+     "carteira": 3735714968.25,
+     "basileia": 0.216855152440023,
+     "estagio3": 0.0,
+     "vencidos": 7.264714717189294e-06
+    },
+    {
+     "cod": "C0080714",
+     "nome": "GOLDMAN SACHS",
+     "lucro": 686226252.149998,
+     "carteira": 5684822.76,
+     "basileia": 0.297875219379002,
+     "estagio3": 1.0,
+     "vencidos": 1.0
+    },
+    {
+     "cod": "C0081720",
+     "nome": "BCO SUMITOMO MITSUI BRASIL S.A.",
+     "lucro": 25253592.82,
+     "carteira": 2057705213.86,
+     "basileia": 0.278031082743445,
+     "estagio3": 0.38041099054287736,
+     "vencidos": 0.368671929738172
+    },
+    {
+     "cod": "71328769",
+     "nome": "SICOOB COCRED COOPERATIVA DE CRÉDITO",
+     "lucro": 43795270.0199997,
+     "carteira": 7137063656.65,
+     "basileia": 0.18741227724359,
+     "estagio3": 0.17250544374877666,
+     "vencidos": 0.04844503386224049
+    },
+    {
+     "cod": "C0080563",
+     "nome": "MERCEDES-BENZ",
+     "lucro": 39490306.5199998,
+     "carteira": 19293458023.25,
+     "basileia": 0.13076223650594,
+     "estagio3": 0.0726116590563352,
+     "vencidos": 0.010655888623721863
+    },
+    {
+     "cod": "10398952",
+     "nome": "CONFEDERAÇÃO NACIONAL DAS COOPERATIVAS CENTRAIS DE CRÉDITO E ECONOMIA FAMILIAR E SOLIDÁRIA - CRESOL CONFEDERAÇÃO",
+     "lucro": 18574563.9599999,
+     "carteira": 0.0,
+     "basileia": 0.20251143811144,
+     "estagio3": null,
+     "vencidos": null
+    },
+    {
+     "cod": "C0084624",
+     "nome": "BOCOM",
+     "lucro": 258045251.750005,
+     "carteira": 16826462986.49,
+     "basileia": 0.172102981137339,
+     "estagio3": 0.016025555099343367,
+     "vencidos": 0.011565493751326306
+    },
+    {
+     "cod": "C0080848",
+     "nome": "GM",
+     "lucro": 277327964.93,
+     "carteira": 13773332909.19,
+     "basileia": 0.194337180934799,
+     "estagio3": 0.025304122589861363,
+     "vencidos": 0.009198325450852895
+    }
+   ],
+   "S1": [
+    {
+     "cod": "C0080075",
+     "nome": "BRADESCO",
+     "lucro": 12112800045.93,
+     "carteira": 929928148205.21,
+     "basileia": 0.155573261111153,
+     "estagio3": 0.07323347433119891,
+     "vencidos": 0.027431283141319266
+    },
+    {
+     "cod": "C0080329",
+     "nome": "BB",
+     "lucro": 6550624863.77,
+     "carteira": 1128399194489.67,
+     "basileia": 0.139146075963478,
+     "estagio3": 0.09332224624980215,
+     "vencidos": 0.041115507093501945
+    },
+    {
+     "cod": "C0080336",
+     "nome": "BTG PACTUAL",
+     "lucro": 9471540322.49002,
+     "carteira": 215378010334.36,
+     "basileia": 0.160421550832961,
+     "estagio3": 0.07906904843615632,
+     "vencidos": 0.038972087148469274
+    },
+    {
+     "cod": "C0080185",
+     "nome": "SANTANDER",
+     "lucro": 7727558574.50988,
+     "carteira": 551585817453.36,
+     "basileia": 0.153354410988322,
+     "estagio3": 0.077756709882791,
+     "vencidos": 0.03281835004911625
+    },
+    {
+     "cod": "C0080738",
+     "nome": "CAIXA ECONÔMICA FEDERAL",
+     "lucro": 6585794275.92998,
+     "carteira": 1379196467570.54,
+     "basileia": 0.154543014689616,
+     "estagio3": 0.07236923187638271,
+     "vencidos": 0.021953712922347907
+    },
+    {
+     "cod": "C0080099",
+     "nome": "ITAU",
+     "lucro": 24670305939.7,
+     "carteira": 1235230835976.66,
+     "basileia": 0.153516322031136,
+     "estagio3": 0.03771120206752811,
+     "vencidos": 0.019977714581693173
+    }
+   ],
+   "S2": [
+    {
+     "cod": "C0082475",
+     "nome": "XP",
+     "lucro": 366430316.590022,
+     "carteira": 40030505032.71,
+     "basileia": 0.132815294646933,
+     "estagio3": 0.020723470210122774,
+     "vencidos": 0.007641655879911191
+    },
+    {
+     "cod": "C0080879",
+     "nome": "BANCO SICOOB",
+     "lucro": 459949279.120002,
+     "carteira": 44908980433.86,
+     "basileia": 0.202926782076754,
+     "estagio3": 0.029433956429995165,
+     "vencidos": 0.006676487487375955
+    },
+    {
+     "cod": "C0081593",
+     "nome": "BCO DO NORDESTE DO BRASIL S.A.",
+     "lucro": 1077598715.68,
+     "carteira": 17779920357.22,
+     "basileia": 0.151372833645037,
+     "estagio3": 0.10884991185959993,
+     "vencidos": 0.04172962427180777
+    },
+    {
+     "cod": "C0080109",
+     "nome": "SAFRA",
+     "lucro": 1911887156.06999,
+     "carteira": 139176939515.16,
+     "basileia": 0.181411026251013,
+     "estagio3": 0.046580309346895526,
+     "vencidos": 0.009668138134713608
+    },
+    {
+     "cod": "C0080192",
+     "nome": "CITIBANK",
+     "lucro": 1278936424.88,
+     "carteira": 26053128163.18,
+     "basileia": 0.153650295042831,
+     "estagio3": 0.048710542861548946,
+     "vencidos": 0.02235601559861295
+    },
+    {
+     "cod": "C0080154",
+     "nome": "BANRISUL",
+     "lucro": 546547018.780001,
+     "carteira": 60428053201.93,
+     "basileia": 0.159097945723375,
+     "estagio3": 0.0696301046497444,
+     "vencidos": 0.02942044261230097
+    },
+    {
+     "cod": "C0084693",
+     "nome": "NU PAGAMENTOS",
+     "lucro": 4093040225.39,
+     "carteira": 152354921356.93,
+     "basileia": 0.155091256405038,
+     "estagio3": 0.12359121560029464,
+     "vencidos": 0.09540662791602612
+    },
+    {
+     "cod": "C0081847",
+     "nome": "BNDES",
+     "lucro": 10977466516.88,
+     "carteira": 416329358513.01,
+     "basileia": 0.254340208451574,
+     "estagio3": 0.045080394769200255,
+     "vencidos": 0.00033472248237250194
+    },
+    {
+     "cod": "C0080745",
+     "nome": "BCO COOPERATIVO SICREDI",
+     "lucro": 162609268.750003,
+     "carteira": 50267292603.75,
+     "basileia": 0.201648348886513,
+     "estagio3": 0.00011660766873293906,
+     "vencidos": 6.022339108756627e-05
+    },
+    {
+     "cod": "C0080484",
+     "nome": "VOTORANTIM",
+     "lucro": 961858265.880003,
+     "carteira": 79918605578.49,
+     "basileia": 0.158767934332953,
+     "estagio3": 0.10716733386741886,
+     "vencidos": 0.04910586739339341
+    }
+   ]
+  }
+ }
 }
