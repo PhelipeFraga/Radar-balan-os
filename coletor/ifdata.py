@@ -216,19 +216,29 @@ def pares(ultimo):
         return c.get("Sr") or (cad.get(lider) or {}).get("Sr") or seg_grupo.get(cod)
 
     todos = {cod: (cod, None) for cod in cods if segmento(cod) in SEGMENTOS}
-    fim = _mes(todos, ultimo)
-    meio = _mes(todos, ultimo // 100 * 100 + 6) if ultimo % 100 > 6 else {}
+
+    def periodo(anomes):
+        """{cod: indicadores} com o lucro acumulado no ano até anomes."""
+        fim = _mes(todos, anomes)
+        meio = _mes(todos, anomes // 100 * 100 + 6) if anomes % 100 > 6 else {}
+        saida = {}
+        for cod, v in fim.items():
+            lucro = v["lucro_sem"]
+            if anomes % 100 > 6:
+                m = meio.get(cod) or {}
+                lucro = lucro + m["lucro_sem"] if lucro is not None and m.get("lucro_sem") is not None else None
+            saida[cod] = {"lucro": lucro, "carteira": v["carteira"], "basileia": v["basileia"],
+                          "estagio3": v["estagio3"], "vencidos": v["vencidos"]}
+        return saida
+
+    fim = periodo(ultimo)
+    antes = periodo(ultimo - 100)  # mesmo período do ano anterior, para as setas
     segmentos, segmento_de = {}, {}
     for cod, v in fim.items():
-        lucro = v["lucro_sem"]
-        if meio:
-            m = meio.get(cod) or {}
-            lucro = lucro + m["lucro_sem"] if lucro is not None and m.get("lucro_sem") is not None else None
         nome = (cad.get(cod) or {}).get("NomeInstituicao") or cod
         nome = nome.replace(" - PRUDENCIAL", "").replace("- PRUDENCIAL", "").strip()
         seg = segmento(cod)
         segmento_de[cod] = seg
-        segmentos.setdefault(seg, []).append({"cod": cod, "nome": nome, "lucro": lucro, "carteira": v["carteira"],
-                                              "basileia": v["basileia"], "estagio3": v["estagio3"], "vencidos": v["vencidos"]})
+        segmentos.setdefault(seg, []).append({"cod": cod, "nome": nome, **v, "antes": antes.get(cod)})
     print(f"  pares: {', '.join(f'{s} {len(segmentos.get(s, []))}' for s in SEGMENTOS)}")
     return {"ate": ultimo, "segmentos": segmentos, "segmento_de": segmento_de}

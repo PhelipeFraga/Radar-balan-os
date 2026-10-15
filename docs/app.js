@@ -8,7 +8,7 @@ const TRIMESTRE = { "1T": "1º trimestre", "2T": "2º trimestre", "3T": "3º tri
 const CVM_BUSCA = "https://www.rad.cvm.gov.br/ENETWeb/frmConsultaExternaCVM.aspx";
 
 const tela = document.getElementById("tela");
-const estado = { dados: null, erro: null, mes: null, diaEscolhido: null, busca: "", filtro: "todas", indicador: "lucro" };
+const estado = { dados: null, erro: null, mes: null, diaEscolhido: null, busca: "", filtro: "todas", indicador: "lucro", verNumeros: "inst" };
 
 // ---------- utilidades ----------
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
@@ -273,10 +273,8 @@ function blocoNumeros(inst) {
 
 // ---------- comparação com pares (segmento do Banco Central) ----------
 const SEGMENTO = { S1: "S1 · os maiores do sistema", S2: "S2 · grandes", S3: "S3 · médios", S4: "S4 · pequenos" };
-const MAX_PARES = 8;
 const nomeBC = (n) => n.toLowerCase().replace(/(^|[\s(\-/.])(\p{L})/gu, (m, a, b) => a + b.toUpperCase())
   .replace(/\b(S\.?a\.?|Ltda|Bco|Cfi|Dtvm)\b/gi, (m) => ({ "s.a.": "S.A.", "sa": "S.A.", "s.a": "S.A.", "bco": "Banco" }[m.toLowerCase()] || m.toUpperCase()));
-const mediana = (xs) => { const s = [...xs].sort((a, b) => a - b); const m = Math.floor(s.length / 2); return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
 
 // Barras horizontais, uma por instituição (pares e ranking).
 function barrasComparacao(linhas, ind, destaque) {
@@ -296,37 +294,60 @@ function barrasComparacao(linhas, ind, destaque) {
   }).join("");
 }
 
-function blocoPares(inst) {
+function blocoComparar(inst) {
   const P = estado.dados.pares;
   const n = inst.numeros;
-  if (!P || !n || !n.segmento || !(P.segmentos || {})[n.segmento]) return "";
+  const vazio = (msg) => `<div class="cartao" style="padding:18px"><div class="vazio" style="padding:0">${msg}</div></div>`;
+  if (!P || !n || !n.segmento || !(P.segmentos || {})[n.segmento]) return vazio("O Banco Central não tem pares para comparar com esta instituição.");
   const ind = INDICADORES.find((i) => i.id === estado.indicador) || INDICADORES[0];
   const nossos = {};
   for (const i of estado.dados.instituicoes) if (i.numeros && i.numeros.cod) nossos[i.numeros.cod] = i;
   const grupo = P.segmentos[n.segmento].filter((x) => x[ind.id] != null);
   const eu = grupo.find((x) => x.cod === n.cod);
-  if (!eu || grupo.length < 2) return "";
-  // Os de porte (carteira) mais parecido com o banco da tela.
-  const perto = grupo.filter((x) => x !== eu && x.carteira)
+  if (!eu) return vazio("Sem esse indicador para esta instituição no Banco Central.");
+  // Os 5 de porte (carteira) mais parecido, como no design: 6 linhas no total.
+  const perto = grupo.filter((x) => x !== eu && x.carteira && eu.carteira)
     .sort((a, b) => Math.abs(Math.log(a.carteira / eu.carteira)) - Math.abs(Math.log(b.carteira / eu.carteira)))
-    .slice(0, MAX_PARES);
-  const med = mediana(grupo.map((x) => x[ind.id]));
-  const linhas = [eu, ...perto].sort((a, b) => b[ind.id] - a[ind.id]).map((x) => ({
-    id: x.cod, valor: x[ind.id], nome: nossos[x.cod] ? nossos[x.cod].nome : nomeBC(x.nome),
-    href: nossos[x.cod] && x.cod !== n.cod ? `#inst/${nossos[x.cod].id}` : null,
-  }));
-  linhas.push({ id: "mediana", mediana: true, valor: med, nome: `Mediana dos ${grupo.length} do segmento` });
-  const acima = eu[ind.id] > med;
-  const bom = ind.bom === "sobe" ? acima : ind.bom === "desce" ? !acima : null;
-  const cor = bom === null || eu[ind.id] === med ? "var(--suave)" : bom ? VERDE : VERMELHO;
-  const frase = `${ind.id === "lucro" ? "Lucro" : ind.nome} de ${formata(ind, eu[ind.id])}: ${eu[ind.id] === med ? "igual à" : acima ? "acima da" : "abaixo da"} mediana dos pares (${formata(ind, med)})`;
-  return `<div style="display:flex;flex-direction:column;gap:2px"><h2>Comparação com pares</h2>
-      <span class="subtitulo">Segmento ${SEGMENTO[n.segmento] || n.segmento} do Banco Central · ${esc(P.rotulo || "")}</span></div>
-    <div class="cartao" style="padding:16px 18px;display:flex;flex-direction:column;gap:8px">
-      <div style="font-size:14px;font-weight:800;color:${cor}">${frase}</div>
-      <div style="font-size:12px;color:var(--suave)">${ind.id === "lucro" ? "Lucro acumulado" : ind.nome} · ${inst.nome} em azul e os ${perto.length} de porte mais parecido. Toque num cartão de Números para trocar o indicador.</div>
-      <div>${barrasComparacao(linhas, ind, n.cod)}</div>
+    .slice(0, 5);
+  const linhas = [eu, ...perto].sort((a, b) => b[ind.id] - a[ind.id]);
+  const maior = Math.max(...linhas.map((x) => Math.abs(x[ind.id])), 0) || 1;
+  const setaDe = (x) => {
+    const antes = x.antes ? x.antes[ind.id] : null;
+    if (antes == null) return { texto: "", cor: "var(--suave)" };
+    const d = x[ind.id] - antes;
+    const texto = ind.tipo === "pct" ? `${d > 0 ? "▲" : d < 0 ? "▼" : "="} ${virgula(Math.abs(d * 100), 1)}`
+      : antes > 0 && x[ind.id] > 0 ? `${d > 0 ? "▲" : d < 0 ? "▼" : "="} ${virgula(Math.abs(d / antes * 100), 0)}%` : "";
+    const melhora = ind.bom === "sobe" ? d > 0 : ind.bom === "desce" ? d < 0 : null;
+    return { texto, cor: melhora === null || d === 0 ? "var(--suave)" : melhora ? VERDE : VERMELHO };
+  };
+  const linhaHtml = (x, k) => {
+    const meu = x === eu;
+    const nome = nossos[x.cod] ? nossos[x.cod].nome : nomeBC(x.nome);
+    const s = setaDe(x);
+    const largura = Math.max(2, Math.round(Math.abs(x[ind.id]) / maior * 100));
+    const conteudo = `<div style="display:flex;flex-direction:column;gap:8px;padding:12px 0;${k < linhas.length - 1 ? "border-bottom:1px solid var(--linha)" : ""}">
+      <div style="display:flex;justify-content:space-between;align-items:baseline;gap:10px">
+        <div style="font-size:14px;font-weight:${meu ? 800 : 600};min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(nome)}</div>
+        <div style="display:flex;gap:8px;align-items:baseline;white-space:nowrap">
+          <span style="font-size:12px;font-weight:700;color:${s.cor}">${s.texto}</span>
+          <span style="font-size:15px;font-weight:800">${formata(ind, x[ind.id])}</span></div></div>
+      <div style="height:8px;border-radius:4px;background:#EEF0F4"><div style="height:8px;border-radius:4px;width:${largura}%;background:${x[ind.id] < 0 ? VERMELHO : meu ? "var(--azul)" : "#C9D2E8"}"></div></div>
     </div>`;
+    return nossos[x.cod] && !meu ? `<a href="#inst/${nossos[x.cod].id}" style="display:block;text-decoration:none;color:inherit">${conteudo}</a>` : conteudo;
+  };
+  const opcoes = INDICADORES.map((x) => `<option value="${x.id}"${x.id === ind.id ? " selected" : ""}>${x.id === "lucro" ? "Lucro acumulado" : x.nome}</option>`).join("");
+  const nomeInd = ind.id === "lucro" ? "Lucro acumulado" : ind.nome;
+  const anoAntes = Number((P.rotulo || "").slice(-4)) - 1;
+  return `
+    <label style="position:relative;display:flex;align-items:center;justify-content:space-between;background:#fff;border-radius:16px;box-shadow:0 4px 14px rgba(20,22,26,.05);min-height:54px;padding:0 16px">
+      <span style="display:flex;flex-direction:column;gap:2px">
+        <span style="font-size:11px;font-weight:700;color:var(--apagado)">INDICADOR</span>
+        <span style="font-size:15px;font-weight:700">${nomeInd} · ${esc(P.rotulo || "")}</span></span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5B6170" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
+      <select id="indicador" aria-label="Indicador" style="position:absolute;inset:0;opacity:0;width:100%;cursor:pointer">${opcoes}</select>
+    </label>
+    <div class="cartao" style="padding:8px 16px">${linhas.map(linhaHtml).join("")}</div>
+    <p class="nota">Pares do mesmo porte no Banco Central (${SEGMENTO[n.segmento] || n.segmento}). Ordenado do maior para o menor; a seta compara com o mesmo período de ${anoAntes || "ano anterior"}.</p>`;
 }
 
 function telaInstituicao(id) {
@@ -386,14 +407,15 @@ function telaInstituicao(id) {
     <h2>Balanços anuais anteriores</h2>
     <div class="cartao lista">${anuais.map(linhaAnual).join("")}</div>
     <div style="display:flex;flex-direction:column;gap:2px"><h2>Números</h2>${inst.numeros && inst.numeros.atual ? `<span class="subtitulo">Acumulado do ${inst.numeros.atual.rotulo.replace(/ (\d{4})$/, " de $1")} · vs. mesmo período do ano anterior</span>` : ""}</div>
-    ${blocoNumeros(inst)}
-    ${(() => { try { return blocoPares(inst); } catch (e) { return ""; } })()}`;
-  tela.querySelectorAll("[data-ind]").forEach((b) => b.addEventListener("click", () => {
-    estado.indicador = b.dataset.ind;
-    const y = window.scrollY;
-    desenhar();
-    window.scrollTo(0, y);
-  }));
+    ${inst.numeros && inst.numeros.atual ? `<div style="background:#E6E8EE;border-radius:14px;padding:4px;display:grid;grid-template-columns:1fr 1fr;gap:4px">
+      ${[["inst", "Esta instituição"], ["comparar", "Comparar"]].map(([v, rot]) => `<button data-ver="${v}" aria-pressed="${estado.verNumeros === v}" style="min-height:38px;border-radius:11px;border:none;font-size:13px;cursor:pointer;${estado.verNumeros === v ? "background:#fff;color:var(--texto);font-weight:700;box-shadow:0 2px 6px rgba(20,22,26,.08)" : "background:transparent;color:var(--suave);font-weight:600"}">${rot}</button>`).join("")}
+    </div>` : ""}
+    ${estado.verNumeros === "comparar" && inst.numeros && inst.numeros.atual ? (() => { try { return blocoComparar(inst); } catch (e) { return ""; } })() : blocoNumeros(inst)}`;
+  const redesenhar = () => { const y = window.scrollY; desenhar(); window.scrollTo(0, y); };
+  tela.querySelectorAll("[data-ind]").forEach((b) => b.addEventListener("click", () => { estado.indicador = b.dataset.ind; redesenhar(); }));
+  tela.querySelectorAll("[data-ver]").forEach((b) => b.addEventListener("click", () => { estado.verNumeros = b.dataset.ver; redesenhar(); }));
+  const sel = tela.querySelector("#indicador");
+  if (sel) sel.addEventListener("change", () => { estado.indicador = sel.value; redesenhar(); });
 }
 
 function telaEvento(id) {
