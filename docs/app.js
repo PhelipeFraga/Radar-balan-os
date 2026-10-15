@@ -271,6 +271,64 @@ function blocoNumeros(inst) {
     <p class="nota">Fonte: Banco Central (IF.data), grupo prudencial. Os números saem 2 a 3 meses depois do fim do trimestre. Estágio 3 e Vencidos são % da carteira. O Estágio 3 existe desde 2025 (Resolução 4.966); até 2024, o lugar dele é da carteira E–H. Vencidos = parcelas com mais de 15 dias de atraso, mesma base em todos os anos. Toque num cartão para ver o gráfico dele.</p>`;
 }
 
+// ---------- comparação com pares (segmento do Banco Central) ----------
+const SEGMENTO = { S1: "S1 · os maiores do sistema", S2: "S2 · grandes", S3: "S3 · médios", S4: "S4 · pequenos" };
+const MAX_PARES = 8;
+const nomeBC = (n) => n.toLowerCase().replace(/(^|[\s(\-/.])(\p{L})/gu, (m, a, b) => a + b.toUpperCase())
+  .replace(/\b(S\.?a\.?|Ltda|Bco|Cfi|Dtvm)\b/gi, (m) => ({ "s.a.": "S.A.", "sa": "S.A.", "s.a": "S.A.", "bco": "Banco" }[m.toLowerCase()] || m.toUpperCase()));
+const mediana = (xs) => { const s = [...xs].sort((a, b) => a - b); const m = Math.floor(s.length / 2); return s.length % 2 ? s[m] : (s[m - 1] + s[m]) / 2; };
+
+// Barras horizontais, uma por instituição (pares e ranking).
+function barrasComparacao(linhas, ind, destaque) {
+  const maior = Math.max(...linhas.map((l) => Math.abs(l.valor ?? 0)), 0) || 1;
+  return linhas.map((l) => {
+    const largura = l.valor == null ? 0 : Math.max(2, Math.round(Math.abs(l.valor) / maior * 100));
+    const cor = l.mediana ? "#8A90A0" : l.valor < 0 ? VERMELHO : l.id === destaque ? "var(--azul)" : "#C9D2E8";
+    const peso = l.id === destaque || l.mediana ? 800 : 600;
+    const abre = l.href ? `<a href="${l.href}" style="text-decoration:none;color:inherit;display:block">` : "<div>";
+    const fecha = l.href ? "</a>" : "</div>";
+    return `${abre}<div style="display:flex;flex-direction:column;gap:5px;padding:8px 0;border-bottom:1px solid var(--linha)">
+      <div style="display:flex;justify-content:space-between;gap:10px;font-size:13px;font-weight:${peso}">
+        <span style="min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(l.nome)}</span>
+        <span style="white-space:nowrap">${formata(ind, l.valor)}</span></div>
+      <div style="height:8px;border-radius:4px;background:#EEF0F4"><div style="height:8px;border-radius:4px;width:${largura}%;background:${cor}${l.mediana ? ";opacity:.7" : ""}"></div></div>
+    </div>${fecha}`;
+  }).join("");
+}
+
+function blocoPares(inst) {
+  const P = estado.dados.pares;
+  const n = inst.numeros;
+  if (!P || !n || !n.segmento || !(P.segmentos || {})[n.segmento]) return "";
+  const ind = INDICADORES.find((i) => i.id === estado.indicador) || INDICADORES[0];
+  const nossos = {};
+  for (const i of estado.dados.instituicoes) if (i.numeros && i.numeros.cod) nossos[i.numeros.cod] = i;
+  const grupo = P.segmentos[n.segmento].filter((x) => x[ind.id] != null);
+  const eu = grupo.find((x) => x.cod === n.cod);
+  if (!eu || grupo.length < 2) return "";
+  // Os de porte (carteira) mais parecido com o banco da tela.
+  const perto = grupo.filter((x) => x !== eu && x.carteira)
+    .sort((a, b) => Math.abs(Math.log(a.carteira / eu.carteira)) - Math.abs(Math.log(b.carteira / eu.carteira)))
+    .slice(0, MAX_PARES);
+  const med = mediana(grupo.map((x) => x[ind.id]));
+  const linhas = [eu, ...perto].sort((a, b) => b[ind.id] - a[ind.id]).map((x) => ({
+    id: x.cod, valor: x[ind.id], nome: nossos[x.cod] ? nossos[x.cod].nome : nomeBC(x.nome),
+    href: nossos[x.cod] && x.cod !== n.cod ? `#inst/${nossos[x.cod].id}` : null,
+  }));
+  linhas.push({ id: "mediana", mediana: true, valor: med, nome: `Mediana dos ${grupo.length} do segmento` });
+  const acima = eu[ind.id] > med;
+  const bom = ind.bom === "sobe" ? acima : ind.bom === "desce" ? !acima : null;
+  const cor = bom === null || eu[ind.id] === med ? "var(--suave)" : bom ? VERDE : VERMELHO;
+  const frase = `${ind.id === "lucro" ? "Lucro" : ind.nome} de ${formata(ind, eu[ind.id])}: ${eu[ind.id] === med ? "igual à" : acima ? "acima da" : "abaixo da"} mediana dos pares (${formata(ind, med)})`;
+  return `<div style="display:flex;flex-direction:column;gap:2px"><h2>Comparação com pares</h2>
+      <span class="subtitulo">Segmento ${SEGMENTO[n.segmento] || n.segmento} do Banco Central · ${esc(P.rotulo || "")}</span></div>
+    <div class="cartao" style="padding:16px 18px;display:flex;flex-direction:column;gap:8px">
+      <div style="font-size:14px;font-weight:800;color:${cor}">${frase}</div>
+      <div style="font-size:12px;color:var(--suave)">${ind.id === "lucro" ? "Lucro acumulado" : ind.nome} · ${inst.nome} em azul e os ${perto.length} de porte mais parecido. Toque num cartão de Números para trocar o indicador.</div>
+      <div>${barrasComparacao(linhas, ind, n.cod)}</div>
+    </div>`;
+}
+
 function telaInstituicao(id) {
   const inst = estado.dados.instituicoes.find((i) => String(i.id) === id);
   if (!inst) { tela.innerHTML = `${voltar("#instituicoes")}<div class="erro">Instituição não encontrada.</div>`; return; }
@@ -328,7 +386,8 @@ function telaInstituicao(id) {
     <h2>Balanços anuais anteriores</h2>
     <div class="cartao lista">${anuais.map(linhaAnual).join("")}</div>
     <div style="display:flex;flex-direction:column;gap:2px"><h2>Números</h2>${inst.numeros && inst.numeros.atual ? `<span class="subtitulo">Acumulado do ${inst.numeros.atual.rotulo.replace(/ (\d{4})$/, " de $1")} · vs. mesmo período do ano anterior</span>` : ""}</div>
-    ${blocoNumeros(inst)}`;
+    ${blocoNumeros(inst)}
+    ${(() => { try { return blocoPares(inst); } catch (e) { return ""; } })()}`;
   tela.querySelectorAll("[data-ind]").forEach((b) => b.addEventListener("click", () => {
     estado.indicador = b.dataset.ind;
     const y = window.scrollY;
@@ -399,17 +458,19 @@ function telaInstituicoes() {
 
 function telaNumeros() {
   const segue = seguindo();
-  const lista = estado.dados.instituicoes.filter((i) => segue(i.id) && i.numeros && i.numeros.atual);
-  const linha = (i) => {
-    const u = i.numeros.atual;
-    return `<a class="item" href="#inst/${i.id}"><div class="logo">${esc(i.sigla)}</div>
-      <div class="meio"><div class="nome">${esc(i.nome)}</div><div class="info">Lucro ${rotuloCurto(u.rotulo)} ${reais(u.lucro)} · Vencidos ${pct(u.vencidos)}</div></div>
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#8A90A0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg></a>`;
-  };
+  const ind = INDICADORES.find((i) => i.id === estado.indicador) || INDICADORES[0];
+  const lista = estado.dados.instituicoes.filter((i) => segue(i.id) && i.numeros && i.numeros.atual && i.numeros.atual[ind.id] != null);
+  const rotulo = lista.length ? lista[0].numeros.atual.rotulo : "";
+  const linhas = lista.sort((a, b) => b.numeros.atual[ind.id] - a.numeros.atual[ind.id])
+    .map((i) => ({ id: i.id, valor: i.numeros.atual[ind.id], nome: i.nome, href: `#inst/${i.id}` }));
+  const chips = INDICADORES.map((x) => `<button data-ind="${x.id}" class="${x.id === ind.id ? "ativo" : ""}">${x.id === "lucro" ? "Lucro" : x.nome}</button>`).join("");
   tela.innerHTML = `
     <div class="topo"><h1>Números</h1></div>
-    <p class="nota" style="margin:0">Toque numa instituição para ver lucro, carteira, Basileia, Estágio 3 e Vencidos, ano a ano.</p>
-    <div class="cartao lista">${lista.length ? lista.map(linha).join("") : '<div class="vazio">Nenhuma instituição acompanhada com números no Banco Central.</div>'}</div>`;
+    <div class="filtros">${chips}</div>
+    <div style="display:flex;flex-direction:column;gap:2px"><h2>${ind.id === "lucro" ? "Lucro acumulado" : ind.nome}</h2><span class="subtitulo">${esc(rotulo)} · instituições que você acompanha</span></div>
+    <div class="cartao" style="padding:8px 18px">${linhas.length ? barrasComparacao(linhas, ind, null) : '<div class="vazio">Nenhuma instituição acompanhada com números no Banco Central.</div>'}</div>
+    <p class="nota">Toque numa instituição para ver os números dela e a comparação com os pares do mesmo porte.</p>`;
+  tela.querySelectorAll("[data-ind]").forEach((b) => b.addEventListener("click", () => { estado.indicador = b.dataset.ind; desenhar(); }));
 }
 
 function rodapeAtualizacao() {
