@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-10-20T20:52-03:00",
+ "atualizado": "2026-10-21T06:24-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -4330,7 +4330,13 @@
      "ano": 2026,
      "data": "2026-10-22",
      "fonte": "confirmada",
-     "status": "previsto"
+     "status": "saiu",
+     "saiu_em": "2026-10-21",
+     "noticia": {
+      "titulo": "Bradesco (BBDC4) chega ao balanço com quase R$ 10 bilhões a mais no caixa, mas ainda precisa convencer que a virada veio para ficar - Seu Dinheiro",
+      "link": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNWjljcF9tZ2syd3ctNFVWcTl1Q1Jtam5lTmVYcXdETGZBYlAxQjlyZmcwLVlOSVFsMEphNWRzWVQ5dWhNMDZXZURjeURLVEtOMFRfNU1oMlFSQVZMOHhZT2g3Vmc0ODJPNlpCT2xTV01aaXJyZ0VlcWlRWEZveVItUUZTSEhDY1hDNTlVNHhDSV94R2p3MXdZeVJYXzJrZGtNUTkzb2E1dEsxX2VwWW9USnljNTJhNkJpQlVKRXJVekJPdzlYcF8zVUwydElCTnU2Qmk3RjNzSFlxQ00xMGJQdV84UkttR3FWR3pKSGpvRVVseXFrYWx6MzAwbWxGWjROeTNRNDN3?oc=5",
+      "quando": "Wed, 21 Oct 2026 09:13:00 GMT"
+     }
     },
     {
      "tipo": "DFP",
