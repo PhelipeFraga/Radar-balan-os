@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-04T19:19-03:00",
+ "atualizado": "2026-11-05T00:37-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -4982,7 +4982,13 @@
      "ano": 2026,
      "data": "2026-11-04",
      "fonte": "confirmada",
-     "status": "previsto"
+     "status": "saiu",
+     "saiu_em": "2026-11-05",
+     "noticia": {
+      "titulo": "Daycoval tem lucro de R$ 452 milhões no 3º trimestre - Valor Econômico",
+      "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTm5ydk41YXRpYjRnNmtfZVRXeWx5bjVOa0RfdEtOY2FxTTBFSTdURU5tVkNTeUhfc0lVQU1SX3laa0VmUXJlVks3Ym5EVFpOdHpJa2JKazhtclMybDlyQWd4SWt2aE4ySHJGaTUyTFZ4REh2TFJCNFYyclpqZ05LdTd5X2tyVUdndkgtN2NBZVVxbkFEd2NFbkpVS1FaZjVpOUdhbS1rOGRBYUVJTVHSAbwBQVVfeXFMTlBUUkstdHdoYXBKVjhRek1JZGwwUk96TG40R3o3dFg2NmRILTcxTUh0YkpOS1k2NkFDR29VenMyZHBTdWpVVXpEQ252a2k0S2o1TlF0RTVweVJTemFXTHh4SVlvMUFKRWxJZmY0dldwdWRmenhpOWp6eXZYOEJWMWxYdEdNQTliYlpoQXdyek43c3YxY254X1ZOZzRjdzNMcF9QQzQ4c25TazJia1FtdFc5RC1VTVBDWWhsZHQ?oc=5",
+      "quando": "Wed, 04 Nov 2026 23:52:29 GMT"
+     }
     },
     {
      "tipo": "DFP",
@@ -5356,11 +5362,11 @@
      "data": "2026-11-03",
      "fonte": "confirmada",
      "status": "saiu",
-     "saiu_em": "2026-11-04",
+     "saiu_em": "2026-11-05",
      "noticia": {
-      "titulo": "Itaú registra lucro recorde de R$ 12,6 bilhões no terceiro trimestre - Contec Brasil",
-      "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQazZoUGJFN0htMmE5b1Y0LXZIdVlKYUNIWEFoSW9HR3BvVkE2dTdOZEtEa3FFTWVfejVlTUMtV1JWOEw4MWU2VlgtSkh3MXJvaW5aMkdKWjNsNVJJMkdLM1ZHcmczYmhCREdieU1sN0RFSXNfQkRJZWpyTkFPaUVUc21manNLUWoyRmI1Vi02QzlWWjg?oc=5",
-      "quando": "Wed, 04 Nov 2026 14:30:28 GMT"
+      "titulo": "Lucro do Itaú vai a R$ 12,6 bi no terceiro trimestre, alta de 1,7% - UOL Economia",
+      "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNQlY3dUZhay02OWlsSU83UDllZ3hCVFRBUzBSZ2hmUDNLeW5QOU9SQUJ5VGVhOHBBYko3V3BNQ1UtenJfVXZmQUVLTjFTUjVRMHJ6Njg2ZE9GUzQ2MUxKWXQyVzA5b3BFdXhTWE1xX3FsaS1KWkJ6NER1dmFSa19ZSWJnUWJZdkdJZEtsaWVKSGNRcXJYZnJHSGs3RXFmSGV0U3c?oc=5",
+      "quando": "Tue, 03 Nov 2026 22:29:39 GMT"
      }
     },
     {
