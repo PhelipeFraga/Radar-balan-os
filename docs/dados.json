@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-05T22:19-03:00",
+ "atualizado": "2026-11-06T00:32-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -247,7 +247,7 @@
      "data": "2026-11-05",
      "fonte": "confirmada",
      "status": "saiu",
-     "saiu_em": "2026-11-05",
+     "saiu_em": "2026-11-06",
      "noticia": {
       "titulo": "Banco ABC Brasil registra lucro de R$ 273,7 milhões no 3T26 e amplia carteira de crédito - ADVFN",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcVVLR2VPb2xjMGRVUWx3Y2VVcjRQcmdRUllabjdSSkdtd29uSHotYzNYZWhfcVMxRmI1cFdBSTdNS3k5TFZMMEtMV3BRX2l1dXRtTzdCMGN1OWowZmJUVXMwVmthMXFUX0M0NkpYTHBrWi12TlRXV2VTWWpDSWpINi1lZTNUT1ZtZEFmRmRRV243TlNtb3JKU2tiS2NhVnc4NjRHZGRYOGxhUERJdEJ3Y2VNLUtPcEdFNVZVRkdWOFg?oc=5",
@@ -769,9 +769,9 @@
      "data": "2026-11-05",
      "fonte": "confirmada",
      "status": "saiu",
-     "saiu_em": "2026-11-05",
+     "saiu_em": "2026-11-06",
      "noticia": {
-      "titulo": "BR Partners registra lucro de R$ 23,54 mi no terceiro trimestre de 2026, queda de -44,26% - trademap.com.br",
+      "titulo": "BR Partners registra lucro de R$ 23,54 mi no terceiro trimestre de 2026, queda de -44,26% - TradeMap",
       "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5aQTVITlFYaGRvOWd1XzRlcDVwR2dSR0NHZEFYNldwa19fWVhsMW9ERmhtZUF6eWJsa0xiZ2ZhV2xwaFE4eHdfWk1BWE9XZGMxOGt5YURlTnA?oc=5",
       "quando": "Thu, 05 Nov 2026 21:04:45 GMT"
      }
@@ -1606,7 +1606,7 @@
      "data": "2026-11-05",
      "fonte": "confirmada",
      "status": "saiu",
-     "saiu_em": "2026-11-05",
+     "saiu_em": "2026-11-06",
      "noticia": {
       "titulo": "JCP do Banco BMG soma R$ 64 milhões enquanto custo do crédito pressiona lucro - Economic News Brasil",
       "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQZC1FWkh2djlsYU15WlJuSkE2UnJoWDVjRHBvRjhsY3JVWTRjcWI5V3Rrb29PamtCZDRmLUtRNTVXbzI4VHd2U1VMSm5IUnFOek5hQkNLZE5GZWF4UF9ETEZ3WFQtaWw1dVc4T1o2VjhxeXhxRHVVYXZuQmZYMWRuRkVYeVpfTjg?oc=5",
@@ -5001,7 +5001,7 @@
      "data": "2026-11-04",
      "fonte": "confirmada",
      "status": "saiu",
-     "saiu_em": "2026-11-05",
+     "saiu_em": "2026-11-06",
      "noticia": {
       "titulo": "Daycoval tem lucro de R$ 452 milhões no 3º trimestre - Valor Econômico",
       "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNTm5ydk41YXRpYjRnNmtfZVRXeWx5bjVOa0RfdEtOY2FxTTBFSTdURU5tVkNTeUhfc0lVQU1SX3laa0VmUXJlVks3Ym5EVFpOdHpJa2JKazhtclMybDlyQWd4SWt2aE4ySHJGaTUyTFZ4REh2TFJCNFYyclpqZ05LdTd5X2tyVUdndkgtN2NBZVVxbkFEd2NFbkpVS1FaZjVpOUdhbS1rOGRBYUVJTVHSAbwBQVVfeXFMTlBUUkstdHdoYXBKVjhRek1JZGwwUk96TG40R3o3dFg2NmRILTcxTUh0YkpOS1k2NkFDR29VenMyZHBTdWpVVXpEQ252a2k0S2o1TlF0RTVweVJTemFXTHh4SVlvMUFKRWxJZmY0dldwdWRmenhpOWp6eXZYOEJWMWxYdEdNQTliYlpoQXdyek43c3YxY254X1ZOZzRjdzNMcF9QQzQ4c25TazJia1FtdFc5RC1VTVBDWWhsZHQ?oc=5",
@@ -5380,7 +5380,7 @@
      "data": "2026-11-03",
      "fonte": "confirmada",
      "status": "saiu",
-     "saiu_em": "2026-11-05",
+     "saiu_em": "2026-11-06",
      "noticia": {
       "titulo": "Lucro do Itaú vai a R$ 12,6 bi no terceiro trimestre, alta de 1,7% - UOL Economia",
       "link": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNQlY3dUZhay02OWlsSU83UDllZ3hCVFRBUzBSZ2hmUDNLeW5QOU9SQUJ5VGVhOHBBYko3V3BNQ1UtenJfVXZmQUVLTjFTUjVRMHJ6Njg2ZE9GUzQ2MUxKWXQyVzA5b3BFdXhTWE1xX3FsaS1KWkJ6NER1dmFSa19ZSWJnUWJZdkdJZEtsaWVKSGNRcXJYZnJHSGs3RXFmSGV0U3c?oc=5",
@@ -5825,7 +5825,7 @@
      "data": "2026-11-05",
      "fonte": "confirmada",
      "status": "saiu",
-     "saiu_em": "2026-11-05",
+     "saiu_em": "2026-11-06",
      "noticia": {
       "titulo": "Banco Mercantil tem lucro de R$ 279,4 milhões no 3º trimestre, no 16º recorde seguido - Valor Econômico",
       "link": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNRlkxYmxMMS1HU3R2T01McG5nNlcxMTZDdFhiLVBrNTltMWdEN2RVUVVGUnZwQUNyNnZvSFVPdGk5Qko5TFRXQzM0OXo4R2lXRkV0UzVJWkhKVHk2SGhJN3dXRUtzZEVQTjF6Z0ZPWkdOeWJnWXZBUzZ6ZGp1RlpzZHo4YjBWNFJDcXV3SmpJNUN1VTZKLXRoeWVhc2o2YTVsaXJuemtSZUxBRm05TTBFY2RvVWxpeVZtVHpTQlJrNlFxaXlLWGVaZUR1cDdhT3pHSEJz0gHiAUFVX3lxTFBWeWRMUFlXRHNfcklnYnRPZy1NUEktbnNlRnpXampSbV9vVFNUSTNtaWtlTmFIaGlEVS1YelZTWWF5aTFmQk5FTlVkQlpHTmg4UWp1UnZ0UjVjczBMRG11UUtzaHlNWnV3OVltcVNoVTRtWXlQNG81aHRtcFByemNvYUZFaTJOX0RtTGptUGlSYzg3OC1BR0Z6TDBHRjdadDJIaHo4eU0tZW5Ucy1DMGlyUmJpVW1TTmpEVVJoa091UURsQkUxMmFrbEp0QWkwZ2RCcWR5dXc3a3Y1QTJzUUt2WkE?oc=5",
