@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-09T16:24-03:00",
+ "atualizado": "2026-11-10T00:06-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -2770,7 +2770,13 @@
      "ano": 2026,
      "data": "2026-11-11",
      "fonte": "confirmada",
-     "status": "previsto"
+     "status": "saiu",
+     "saiu_em": "2026-11-10",
+     "noticia": {
+      "titulo": "Banco ABC Brasil tem lucro de R$ 273,7 milhões no 3º trimestre, alta anual de 6,6% - feebpr.org.br",
+      "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYXo0bTFFN3ZxZ0h6LWVxaTVGdFBiZFQ0ZjY1YXJlZ0VEVG5fQ0NmcHRMbDNNLTZQNmlhRmFEYXk5YlZNTlpXaS1fMVVIMjMzTzVYNFdKWXIyWjdDZV9aVzNfY2QtR04wdDZOYUZZVXQtYkFNcld0S2R4YjltLVRvcWVLNHBTR1RfV3Zwdzg4emFUVUdmR3FTd0FGTUZaZkxpN19ra193?oc=5",
+      "quando": "Mon, 09 Nov 2026 11:13:00 GMT"
+     }
     },
     {
      "tipo": "DFP",
