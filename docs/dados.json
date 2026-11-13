@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-12T22:36-03:00",
+ "atualizado": "2026-11-13T00:31-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -950,7 +950,13 @@
      "ano": 2026,
      "data": "2026-11-14",
      "fonte": "prazo",
-     "status": "previsto"
+     "status": "saiu",
+     "saiu_em": "2026-11-13",
+     "noticia": {
+      "titulo": "Não é só o BRB: BB tem crise no agro e ações em queda - Rádio Corredor",
+      "link": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1IVUR5RnZxdkdYeGRTVDJHNmJWdWltTHhnelhhcmptbnZVSVRJZmtCV05qeWItejJYQ2U2Tm81T0NVVU82MERnWUlTSnk4Y1BDUDJwVHRmQVFPb1JvSkFweFBYbkJheS1XdTBZUVV3SlhFU0wxYW1J?oc=5",
+      "quando": "Thu, 12 Nov 2026 18:50:47 GMT"
+     }
     },
     {
      "tipo": "DFP",
@@ -1294,7 +1300,7 @@
      "data": "2026-11-12",
      "fonte": "confirmada",
      "status": "saiu",
-     "saiu_em": "2026-11-12",
+     "saiu_em": "2026-11-13",
      "noticia": {
       "titulo": "Lucro ajustado do BTG Pactual cresce 17% no 3º tri - InfoMoney",
       "link": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQRDJsWTVHUGhYMG9xMUJTTFpsUmZRc2lBSG92YnhrcjRFQkc1cVhQQXg1eW1qaU9lU1ZzZk9OVjJxSWkwSzg3dE14SzRVZG9kb3hwT1JBZDNSTkJvX3ZxMDNLOUg3X3NNOUlGWkxoRWxLcjQ4RXFOOFZ4T2l2cmhycnFFcXdFdDBTRWVhVm1lWUtLbXJoY2fSAZsBQVVfeXFMUG1rblJxQV9UaE96YVV3MVhDeFFDczRETDdlaVY1aGhwcFVodE4yYTUyOWNMcTdmaTJLelFnOFJBY3pKU3EzTG9MdXBoRmM5T1NzZUpEdXdHU0haMnY0V0hUejYwSHl5RWFlcWx1bWFFQ04ydTdUcmExWlgzLW1ULVctVDkwZGxwclV0dkxwWG9JVWtFaDVEZk00TDg?oc=5",
@@ -1950,7 +1956,7 @@
      "data": "2026-11-11",
      "fonte": "confirmada",
      "status": "saiu",
-     "saiu_em": "2026-11-12",
+     "saiu_em": "2026-11-13",
      "noticia": {
       "titulo": "Banco Pine tem lucro recorde de R$ 185,2 milhões no 3º trimestre, alta anual de 78,7% - Valor Econômico",
       "link": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQRnUteGFFOWdFdk9IM0Jidk9VamFuT3ZGeGdydTJrWEFMSXVYdExMY25HaEh0RkRIU3hncjUtLS1oeTNHYmZ6dW1yaHJWMV9OaktkMVhqcGhYdlp4U3lLRURlNnI3OTI0M1ZrMmNZNTJfMkNXdGVocllyNG9mamNPQklZdWhjTWZKRXU4NXJDWVl2WkdSM1RXQ3lQWGdLeVN2T3ppd014SFdhRkpYZjZCTHI4amdVdjA2eFhSczY2S01Uck9FZEdqNWRra2Q1dUYtV2lpZklmT3dlaW1xcGxjX1NLUmZIbkM5Y01UUNIB7AFBVV95cUxQRnUteGFFOWdFdk9IM0Jidk9VamFuT3ZGeGdydTJrWEFMSXVYdExMY25HaEh0RkRIU3hncjUtLS1oeTNHYmZ6dW1yaHJWMV9OaktkMVhqcGhYdlp4U3lLRURlNnI3OTI0M1ZrMmNZNTJfMkNXdGVocllyNG9mamNPQklZdWhjTWZKRXU4NXJDWVl2WkdSM1RXQ3lQWGdLeVN2T3ppd014SFdhRkpYZjZCTHI4amdVdjA2eFhSczY2S01Uck9FZEdqNWRra2Q1dUYtV2lpZklmT3dlaW1xcGxjX1NLUmZIbkM5Y01UUA?oc=5",
@@ -2946,7 +2952,7 @@
      "data": "2026-11-11",
      "fonte": "confirmada",
      "status": "saiu",
-     "saiu_em": "2026-11-12",
+     "saiu_em": "2026-11-13",
      "noticia": {
       "titulo": "LUCRO MENOR DO BB | O resultado do Banco do Brasil (BB) poderia ter sido pior do que o anunciado na noite de quarta-feira, 11, quando a instituição informou ter tido lucro de R$ 1,27 bilhão no terceiro trimestre, queda de 66,5% em relação a igual períod - Instagram",
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5NUVFaVm0zNXRGTlBGSkZRbXpkSV9VMFF6YzVrYzVOQTRKZktoeFZYV1c2NjBTUGRCcTNkSG01M3hoeTdIZUVuZFRqM2IwUFZyeVE?oc=5",
@@ -3788,7 +3794,7 @@
      "data": "2026-11-12",
      "fonte": "confirmada",
      "status": "saiu",
-     "saiu_em": "2026-11-12",
+     "saiu_em": "2026-11-13",
      "noticia": {
       "titulo": "Banestes lucra R$ 84,0 milhões no terceiro trimestre, queda de 23,9% - UOL Economia",
       "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSDlMcVBCUkJMbUNTUFVuM0JMWmJoRkV3dUJhaWpQQ2JvOFBoRHF2dEUxSXlPN3l0WEJybkN1OGpmbDgtWmRBNGNCYmpNTWJlX1RVOUVWYXZ4TTNaZzNCd3VnVlFRMXo3Sk9xVzdVX1NsQm4yeWQxVUtCRjNINHYxM1VyT3lDWEo2VWNGZWc4Q1RhQllCRTl0eHBLVC0yOGE4cE0zb05pMFBQd3NIVlNXMHBHZjV0UGw3aWZmUTktaDA?oc=5",
@@ -4322,11 +4328,11 @@
      "data": "2026-11-12",
      "fonte": "confirmada",
      "status": "saiu",
-     "saiu_em": "2026-11-12",
+     "saiu_em": "2026-11-13",
      "noticia": {
-      "titulo": "Lucro do Banrisul cai 52% no terceiro trimestre e fica em R$ 157,8 milhões - Jornal do Comércio",
+      "titulo": "Banrisul registra lucro líquido de R$ 157,8 milhões no 3º trimestre - Jornal do Comércio",
       "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxPMlBrTGp0UE9VeUV0UHFmTEZmcFBZVGZHa1ZNVWVCRUdsZUd4RHd3UGF0U3Zjc1pURDFyRFM0Ml9nVkRtZEl5bnBxYzl2b2VRV3NYRFhZck9HeV9Hb19rQ3Nid0lMQ200NFQyZi1KWU40QUhJSUF4WGc0bjRpNDVpekpkWVVNVW53VzA4UmRDdTIzeDU1OG5kWmRmV3N4Szl3Y05PMVZCUlVRTjRhd3BVblBkWW9Ed0NTNmhYeFJkeDIxRlAwOGtNR0hBMW1OVnNm?oc=5",
-      "quando": "Thu, 12 Nov 2026 19:38:48 GMT"
+      "quando": "Thu, 12 Nov 2026 23:07:27 GMT"
      }
     },
     {
@@ -6438,7 +6444,7 @@
      "data": "2026-11-11",
      "fonte": "confirmada",
      "status": "saiu",
-     "saiu_em": "2026-11-12",
+     "saiu_em": "2026-11-13",
      "noticia": {
       "titulo": "Paraná Banco lucra R$ 32,5 milhões no terceiro trimestre, alta de 3,0% - BOL",
       "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNUXNBelotNUJIZmtia0EwNF8tNDlEUE1WdjlESFdCRVRwNkgwU0N1d012dEstNHlMaDAyLVZfYnJzWnB3cWpvcGxtU1dJSjZ1X3E3ckpSdm5iQ1pOcVdQQ0FyY3l5OE5VMWgzMmlxeGdiWFU3dmQtWTYtd0R5cDlRRWpGaE1uWDJRU0hjMWFfbmFBaUpRT2w4dFQzbWJVWjU5WVdpSW85OFdMTTRDdTdZU0ZodXpGWGNHQVBac9IBvAFBVV95cUxNUXNBelotNUJIZmtia0EwNF8tNDlEUE1WdjlESFdCRVRwNkgwU0N1d012dEstNHlMaDAyLVZfYnJzWnB3cWpvcGxtU1dJSjZ1X3E3ckpSdm5iQ1pOcVdQQ0FyY3l5OE5VMWgzMmlxeGdiWFU3dmQtWTYtd0R5cDlRRWpGaE1uWDJRU0hjMWFfbmFBaUpRT2w4dFQzbWJVWjU5WVdpSW85OFdMTTRDdTdZU0ZodXpGWGNHQVBacw?oc=5",
