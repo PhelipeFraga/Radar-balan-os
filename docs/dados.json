@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-14T00:27-03:00",
+ "atualizado": "2026-11-14T12:27-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -519,7 +519,13 @@
      "ano": 2026,
      "data": "2026-11-13",
      "fonte": "confirmada",
-     "status": "previsto"
+     "status": "saiu",
+     "saiu_em": "2026-11-14",
+     "noticia": {
+      "titulo": "B100 S.A. reverte prejuízo e lucra R$ 958,00 mil no terceiro trimestre de 2026 - TradeMap",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9zWlBfQVByTU5fTHV5WkZSdWJucXVnclo2a3lROTh3NG5GVFZVZ0pqdkhBM0JIckRTZXF1NlUzdTBwNGVtS0cyUlBqNmZXeUs5NkpOQm9ZTUo?oc=5",
+      "quando": "Sat, 14 Nov 2026 04:21:08 GMT"
+     }
     },
     {
      "tipo": "DFP",
@@ -2956,7 +2962,7 @@
      "noticia": {
       "titulo": "CRISE NO 'BB' | Os resultados do Banco do Brasil abaixo do esperado no terceiro trimestre deste ano elevam a pressão pela troca na presidência do banco, hoje sob comando de Tarciana Medeiros, apurou o Estadão/Broadcast. ⁣ ⁣ Antes da divulgação do - Instagram",
       "link": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE1zVUR2a2FJcFB5cTFhSGpabHlIcTBCOGRJa2ZDNnpWYzNYa3Y1eE9qUTBkRE80dWt4SGdZY1FjWHN6RW9Tdmpsa19CYlp6dWpONVE?oc=5",
-      "quando": "Fri, 13 Nov 2026 23:04:23 GMT"
+      "quando": "Sat, 14 Nov 2026 05:00:17 GMT"
      }
     },
     {
@@ -3491,7 +3497,13 @@
      "ano": 2026,
      "data": "2026-11-13",
      "fonte": "confirmada",
-     "status": "previsto"
+     "status": "saiu",
+     "saiu_em": "2026-11-14",
+     "noticia": {
+      "titulo": "Lucro de Banese salta 46,80% no terceiro trimestre de 2026, para R$ 69,05 mi - TradeMap",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBraVhLQmZtYzRuWER5N0d3cTZ1VGZJOTlsWjlJU2tsa25iWUJyVXoyOGVyUWlzZWNyOTBuVVNqa1lxZmlZSF9YcTZSb3ZFa0VRaUo2QVk3dWs?oc=5",
+      "quando": "Sat, 14 Nov 2026 04:59:53 GMT"
+     }
     },
     {
      "tipo": "DFP",
@@ -3802,9 +3814,9 @@
      "status": "saiu",
      "saiu_em": "2026-11-14",
      "noticia": {
-      "titulo": "Banestes fecha trimestre com lucro de R$ 84 milhões - ES Brasil",
-      "link": "https://news.google.com/rss/articles/CBMidEFVX3lxTE55X3lYbUl0V2wtaF9Vd1ZGamh2UDhxTVdpX2cxNFk4ZzJnbjloZDBjZGp0MXZIUFVaYThRVkw1dTI2WUxfWG1jakRaOWFMcmMxdjVGalIxekM5eTRiR3c3SFZDdTkxcUxQakFKWWJzb3djX19u?oc=5",
-      "quando": "Fri, 13 Nov 2026 19:54:26 GMT"
+      "titulo": "Banestes lucra R$ 84,0 milhões no terceiro trimestre, queda de 23,9% - UOL Economia",
+      "link": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOSDlMcVBCUkJMbUNTUFVuM0JMWmJoRkV3dUJhaWpQQ2JvOFBoRHF2dEUxSXlPN3l0WEJybkN1OGpmbDgtWmRBNGNCYmpNTWJlX1RVOUVWYXZ4TTNaZzNCd3VnVlFRMXo3Sk9xVzdVX1NsQm4yeWQxVUtCRjNINHYxM1VyT3lDWEo2VWNGZWc4Q1RhQllCRTl0eHBLVC0yOGE4cE0zb05pMFBQd3NIVlNXMHBHZjV0UGw3aWZmUTktaDA?oc=5",
+      "quando": "Thu, 12 Nov 2026 21:55:09 GMT"
      }
     },
     {
@@ -4055,7 +4067,13 @@
      "ano": 2026,
      "data": "2026-11-13",
      "fonte": "confirmada",
-     "status": "previsto"
+     "status": "saiu",
+     "saiu_em": "2026-11-14",
+     "noticia": {
+      "titulo": "Lucro de Banpará salta 143,54% no terceiro trimestre de 2026, para R$ 59,60 mi - trademap.com.br",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1kMDlYaGlmQUpDS0hJX0hDdGJrUksyRDUwTkRoUUNnMUwwOHNDRU1ndFNBSFpZWjduajF4dGNNUExmcHJlM1hjNV83SG1mSDFnZG5Id1JGQnA?oc=5",
+      "quando": "Sat, 14 Nov 2026 04:21:08 GMT"
+     }
     },
     {
      "tipo": "DFP",
@@ -4987,9 +5005,9 @@
      "status": "saiu",
      "saiu_em": "2026-11-14",
      "noticia": {
-      "titulo": "Vendas do varejo caem 4% em outubro e Centro-Oeste tem a maior queda regional, diz Cielo - A Crítica de Campo Grande",
-      "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQWWlKQWEwUndHSUlCNkk0bXdWME9Fam96bTBoU3BWeWhLT05lQjdiU3Flb19aRHByZUVYTllZV2UwS2dQblppdUZHeGdFbGVaTmE5UVBWTkVkQlpYdHk3UlF5ZkgybEttUzRBeUpCRmdJYmdYdnA4aHpuZnlWa2w4dGtIbw?oc=5",
-      "quando": "Tue, 10 Nov 2026 13:10:00 GMT"
+      "titulo": "Cielo registra lucro de R$ 224,79 mi no terceiro trimestre de 2026, queda de -46,08% - TradeMap",
+      "link": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE00NHgzb3B5bDgxVzI5QkpVTVpzbGZkWXZOOTV3dFVmaFpCWWVXYXdOMUN0REQzYzdiQkxma2tLU1EzTmFYc3Jpc3BHZFgzcmh0OThTdFlXTU4?oc=5",
+      "quando": "Sat, 14 Nov 2026 04:21:08 GMT"
      }
     },
     {
