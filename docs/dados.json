@@ -1,5 +1,5 @@
 {
- "atualizado": "2026-11-17T15:02-03:00",
+ "atualizado": "2026-11-17T23:41-03:00",
  "instituicoes": [
   {
    "id": 20958,
@@ -2587,7 +2587,13 @@
      "ano": 2026,
      "data": "2026-11-16",
      "fonte": "confirmada",
-     "status": "previsto"
+     "status": "saiu",
+     "saiu_em": "2026-11-17",
+     "noticia": {
+      "titulo": "Fazendas fantasmas: o que a polícia investiga e o que diz o Banco do Brasil - Metrópoles",
+      "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOYmt2WFNUUXdCU3k2ZWdyODYyR2dCNE16Ymo2eHktYjI2TjRCWlRIVFhXRzg2RENFNWs3WmVZTTNtN0M5MmxJWHpnQnNMNTRkSmI5N2tSWXh1UWoyM0ZPdGRBV0hEdUF1dkNDSWdMVVB0SnpnbWQwQzNvOWhObkZiQjB0QlpXUmNORnlNYXFfaVI5OHNZNHJiQzJ5dTVpb0hBNms1OWNNUmk3ZXpHN3o2YzRZWkR5RFlUQUhfaTlfZzZJRVhRcHNFdw?oc=5",
+      "quando": "Tue, 17 Nov 2026 19:47:00 GMT"
+     }
     },
     {
      "tipo": "DFP",
